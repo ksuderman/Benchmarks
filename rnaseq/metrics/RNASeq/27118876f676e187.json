@@ -1,0 +1,63 @@
+{
+    "run": "2",
+    "cloud": "costs",
+    "job_conf": "Default",
+    "workflow_id": "2928f815752ab60b",
+    "history_id": "f3cba926bf9e4329",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "27118876f676e187",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2023-12-11T03:33:46.332132",
+        "create_time": "2023-12-11T03:05:42.257048",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "wig_to_bigWig",
+        "history_id": "f3cba926bf9e4329",
+        "external_id": "gxy-galaxy-galaxy-bjl2k",
+        "command_line": "grep -v \"^track\" '/galaxy/server/database/objects/5/9/2/dataset_5924e100-caf4-4d28-9703-43784e0551bc.dat' | wigToBigWig stdin '/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len' '/galaxy/server/database/objects/c/9/d/dataset_c9d8fa7d-fc74-4ff9-9bba-d48759708759.dat' -clip 2>&1 || echo \"Error running wigToBigWig.\" >&2",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"bedgraph\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"89aef14e97cd11ee89a666949bb345df\"",
+            "settings": "{\"__current_case__\": 0, \"settingsType\": \"preset\"}"
+        },
+        "inputs": {
+            "input1": {
+                "id": "488ff586b86a525f",
+                "src": "hda",
+                "uuid": "5924e100-caf4-4d28-9703-43784e0551bc"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "2bb98caa1d57ad65",
+                "src": "hda",
+                "uuid": "c9d8fa7d-fc74-4ff9-9bba-d48759708759"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.74.182.71:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        2322481938,
+        503642961
+    ]
+}
