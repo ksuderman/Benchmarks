@@ -1,0 +1,9 @@
+PREFIX=ks-costs-124
+TAG=23.1.1-auto
+GKE_VERSION=$GKE_124
+OS=UBUNTU_CONTAINERD
+MACHINE=n2-standard-48
+#IMAGE=ksuderman/galaxy-anvil
+BRAND="Ubuntu / GKE 1.24"
+#VERSION=2.8.0
+#CHART=/Users/suderman/Workspaces/JHU/galaxykubeman-helm/galaxykubeman

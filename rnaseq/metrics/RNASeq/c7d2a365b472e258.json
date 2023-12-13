@@ -1,0 +1,75 @@
+{
+    "run": "1",
+    "cloud": "costs",
+    "job_conf": "Default",
+    "workflow_id": "457261f8e3c1d980",
+    "history_id": "2b054d51478ced12",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "c7d2a365b472e258",
+        "state": "paused",
+        "exit_code": null,
+        "update_time": "2023-12-12T22:35:49.427302",
+        "create_time": "2023-12-12T21:48:24.597855",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.30.0",
+        "history_id": "2b054d51478ced12",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"dea27620993111ee9c173ac21510d17d\"",
+            "three": "false",
+            "strand": "\"-strand +\"",
+            "split": "true",
+            "report": "{\"__current_case__\": 0, \"report_select\": \"bg\", \"scale\": \"0.0116211\", \"zero_regions\": false}",
+            "input_type": "{\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 93, \"src\": \"dce\"}]}, \"input_type_select\": \"bam\"}",
+            "five": "false",
+            "dz": "false",
+            "d": "false"
+        },
+        "inputs": {
+            "input_type|input": {
+                "id": "823e09099c286966",
+                "src": "hda",
+                "uuid": "64cc6945-7ec1-4bd5-8d05-0681b6fda393"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "4e423ce2d3eed3cb",
+                "src": "hda",
+                "uuid": "f623e768-8ea3-4c1a-9e43-1f232c3e4d97"
+            }
+        },
+        "output_collections": {
+            "output": {
+                "id": "f4ee878cf51a9e23",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "paused",
+    "server": "http://34.139.120.251:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5099543128,
+        503642961
+    ]
+}

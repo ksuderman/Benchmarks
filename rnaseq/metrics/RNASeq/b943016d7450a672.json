@@ -1,0 +1,200 @@
+{
+    "run": "1",
+    "cloud": "costs",
+    "job_conf": "Default",
+    "workflow_id": "457261f8e3c1d980",
+    "history_id": "2b054d51478ced12",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "b943016d7450a672",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2023-12-12T22:35:48.424251",
+        "create_time": "2023-12-12T22:11:03.429725",
+        "galaxy_version": "23.1",
+        "command_version": "",
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.5.2+galaxy1",
+        "history_id": "2b054d51478ced12",
+        "external_id": "gxy-galaxy-galaxy-767ln",
+        "command_line": "cp '/galaxy/server/database/jobs_directory/000/75/configs/tmpzhhasgtr' '/galaxy/server/database/objects/c/d/0/dataset_cd047677-922b-4d62-b053-bbf123d1e732.dat' && ln -s '/galaxy/server/database/objects/8/8/6/dataset_886773ec-ac3c-4b54-9ede-0205cf2f3627.dat' localbam.bam && ln -s '/galaxy/server/database/objects/_metadata_files/8/d/4/metadata_8d4f9cdd-deea-46da-bfca-d2c93777cbb7.dat' localbam.bam.bai && cat '/galaxy/server/database/jobs_directory/000/75/configs/tmpzhhasgtr' && bamtools filter -script '/galaxy/server/database/jobs_directory/000/75/configs/tmpzhhasgtr' -in localbam.bam -out '/galaxy/server/database/objects/3/6/b/dataset_36b86480-8972-4706-b5b8-9e74ac930fac.dat'",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"bam\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "rule_configuration": "{\"__current_case__\": 0, \"rules_selector\": false}",
+            "conditions": "[{\"__index__\": 0, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"__current_case__\": 21, \"bam_property_selector\": \"tag\", \"bam_property_value\": \"NH=1\"}}]}]"
+        },
+        "inputs": {
+            "input_bam": {
+                "id": "ee8b50180ef4b214",
+                "src": "hda",
+                "uuid": "886773ec-ac3c-4b54-9ede-0205cf2f3627"
+            }
+        },
+        "outputs": {
+            "out_file2": {
+                "id": "fecf2f5ec456a375",
+                "src": "hda",
+                "uuid": "cd047677-922b-4d62-b053-bbf123d1e732"
+            },
+            "out_file1": {
+                "id": "f2600500f725f83a",
+                "src": "hda",
+                "uuid": "36b86480-8972-4706-b5b8-9e74ac930fac"
+            }
+        },
+        "output_collections": {
+            "out_file2": {
+                "id": "9f137d1da1aef452",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "\n\n\n        \n{\n    \"filters\": [\n        {\n            \"id\": \"1\",\n            \"tag\": \"NH=1\"\n        }\n    ]\n}\n\n        ",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "",
+        "stdout": "\n\n\n        \n{\n    \"filters\": [\n        {\n            \"id\": \"1\",\n            \"tag\": \"NH=1\"\n        }\n    ]\n}\n\n        ",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-767ln-sx6m9 5.15.0-1037-gke #42-Ubuntu SMP Thu Jun 22 03:18:20 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-767ln-sx6m9 5.15.0-1037-gke #42-Ubuntu SMP Thu Jun 22 03:18:20 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.4 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "198047180.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Memory softlimit on cgroup",
+                "value": "8.0 EB",
+                "plugin": "cgroup",
+                "name": "memory.soft_limit_in_bytes",
+                "raw_value": "9223372036854771712.0000000"
+            },
+            {
+                "title": "Was OOM Killer active?",
+                "value": "No",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.under_oom",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "OOM Control enabled",
+                "value": "Yes",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.oom_kill_disable",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage (MEM+SWP)",
+                "value": "3.8 GB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.max_usage_in_bytes",
+                "raw_value": "4079771648.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM+SWP)",
+                "value": "3.8 GB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.limit_in_bytes",
+                "raw_value": "4080218112.0000000"
+            },
+            {
+                "title": "Max memory usage (MEM)",
+                "value": "3.8 GB",
+                "plugin": "cgroup",
+                "name": "memory.max_usage_in_bytes",
+                "raw_value": "4079771648.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM)",
+                "value": "3.8 GB",
+                "plugin": "cgroup",
+                "name": "memory.limit_in_bytes",
+                "raw_value": "4080218112.0000000"
+            },
+            {
+                "title": "Failed to allocate memory count",
+                "value": 0.0,
+                "plugin": "cgroup",
+                "name": "memory.failcnt",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU Time",
+                "value": "23 minutes",
+                "plugin": "cgroup",
+                "name": "cpuacct.usage",
+                "raw_value": "1380166457303.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "23 minutes",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "1380.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2023-12-12 22:34:25",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1702420465.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2023-12-12 22:11:25",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1702419085.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "4080",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "4080.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "http://34.139.120.251:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5099543128,
+        503642961
+    ]
+}
