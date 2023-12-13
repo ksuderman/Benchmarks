@@ -10,6 +10,11 @@ This repository collects the RNA-Seq, Variant calling, and Single Cell benchmark
 
 Each of the `rnaseq`, `variant`, and `single-cell` directories contain the benchmark, experiment, and TPV configuration files required to run the benchmark experiments.
 
+## Results Tables
+
+1. [RNA-Seq](rnaseq/RNA-Seq-Defaults.md)
+
+
 ## Files
 
 **settings.sh** Environment variable definitions used when creating a GKE cluster. See [Variables](#variables) below for a description of the variables used.
