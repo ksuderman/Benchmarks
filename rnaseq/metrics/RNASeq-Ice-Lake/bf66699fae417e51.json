@@ -1,0 +1,64 @@
+{
+    "run": "1",
+    "cloud": "costs",
+    "job_conf": "8x32",
+    "workflow_id": "758a2b099369dfca",
+    "history_id": "d889dea78025b43d",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bf66699fae417e51",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2023-12-13T22:27:12.686715",
+        "create_time": "2023-12-13T22:01:13.730593",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "param_value_from_file",
+        "history_id": "d889dea78025b43d",
+        "external_id": "gxy-galaxy-galaxy-dkvrv",
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"txt\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"20d98d0e9a0311ee92172ae1ce8ff994\"",
+            "remove_newlines": "true",
+            "param_type": "\"float\""
+        },
+        "inputs": {
+            "input1": {
+                "id": "13251eeb15d89391",
+                "src": "hda",
+                "uuid": "48aef60f-6fcf-45ef-8048-ca1a976c5af2"
+            }
+        },
+        "outputs": {
+            "float_param": {
+                "id": "60027ed6228bf01b",
+                "src": "hda",
+                "uuid": "fd2953c3-7f86-49f5-833c-d5287a147492"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.139.120.251:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

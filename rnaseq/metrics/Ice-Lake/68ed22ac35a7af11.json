@@ -1,0 +1,284 @@
+{
+    "run": "3",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "9d2c7716a45c4f16",
+    "history_id": "850d26f8215a251e",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "68ed22ac35a7af11",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2023-12-19T04:01:14.414197",
+        "create_time": "2023-12-19T03:39:10.422765",
+        "galaxy_version": "23.1",
+        "command_version": "multiqc, version 1.11",
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
+        "history_id": "850d26f8215a251e",
+        "external_id": "gxy-galaxy-galaxy-sz4qh",
+        "command_line": "die() { echo \"$@\" 1>&2 ; exit 1; } &&  mkdir multiqc_WDir &&   mkdir multiqc_WDir/cutadapt_0 &&    ln -s '/galaxy/server/database/objects/f/4/7/dataset_f4760dbc-66ca-41cc-90b5-82a9a244fbde.dat' 'multiqc_WDir/cutadapt_0/SRR24043307_fastq.txt' && sed -i.old 's/You are running/This is/' 'multiqc_WDir/cutadapt_0/SRR24043307_fastq.txt' && grep -q \"This is cutadapt\" 'multiqc_WDir/cutadapt_0/SRR24043307_fastq.txt' || die \"'This is cutadapt' or 'You are running cutadapt' not found in the file\" && mkdir multiqc_WDir/star_1 &&    mkdir 'multiqc_WDir/star_1/log_0' &&     ln -s '/galaxy/server/database/objects/e/f/8/dataset_ef8d9752-8ebf-4934-a17c-f2f34b8fa890.dat' 'multiqc_WDir/star_1/log_0/SRR24043307_fastq_Log.final.out' &&   mkdir 'multiqc_WDir/star_1/genecounts_1' &&     ln -s '/galaxy/server/database/objects/8/7/1/dataset_871edf92-8597-42bd-a0c5-fc3842b2bbd1.dat' 'multiqc_WDir/star_1/genecounts_1/SRR24043307_fastq_ReadsPerGene.out.tab' &&   multiqc multiqc_WDir --filename 'report'    --export",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"2b181c4c9e2011ee8df8c2ac19489311\"",
+            "title": "\"\"",
+            "saveLog": "false",
+            "results": "[{\"__index__\": 0, \"software_cond\": {\"__current_case__\": 5, \"input\": {\"values\": [{\"id\": 130, \"src\": \"hdca\"}]}, \"software\": \"cutadapt\"}}, {\"__index__\": 1, \"software_cond\": {\"__current_case__\": 28, \"output\": [{\"__index__\": 0, \"type\": {\"__current_case__\": 0, \"input\": {\"values\": [{\"id\": 131, \"src\": \"hdca\"}]}, \"type\": \"log\"}}, {\"__index__\": 1, \"type\": {\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 134, \"src\": \"hdca\"}]}, \"type\": \"genecounts\"}}], \"software\": \"star\"}}]",
+            "flat": "false",
+            "export": "true",
+            "comment": "\"\""
+        },
+        "inputs": {
+            "results_1|software_cond|output_0|type|input1": {
+                "id": "431faaad4fac4108",
+                "src": "hda",
+                "uuid": "ef8d9752-8ebf-4934-a17c-f2f34b8fa890"
+            },
+            "results_1|software_cond|output_0|type|input": {
+                "id": "431faaad4fac4108",
+                "src": "hda",
+                "uuid": "ef8d9752-8ebf-4934-a17c-f2f34b8fa890"
+            },
+            "results_1|software_cond|output_1|type|input1": {
+                "id": "8b5e0bf8d50fdf32",
+                "src": "hda",
+                "uuid": "871edf92-8597-42bd-a0c5-fc3842b2bbd1"
+            },
+            "results_1|software_cond|output_1|type|input": {
+                "id": "8b5e0bf8d50fdf32",
+                "src": "hda",
+                "uuid": "871edf92-8597-42bd-a0c5-fc3842b2bbd1"
+            },
+            "results_0|software_cond|input1": {
+                "id": "24d82be2a8d7c7d3",
+                "src": "hda",
+                "uuid": "f4760dbc-66ca-41cc-90b5-82a9a244fbde"
+            },
+            "results_0|software_cond|input": {
+                "id": "24d82be2a8d7c7d3",
+                "src": "hda",
+                "uuid": "f4760dbc-66ca-41cc-90b5-82a9a244fbde"
+            }
+        },
+        "outputs": {
+            "html_report": {
+                "id": "4046fcb2479ff417",
+                "src": "hda",
+                "uuid": "d938cdb4-12c7-40b2-bf9e-16592ccb2df5"
+            },
+            "__new_primary_file_stats|cutadapt__": {
+                "id": "1a8a6a0b50335923",
+                "src": "hda",
+                "uuid": "5ae058cc-0561-4fde-8cb9-513c467dc6a2"
+            },
+            "__new_primary_file_stats|general_stats__": {
+                "id": "3e4650468b99ae99",
+                "src": "hda",
+                "uuid": "dac029bc-e5df-436f-ba45-0f12409f0b1c"
+            },
+            "__new_primary_file_stats|sources__": {
+                "id": "4bef6c5ff9bfca8c",
+                "src": "hda",
+                "uuid": "bbc609d4-12e6-4f42-8863-f7e105d6c9bb"
+            },
+            "__new_primary_file_stats|star__": {
+                "id": "8d95380a85883b23",
+                "src": "hda",
+                "uuid": "a7465738-6372-4207-929e-5d1a79253b10"
+            },
+            "__new_primary_file_plots|cutadapt_filtered_reads_plot_1__": {
+                "id": "bdf51e9ad416d10f",
+                "src": "hda",
+                "uuid": "0bc839d7-7ce8-4a2c-8b3c-1f62e45b8111"
+            },
+            "__new_primary_file_plots|cutadapt_trimmed_sequences_plot_3_Counts__": {
+                "id": "be6aacb967beadc7",
+                "src": "hda",
+                "uuid": "c8a155c5-5904-4da3-b02b-7df40dcec31d"
+            },
+            "__new_primary_file_plots|cutadapt_trimmed_sequences_plot_3_Obs_Exp__": {
+                "id": "f279af657d67dcd6",
+                "src": "hda",
+                "uuid": "2347853e-0686-4e78-bc64-bbc4066fc645"
+            },
+            "__new_primary_file_plots|star_alignment_plot_1__": {
+                "id": "b066e093dbc6d254",
+                "src": "hda",
+                "uuid": "7082e5c1-00c4-4d42-bcd0-11051f183874"
+            },
+            "__new_primary_file_plots|star_gene_counts_Reverse_Stranded__": {
+                "id": "6ba29c34876db040",
+                "src": "hda",
+                "uuid": "e74458bb-c16d-42e3-8d24-277798ac501b"
+            },
+            "__new_primary_file_plots|star_gene_counts_Same_Stranded__": {
+                "id": "469928bcd7626bde",
+                "src": "hda",
+                "uuid": "fb90af23-08e0-44d5-8b3a-0a289f0340f6"
+            },
+            "__new_primary_file_plots|star_gene_counts_Unstranded__": {
+                "id": "c52ca81d0fc93b28",
+                "src": "hda",
+                "uuid": "db5ed7f5-bb14-4a2a-afee-b65e1091269d"
+            }
+        },
+        "output_collections": {
+            "stats": {
+                "id": "85672e542751ca68",
+                "src": "hdca"
+            },
+            "plots": {
+                "id": "c342c152c7265c44",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "|         searching | \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 100% 4/4  ",
+        "tool_stderr": "\n  /// MultiQC \ud83d\udd0d | v1.11\n\n|           multiqc | MultiQC Version v1.17 now available!\n|           multiqc | Search path : /galaxy/server/database/jobs_directory/000/121/working/multiqc_WDir\n|              star | Found 1 reports and 1 gene count files\n|          cutadapt | Found 1 reports\n|           multiqc | Compressing plot data\n|           multiqc | Report      : report.html\n|           multiqc | Data        : report_data\n|           multiqc | Plots       : report_plots\n|           multiqc | MultiQC complete\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "\n  /// MultiQC \ud83d\udd0d | v1.11\n\n|           multiqc | MultiQC Version v1.17 now available!\n|           multiqc | Search path : /galaxy/server/database/jobs_directory/000/121/working/multiqc_WDir\n|              star | Found 1 reports and 1 gene count files\n|          cutadapt | Found 1 reports\n|           multiqc | Compressing plot data\n|           multiqc | Report      : report.html\n|           multiqc | Data        : report_data\n|           multiqc | Plots       : report_plots\n|           multiqc | MultiQC complete\n",
+        "stdout": "|         searching | \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 100% 4/4  ",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-sz4qh-69b47 5.15.0-1037-gke #42-Ubuntu SMP Thu Jun 22 03:18:20 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-sz4qh-69b47 5.15.0-1037-gke #42-Ubuntu SMP Thu Jun 22 03:18:20 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.3 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "197850744.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Memory softlimit on cgroup",
+                "value": "8.0 EB",
+                "plugin": "cgroup",
+                "name": "memory.soft_limit_in_bytes",
+                "raw_value": "9223372036854771712.0000000"
+            },
+            {
+                "title": "Was OOM Killer active?",
+                "value": "No",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.under_oom",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "OOM Control enabled",
+                "value": "Yes",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.oom_kill_disable",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage (MEM+SWP)",
+                "value": "110.2 MB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.max_usage_in_bytes",
+                "raw_value": "115580928.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM+SWP)",
+                "value": "11.4 GB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.limit_in_bytes",
+                "raw_value": "12240654336.0000000"
+            },
+            {
+                "title": "Max memory usage (MEM)",
+                "value": "110.2 MB",
+                "plugin": "cgroup",
+                "name": "memory.max_usage_in_bytes",
+                "raw_value": "115580928.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM)",
+                "value": "11.4 GB",
+                "plugin": "cgroup",
+                "name": "memory.limit_in_bytes",
+                "raw_value": "12240654336.0000000"
+            },
+            {
+                "title": "Failed to allocate memory count",
+                "value": 0.0,
+                "plugin": "cgroup",
+                "name": "memory.failcnt",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU Time",
+                "value": "6.751781495 seconds",
+                "plugin": "cgroup",
+                "name": "cpuacct.usage",
+                "raw_value": "6751781495.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "7 seconds",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "7.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2023-12-19 04:01:03",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1702958463.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2023-12-19 04:00:56",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1702958456.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "12240",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "12240.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "http://34.73.171.239:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        503642961,
+        503642961
+    ]
+}

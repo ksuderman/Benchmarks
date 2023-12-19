@@ -1,0 +1,70 @@
+{
+    "run": "3",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "9d2c7716a45c4f16",
+    "history_id": "850d26f8215a251e",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "de72ba87988ee12d",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2023-12-19T04:17:01.330945",
+        "create_time": "2023-12-19T04:01:27.337816",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.30.0",
+        "history_id": "850d26f8215a251e",
+        "external_id": "gxy-galaxy-galaxy-lglsm",
+        "command_line": "bedtools genomecov  -ibam '/galaxy/server/database/objects/a/2/9/dataset_a297305b-fa37-4093-9fcc-7a4f7bed5d20.dat'   -split   -bg  -scale 0.0232417     > '/galaxy/server/database/objects/3/9/a/dataset_39aca17b-a3b0-40e2-ad1b-0f7652a1ad95.dat'",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"2b181c4c9e2011ee8df8c2ac19489311\"",
+            "three": "false",
+            "strand": "\"\"",
+            "split": "true",
+            "report": "{\"__current_case__\": 0, \"report_select\": \"bg\", \"scale\": \"0.0232417\", \"zero_regions\": false}",
+            "input_type": "{\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 199, \"src\": \"dce\"}]}, \"input_type_select\": \"bam\"}",
+            "five": "false",
+            "dz": "false",
+            "d": "false"
+        },
+        "inputs": {
+            "input_type|input": {
+                "id": "1cae68661e55efcb",
+                "src": "hda",
+                "uuid": "a297305b-fa37-4093-9fcc-7a4f7bed5d20"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "50a8269a04c8d9bd",
+                "src": "hda",
+                "uuid": "39aca17b-a3b0-40e2-ad1b-0f7652a1ad95"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.73.171.239:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        503642961,
+        503642961
+    ]
+}

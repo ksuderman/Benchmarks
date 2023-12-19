@@ -13,14 +13,31 @@ Each of the `rnaseq`, `variant`, and `single-cell` directories contain the bench
 ## Results Tables
 
 1. [RNA-Seq](rnaseq/RNA-Seq-Defaults.md)
+2. [Ice Lake](results/IceLake.md)
 
 
 ## Files
 
-**settings.sh** Environment variable definitions used when creating a GKE cluster. See [Variables](#variables) below for a description of the variables used.
+**costs.sh**<br/>Environment variable definitions used when creating a GKE cluster. See [Variables](#variables) below for a description of the variables used.<br/>
+**cascade-lake.sh**<br/>Variable definitions used for the clusters using Intel Cascade Lake cpus.<br/>
+**ice-lake.sh**<br/>Variable definitions used for the clusters using Intel Ice Lake cpus.<br/>
+**anvil**<br/> is a Bash script used to manage the GKE clusters used to run the experiments. Run `anvil --help` for full usage information.
 
-**anvil** is a Bash script used to manage the GKE clusters used to run the experiments. Run `anvil --help` for full usage information.
+## Ensuring the CPU Type
 
+Google supports specifying a `--min-cpu-platform`, but that is a *minimum* and we may get a later CPU family if the minium requested family is not available.  Therefore we need to ensure the CPUs used in the cluster are actually the type requested.
+
+```bash
+# SSH into the node
+gcloud compute ssh --zone <ZONE> <instance name>
+
+# Install GCC
+sudo apt update
+sudo apt install build-essential
+
+# Get the CPU family name
+gcc -march=native -Q --help=target | grep -march
+```
 ### Create a cluster
 ```bash
 anvil --settings settings.sh cluster disks galaxy

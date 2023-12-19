@@ -3,9 +3,24 @@ jobs:
     tpv_rules_local.yml:
       tools:  
         toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/.*:
-          cores: {{ cores }}
-          mem: {{ mem }}
+          {%- if rnastar_cores is defined %}
+          cores: {{ rnastar_cores -}}
+          {% else %}
+          cores: {{ cores -}}
+          {% endif %}
+          {%- if rnastar_mem is defined %}
+          mem: {{ rnastar_mem -}}
+          {%- else %}
+          mem: {{ mem -}}
+          {%- endif %}
         toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/.*:
-          cores: {{ cores }}
-          mem: {{ mem }}
-        
+          {%- if cufflinks_cores is defined %}
+          cores: {{ cufflinks_cores -}}
+          {% else %}
+          cores {{ cores -}}
+          {% endif %}
+          {%- if cufflinks_mem is defined %}
+          mem: {{ cufflinks_mem -}}
+          {% else %}
+          mem {{ mem -}}
+          {% endif %}
