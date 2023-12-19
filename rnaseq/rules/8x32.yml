@@ -8,5 +8,5 @@ galaxy:
             mem: 64
           toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/.*:
             cores: 8
-            mem: 64
+            mem: 32
         

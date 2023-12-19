@@ -31,13 +31,13 @@ def run(file: str, tool: str, filter:list):
     count = 0
     for line in data:
         parts = line.split('|')
-        if parts[3].strip() == 'ok':
-            print(line)
-            runtime += float(parts[-2])
-            memory += float(parts[-3])
-            count += 1
-        else:
-            print(f"Rejecting line {parts[3]}: {line}")
+        # if parts[4].strip() == 'ok':
+        print(line)
+        runtime += float(parts[-3])
+        memory += float(parts[-2])
+        count += 1
+        # else:
+        #     print(f"Rejecting line {parts[3]}: {line}")
     if count == 0:
         print("ERROR: No lines matched the given query")
         return

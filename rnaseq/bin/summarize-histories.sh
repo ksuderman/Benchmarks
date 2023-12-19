@@ -1,8 +1,21 @@
 #!/usr/bin/env bash
 
-for hid in $(abm costs history list | grep costs | awk '{print $1}') ; do
-	name=$(abm costs history show $hid | jq -r .name | tr ' ' '_')
-	echo "Getting results for history $hid $name"
-	abm costs history summarize $hid > results/$name.csv
-	abm costs history summarize --markdown --sort-by runtime $hid > results/$name.md
+if [[ $# = 0 ]] ; then
+	echo "ERROR: No instance name provided"
+	exit 1
+fi
+
+cloud=$1
+
+if [[ ! -e results/$cloud ]] ; then
+	mkdir results/$cloud
+fi
+
+for hid in $(abm $cloud history list | grep $cloud | awk '{print $1}') ; do
+	echo "Getting name for history $hid"
+	name=$(abm $cloud history show $hid | jq -r .name | tr ' ' '_')
+	echo "Generating CSV for history $name"
+	abm $cloud history summarize $hid > results/$cloud/$name.csv
+	echo "Generating markdown for history $name"
+	abm $cloud history summarize --markdown --sort-by runtime $hid > results/$cloud/$name.md
 done
