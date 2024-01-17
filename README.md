@@ -13,7 +13,7 @@ Each of the `rnaseq`, `variant`, and `single-cell` directories contain the bench
 ## Results Tables
 
 1. [RNA-Seq](rnaseq/RNA-Seq-Defaults.md)
-2. [Ice Lake](results/IceLake.md)
+2. [Ice Lake](rnaseq/results/IceLake.md)
 
 
 ## Files
