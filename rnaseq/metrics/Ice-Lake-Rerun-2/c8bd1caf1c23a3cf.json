@@ -1,0 +1,132 @@
+{
+    "run": "1",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "2f59f6d3ea9d7314",
+    "history_id": "c8bea966218bfbf0",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "c8bd1caf1c23a3cf",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2024-01-20T00:27:54.182875",
+        "create_time": "2024-01-20T00:17:49.491264",
+        "galaxy_version": "23.1",
+        "command_version": "",
+        "copied_from_job_id": null,
+        "tool_id": "wig_to_bigWig",
+        "history_id": "c8bea966218bfbf0",
+        "external_id": "gxy-galaxy-galaxy-99tm8",
+        "command_line": "grep -v \"^track\" '/galaxy/server/database/objects/4/1/b/dataset_41b72d33-6d84-4a57-b711-7f7388f429bd.dat' | wigToBigWig stdin '/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len' '/galaxy/server/database/objects/4/9/5/dataset_495aa0c8-3392-446a-b73f-b04e27b836aa.dat' -clip 2>&1 || echo \"Error running wigToBigWig.\" >&2",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"bedgraph\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"354967c4b72611ee8281b632d2eac228\"",
+            "settings": "{\"__current_case__\": 0, \"settingsType\": \"preset\"}"
+        },
+        "inputs": {
+            "input1": {
+                "id": "7f89f7d5d1faad15",
+                "src": "hda",
+                "uuid": "41b72d33-6d84-4a57-b711-7f7388f429bd"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "a546ffd6781c3aaa",
+                "src": "hda",
+                "uuid": "495aa0c8-3392-446a-b73f-b04e27b836aa"
+            }
+        },
+        "output_collections": {
+            "out_file1": {
+                "id": "cc39ea385a7c234b",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-99tm8-s59sv 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-99tm8-s59sv 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.3 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "197850376.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "11 seconds",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "11.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-01-20 00:27:47",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1705710467.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-01-20 00:27:36",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1705710456.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "10737",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "10737.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "http://34.138.123.6:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        29167384,
+        503642961
+    ]
+}

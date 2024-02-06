@@ -1,0 +1,121 @@
+{
+    "run": "1",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "5954028d45ac6b3b",
+    "history_id": "7414fa1f9502cff6",
+    "inputs": "SRR24043307-20 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "4293563a57f6cda8",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2024-01-19T23:01:31.157839",
+        "create_time": "2024-01-19T23:00:45.124112",
+        "galaxy_version": "23.1",
+        "command_version": "",
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+        "history_id": "7414fa1f9502cff6",
+        "external_id": "gxy-galaxy-galaxy-wpmj5",
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"92c502eeb71e11eea9818684b565b28a\"",
+            "components": "[{\"__index__\": 0, \"param_type\": {\"__current_case__\": 0, \"component_value\": \"hg38\", \"select_param_type\": \"text\"}}]"
+        },
+        "inputs": {},
+        "outputs": {
+            "out1": {
+                "id": "1606728862f7cb47",
+                "src": "hda",
+                "uuid": "f7d95654-2d8c-4d78-ab19-475b7175f684"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-wpmj5-gjgtk 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-wpmj5-gjgtk 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.3 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "197850376.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "4 seconds",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "4.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-01-19 23:01:11",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1705705271.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-01-19 23:01:07",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1705705267.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "4080",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "4080.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "http://34.138.123.6:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

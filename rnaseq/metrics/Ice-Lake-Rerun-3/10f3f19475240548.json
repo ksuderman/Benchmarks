@@ -1,0 +1,81 @@
+{
+    "run": "1",
+    "cloud": "ice2",
+    "job_conf": "ice-lake",
+    "workflow_id": "57b34d610b01b7e1",
+    "history_id": "d0ec93c740e3d86e",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "10f3f19475240548",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-01-21T18:52:35.164489",
+        "create_time": "2024-01-21T18:52:34.461205",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.0+galaxy1",
+        "history_id": "d0ec93c740e3d86e",
+        "external_id": null,
+        "command_line": null,
+        "traceback": "Traceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/jobs/runners/__init__.py\", line 291, in prepare_job\n    job_wrapper.prepare()\n  File \"/galaxy/server/lib/galaxy/jobs/__init__.py\", line 1254, in prepare\n    ) = tool_evaluator.build()\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 568, in build\n    global_tool_logs(self._build_command_line, config_file, \"Building Command Line\")\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 96, in global_tool_logs\n    raise e\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 92, in global_tool_logs\n    return func()\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 585, in _build_command_line\n    command_line = fill_template(\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 115, in fill_template\n    return fill_template(\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 115, in fill_template\n    return fill_template(\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 115, in fill_template\n    return fill_template(\n  [Previous line repeated 7 more times]\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 123, in fill_template\n    raise first_exception or e\n  File \"/galaxy/server/lib/galaxy/util/template.py\", line 87, in fill_template\n    return unicodify(t, log_exception=False)\n  File \"/galaxy/server/lib/galaxy/util/__init__.py\", line 1153, in unicodify\n    value = str(value)\n  File \"/galaxy/server/.venv/lib/python3.10/site-packages/Cheetah/Template.py\", line 1053, in __unicode__\n    return getattr(self, mainMethName)()\n  File \"DynamicallyCompiledCheetahTemplate.py\", line 107, in respond\nNameMapper.NotFound: cannot find 'forward' while searching for 'library.input_1.forward'\n",
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "output_selector": "[\"report\"]",
+            "read_mod_options": "{\"length_tag\": \"\", \"nextseq_trim\": \"0\", \"quality_cutoff\": \"30\", \"rename\": \"\", \"shorten_options\": {\"__current_case__\": 1, \"shorten_values\": \"False\"}, \"strip_suffix\": \"\", \"trim_n\": false, \"zero_cap\": false}",
+            "filter_options": "{\"discard_cassava\": false, \"discard_trimmed\": false, \"discard_untrimmed\": false, \"length_R2_options\": {\"__current_case__\": 1, \"length_R2_status\": \"False\"}, \"max_expected_errors\": \"\", \"max_n\": \"\", \"maximum_length\": \"\", \"minimum_length\": \"15\", \"pair_filter\": \"any\"}",
+            "adapter_options": "{\"action\": \"trim\", \"error_rate\": \"0.1\", \"internal\": \"\", \"match_read_wildcards\": \" \", \"no_indels\": false, \"overlap\": \"3\", \"revcomp\": false, \"times\": \"1\"}",
+            "library": "{\"__current_case__\": 2, \"input_1\": {\"values\": [{\"id\": 69, \"src\": \"hdca\"}]}, \"r1\": {\"adapters\": [{\"__index__\": 0, \"adapter_source\": {\"__current_case__\": 0, \"adapter\": \"AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_name\": \"Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_source_list\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters\": [], \"cut\": \"0\", \"front_adapters\": []}, \"r2\": {\"adapters2\": [{\"__index__\": 0, \"adapter_source2\": {\"__current_case__\": 0, \"adapter2\": \"AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_name2\": \"Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_source_list2\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters2\": [], \"cut2\": \"0\", \"front_adapters2\": [], \"quality_cutoff2\": \"\"}, \"type\": \"paired_collection\"}"
+        },
+        "inputs": {
+            "library|input_11": {
+                "id": "b7e79ebfc6408abb",
+                "src": "hda",
+                "uuid": "2c348632-8a23-4a8d-917e-88ea7c670ba9"
+            }
+        },
+        "outputs": {
+            "out_pairs|__part__|forward": {
+                "id": "04d2ea1c15a99e96",
+                "src": "hda",
+                "uuid": "2d832a44-4120-4359-9ba5-f53ec960c64c"
+            },
+            "out_pairs|__part__|reverse": {
+                "id": "0793cc06dacd90d8",
+                "src": "hda",
+                "uuid": "5cedd109-9086-4313-9ca6-108a328d2c13"
+            },
+            "report": {
+                "id": "e239249fe8c5ebb3",
+                "src": "hda",
+                "uuid": "7a1eab05-9551-46e4-ba3e-99f412df945f"
+            }
+        },
+        "output_collections": {
+            "out_pairs": {
+                "id": "7907b1ccb0b5fa65",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.23.81.130:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        9,
+        503642961
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "run": "1",
+    "cloud": "ice2",
+    "job_conf": "ice-lake",
+    "workflow_id": "57b34d610b01b7e1",
+    "history_id": "7a16757b385100f9",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "e72e2e4626c2d9a7",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-01-21T17:17:38.333015",
+        "create_time": "2024-01-21T16:56:57.320954",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2",
+        "history_id": "7a16757b385100f9",
+        "external_id": "gxy-galaxy-galaxy-nxjr9",
+        "command_line": "env -i $(which awk) --sandbox -v FS='\t' -v OFS='\t' --re-interval -f \"/galaxy/server/database/jobs_directory/000/25/configs/tmprkex87zc\" \"/galaxy/server/database/objects/0/6/c/dataset_06c68fe1-391b-4517-b2b2-97b6c4fb4943.dat\" > \"/galaxy/server/database/objects/7/6/9/dataset_769ad109-48fe-4f8d-a20e-b06ad472178b.dat\"",
+        "traceback": null,
+        "params": {
+            "code": "\"NR>4{print $1\\\"\\\\t\\\"$3}\"",
+            "__workflow_invocation_uuid__": "\"09c617d8b87e11ee913f6a5fa6a97397\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"tabular\""
+        },
+        "inputs": {
+            "infile": {
+                "id": "d0de11f8f1af1dcb",
+                "src": "hda",
+                "uuid": "06c68fe1-391b-4517-b2b2-97b6c4fb4943"
+            }
+        },
+        "outputs": {
+            "outfile": {
+                "id": "6cc778cf9e40ad65",
+                "src": "hda",
+                "uuid": "769ad109-48fe-4f8d-a20e-b06ad472178b"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.23.81.130:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "run": "1",
+    "cloud": "cascade",
+    "job_conf": "col-e",
+    "workflow_id": "36fa9c180c5ed4a9",
+    "history_id": "7b536219bd7368cf",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "6a060c342467e112",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2023-12-17T22:10:56.020872",
+        "create_time": "2023-12-17T22:09:44.146534",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "param_value_from_file",
+        "history_id": "7b536219bd7368cf",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"txt\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"fb270a189d2811eeb0e9ae93ebfbb7e7\"",
+            "remove_newlines": "true",
+            "param_type": "\"float\""
+        },
+        "inputs": {
+            "input1": {
+                "id": "a7f1837ac8c5bc08",
+                "src": "hda",
+                "uuid": "55271f27-aab6-444f-ab4f-a038bf728239"
+            }
+        },
+        "outputs": {
+            "float_param": {
+                "id": "a564166d9f6025b5",
+                "src": "hda",
+                "uuid": "5ca0d638-08b6-43a9-a5ba-b2a13f9c6ab1"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleted",
+    "server": "http://34.139.33.58:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        0,
+        503642961
+    ]
+}

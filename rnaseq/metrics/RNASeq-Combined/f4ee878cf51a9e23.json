@@ -1,0 +1,68 @@
+{
+    "run": "1",
+    "cloud": "costs",
+    "job_conf": "Default",
+    "workflow_id": "457261f8e3c1d980",
+    "history_id": "2b054d51478ced12",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "f4ee878cf51a9e23",
+        "state": "paused",
+        "exit_code": null,
+        "update_time": "2023-12-12T22:35:50.411288",
+        "create_time": "2023-12-12T21:48:24.913623",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "wig_to_bigWig",
+        "history_id": "2b054d51478ced12",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"bedgraph\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"dea27620993111ee9c173ac21510d17d\"",
+            "settings": "{\"__current_case__\": 0, \"settingsType\": \"preset\"}"
+        },
+        "inputs": {
+            "input1": {
+                "id": "3407b50de91aaa3a",
+                "src": "hda",
+                "uuid": "a24377cd-0914-47dd-8a76-bf118a53ffc0"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "b0e37985c1e176fb",
+                "src": "hda",
+                "uuid": "7b4453b8-c59a-438d-a135-a87636949f11"
+            }
+        },
+        "output_collections": {
+            "out_file1": {
+                "id": "3e81887e3a389492",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "paused",
+    "server": "http://34.139.120.251:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5099543128,
+        503642961
+    ]
+}

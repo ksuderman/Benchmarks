@@ -1,0 +1,68 @@
+{
+    "run": "1",
+    "cloud": "cascade",
+    "job_conf": "col-h",
+    "workflow_id": "d6564bf7d9b7ac55",
+    "history_id": "a168d6c06ca48e2c",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "712b491b0c3d927f",
+        "state": "deleting",
+        "exit_code": null,
+        "update_time": "2024-01-19T17:49:59.652588",
+        "create_time": "2024-01-19T17:48:38.445677",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2",
+        "history_id": "a168d6c06ca48e2c",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"txt\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"f8f2ffacb6f211ee89ec46ad1fb4e501\"",
+            "code": "\"$0~\\\"Uniquely mapped reads number\\\"{print 1000000/$NF} \""
+        },
+        "inputs": {
+            "infile": {
+                "id": "33ddb0734b451d45",
+                "src": "hda",
+                "uuid": "fc13af0f-078f-4708-8b82-64a64e61d16e"
+            }
+        },
+        "outputs": {
+            "outfile": {
+                "id": "6e6dc016af328e25",
+                "src": "hda",
+                "uuid": "a432ef18-6a19-4ad2-9de0-2f0e815bcd7d"
+            }
+        },
+        "output_collections": {
+            "outfile": {
+                "id": "9ca3b3c78eda71b6",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

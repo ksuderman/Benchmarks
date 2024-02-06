@@ -1,0 +1,88 @@
+{
+    "run": "1",
+    "cloud": "costs",
+    "job_conf": "col-f",
+    "workflow_id": "428fb8d6a5f9f7d2",
+    "history_id": "c154aafc9207ba0d",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "12033affe329d3f8",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2023-12-15T09:59:38.414299",
+        "create_time": "2023-12-15T09:52:40.871057",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.0+galaxy1",
+        "history_id": "c154aafc9207ba0d",
+        "external_id": "gxy-galaxy-galaxy-dqbds",
+        "command_line": "ln -f -s '/galaxy/server/database/objects/6/a/9/dataset_6a91822e-b87b-410c-b945-adf4e618f954.dat' 'SRR24043307_fastq_1.fq.gz' &&  ln -f -s '/galaxy/server/database/objects/b/e/7/dataset_be7b8cbc-3bc8-4577-a2e6-b5603605b6a5.dat' 'SRR24043307_fastq_2.fq.gz' &&    cutadapt  -j=${GALAXY_SLOTS:-4}      -a 'Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'='AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'         -A 'Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'='AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'      --output='out1.fq.gz' --paired-output='out2.fq.gz'  --error-rate=0.1 --times=1 --overlap=3   --action=trim      --minimum-length=15 --pair-filter=any   --quality-cutoff=30     'SRR24043307_fastq_1.fq.gz' 'SRR24043307_fastq_2.fq.gz'  > report.txt",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"aef4707c9b2f11ee8d697a4557bf2a53\"",
+            "read_mod_options": "{\"length_tag\": \"\", \"nextseq_trim\": \"0\", \"quality_cutoff\": \"30\", \"rename\": \"\", \"shorten_options\": {\"__current_case__\": 1, \"shorten_values\": \"False\"}, \"strip_suffix\": \"\", \"trim_n\": false, \"zero_cap\": false}",
+            "output_selector": "[\"report\"]",
+            "library": "{\"__current_case__\": 2, \"input_1\": {\"values\": [{\"id\": 6, \"src\": \"dce\"}]}, \"r1\": {\"adapters\": [{\"__index__\": 0, \"adapter_source\": {\"__current_case__\": 0, \"adapter\": \"AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_name\": \"Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_source_list\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters\": [], \"cut\": \"0\", \"front_adapters\": []}, \"r2\": {\"adapters2\": [{\"__index__\": 0, \"adapter_source2\": {\"__current_case__\": 0, \"adapter2\": \"AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_name2\": \"Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_source_list2\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters2\": [], \"cut2\": \"0\", \"front_adapters2\": [], \"quality_cutoff2\": \"\"}, \"type\": \"paired_collection\"}",
+            "filter_options": "{\"discard_cassava\": false, \"discard_trimmed\": false, \"discard_untrimmed\": false, \"length_R2_options\": {\"__current_case__\": 1, \"length_R2_status\": \"False\"}, \"max_expected_errors\": null, \"max_n\": null, \"maximum_length\": null, \"minimum_length\": \"15\", \"pair_filter\": \"any\"}",
+            "adapter_options": "{\"action\": \"trim\", \"error_rate\": \"0.1\", \"internal\": \"\", \"match_read_wildcards\": \" \", \"no_indels\": false, \"overlap\": \"3\", \"revcomp\": false, \"times\": \"1\"}",
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}"
+        },
+        "inputs": {
+            "library|input_12": {
+                "id": "5f8e0aa2cc002773",
+                "src": "hda",
+                "uuid": "be7b8cbc-3bc8-4577-a2e6-b5603605b6a5"
+            },
+            "library|input_11": {
+                "id": "447f37f1877c0cf2",
+                "src": "hda",
+                "uuid": "6a91822e-b87b-410c-b945-adf4e618f954"
+            }
+        },
+        "outputs": {
+            "report": {
+                "id": "188f7ada56eda485",
+                "src": "hda",
+                "uuid": "bd69a764-48eb-4e72-b36b-a570a1aa0703"
+            },
+            "out_pairs|__part__|reverse": {
+                "id": "c7b671ba490de459",
+                "src": "hda",
+                "uuid": "7b941ef1-986e-4ffd-84db-cc331970e082"
+            },
+            "out_pairs|__part__|forward": {
+                "id": "1c65d9014d1c80e9",
+                "src": "hda",
+                "uuid": "8b01f4e5-929a-46b0-ab83-f69d164b7ff4"
+            }
+        },
+        "output_collections": {
+            "out_pairs": {
+                "id": "21511b2f065658bd",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.139.120.251:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

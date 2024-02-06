@@ -1,0 +1,118 @@
+{
+    "run": "3",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "2f59f6d3ea9d7314",
+    "history_id": "e6c67958f80c4c3a",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "822d897b7986b742",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-01-20T01:37:02.829865",
+        "create_time": "2024-01-20T01:17:19.484949",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/2.2.1.3",
+        "history_id": "e6c67958f80c4c3a",
+        "external_id": null,
+        "command_line": null,
+        "traceback": "Traceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/jobs/runners/__init__.py\", line 291, in prepare_job\n    job_wrapper.prepare()\n  File \"/galaxy/server/lib/galaxy/jobs/__init__.py\", line 1248, in prepare\n    tool_evaluator.set_compute_environment(compute_environment, get_special=get_special)\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 139, in set_compute_environment\n    self._validate_incoming(incoming)\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 282, in _validate_incoming\n    visit_input_values(self.tool.inputs, incoming, validate_inputs)\n  File \"/galaxy/server/lib/galaxy/tools/parameters/__init__.py\", line 224, in visit_input_values\n    callback_helper(\n  File \"/galaxy/server/lib/galaxy/tools/parameters/__init__.py\", line 159, in callback_helper\n    new_value = callback(**args)\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 279, in validate_inputs\n    value = input.from_json(value, request_context, context)\n  File \"/galaxy/server/lib/galaxy/tools/parameters/basic.py\", line 2169, in from_json\n    raise ParameterValueError(\ngalaxy.tools.parameters.basic.ParameterValueError: parameter 'input': the previously selected dataset has entered an unusable state\n",
+        "params": {
+            "__input_ext": "\"bam\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"9a3a5084b73111ee8281b632d2eac228\"",
+            "reference_annotation": "{\"__current_case__\": 1, \"compatible_hits_norm\": \"\", \"reference_annotation_file\": {\"values\": [{\"id\": 760, \"src\": \"hda\"}]}, \"use_ref\": \"Use reference annotation\"}",
+            "pre_mrna_fraction": "\"0.15\"",
+            "multiread_correct": "true",
+            "min_isoform_fraction": "\"0.1\"",
+            "max_intron_len": "\"300000\"",
+            "length_correction": "\"--no-effective-length-correction\"",
+            "global_model": null,
+            "bias_correction": "{\"__current_case__\": 0, \"do_bias_correction\": \"Yes\", \"seq_source\": {\"__current_case__\": 0, \"index\": \"hg38\", \"index_source\": \"cached\"}}",
+            "advanced_settings": "{\"__current_case__\": 1, \"inner_dist_std_dev\": \"80\", \"inner_mean_dist\": \"200\", \"junc_alpha\": \"0.001\", \"library_type\": \"fr-secondstrand\", \"mask_file\": null, \"max_bundle_frags\": \"1000000\", \"max_bundle_length\": \"10000000\", \"max_mle_iterations\": \"5000\", \"min_intron_length\": \"50\", \"overhang_tolerance\": \"8\", \"small_anchor_fraction\": \"0.09\", \"trim_three_avgcov_thresh\": \"10\", \"trim_three_dropoff_frac\": \"0.1\", \"use_advanced_settings\": \"Yes\"}",
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}"
+        },
+        "inputs": {
+            "input": {
+                "id": "27d829d8415a970a",
+                "src": "hda",
+                "uuid": "b0264899-9d92-4039-802d-350410adacb5"
+            },
+            "reference_annotation|reference_annotation_file": {
+                "id": "4b60f13c7b17a2d7",
+                "src": "hda",
+                "uuid": "e328938a-038d-4820-bef8-8edc6a3244d2"
+            }
+        },
+        "outputs": {
+            "skipped": {
+                "id": "0097874585c270fb",
+                "src": "hda",
+                "uuid": "1af6abbb-65ec-4964-b0ca-9e4b7f1cff04"
+            },
+            "total_map_mass": {
+                "id": "c4de5735d245f657",
+                "src": "hda",
+                "uuid": "42599b74-676c-4ff3-b4a9-3f022efe3cb0"
+            },
+            "assembled_isoforms": {
+                "id": "efacf2efa265c462",
+                "src": "hda",
+                "uuid": "39ff7e12-5da2-433b-a150-93a3c8428b05"
+            },
+            "transcripts_expression": {
+                "id": "031dfc848eb3b833",
+                "src": "hda",
+                "uuid": "fb99658a-7573-463d-b893-7114f6ec1bca"
+            },
+            "genes_expression": {
+                "id": "3404f61c10e21976",
+                "src": "hda",
+                "uuid": "25f88793-af5f-452d-9f21-dffa68af5f2a"
+            }
+        },
+        "output_collections": {
+            "skipped": {
+                "id": "304a247e41edb185",
+                "src": "hdca"
+            },
+            "total_map_mass": {
+                "id": "6d646cc246518e15",
+                "src": "hdca"
+            },
+            "assembled_isoforms": {
+                "id": "7e2d20f594ce77cd",
+                "src": "hdca"
+            },
+            "transcripts_expression": {
+                "id": "3f771e73cba78452",
+                "src": "hdca"
+            },
+            "genes_expression": {
+                "id": "703795ce365a6eef",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.138.123.6:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        29167384,
+        503642961
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "run": "1",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "5954028d45ac6b3b",
+    "history_id": "73ce0e2efa4ed622",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "3f4554f7447eb7f7",
+        "state": "error",
+        "exit_code": 1,
+        "update_time": "2024-01-19T23:06:14.367269",
+        "create_time": "2024-01-19T23:06:04.895240",
+        "galaxy_version": "23.1",
+        "command_version": "4.0",
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.0+galaxy1",
+        "history_id": "73ce0e2efa4ed622",
+        "external_id": "gxy-galaxy-galaxy-wqc6z",
+        "command_line": "ln -f -s '' 'SRR24043307_fastq_1.fq.gz' &&  ln -f -s '' 'SRR24043307_fastq_2.fq.gz' &&    cutadapt  -j=${GALAXY_SLOTS:-4}      -a 'Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'='AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'         -A 'Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'='AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'      --output='out1.fq.gz' --paired-output='out2.fq.gz'  --error-rate=0.1 --times=1 --overlap=3   --action=trim      --minimum-length=15 --pair-filter=any   --quality-cutoff=30     'SRR24043307_fastq_1.fq.gz' 'SRR24043307_fastq_2.fq.gz'  > report.txt",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"51a7bbf2b71f11eea34c8684b565b28a\"",
+            "read_mod_options": "{\"length_tag\": \"\", \"nextseq_trim\": \"0\", \"quality_cutoff\": \"30\", \"rename\": \"\", \"shorten_options\": {\"__current_case__\": 1, \"shorten_values\": \"False\"}, \"strip_suffix\": \"\", \"trim_n\": false, \"zero_cap\": false}",
+            "output_selector": "[\"report\"]",
+            "library": "{\"__current_case__\": 2, \"input_1\": {\"values\": [{\"id\": 9, \"src\": \"dce\"}]}, \"r1\": {\"adapters\": [{\"__index__\": 0, \"adapter_source\": {\"__current_case__\": 0, \"adapter\": \"AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_name\": \"Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_source_list\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters\": [], \"cut\": \"0\", \"front_adapters\": []}, \"r2\": {\"adapters2\": [{\"__index__\": 0, \"adapter_source2\": {\"__current_case__\": 0, \"adapter2\": \"AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_name2\": \"Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_source_list2\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters2\": [], \"cut2\": \"0\", \"front_adapters2\": [], \"quality_cutoff2\": \"\"}, \"type\": \"paired_collection\"}",
+            "filter_options": "{\"discard_cassava\": false, \"discard_trimmed\": false, \"discard_untrimmed\": false, \"length_R2_options\": {\"__current_case__\": 1, \"length_R2_status\": \"False\"}, \"max_expected_errors\": null, \"max_n\": null, \"maximum_length\": null, \"minimum_length\": \"15\", \"pair_filter\": \"any\"}",
+            "adapter_options": "{\"action\": \"trim\", \"error_rate\": \"0.1\", \"internal\": \"\", \"match_read_wildcards\": \" \", \"no_indels\": false, \"overlap\": \"3\", \"revcomp\": false, \"times\": \"1\"}",
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}"
+        },
+        "inputs": {
+            "library|input_12": {
+                "id": "de5dc74b0aea9a6f",
+                "src": "hda",
+                "uuid": "be7b8cbc-3bc8-4577-a2e6-b5603605b6a5"
+            },
+            "library|input_11": {
+                "id": "fae2a93707cab4bd",
+                "src": "hda",
+                "uuid": "6a91822e-b87b-410c-b945-adf4e618f954"
+            }
+        },
+        "outputs": {
+            "report": {
+                "id": "1cfd479779ec2860",
+                "src": "hda",
+                "uuid": "abd5d1f7-5710-42bd-9fa8-48cb1f47a07b"
+            },
+            "out_pairs|__part__|reverse": {
+                "id": "08ef311cd7b01584",
+                "src": "hda",
+                "uuid": "1d947fb3-6a6d-401b-86b7-11acbcd3dbc5"
+            },
+            "out_pairs|__part__|forward": {
+                "id": "89a57dad76d3e78f",
+                "src": "hda",
+                "uuid": "85543be2-2453-4afe-b757-14d27a074b6e"
+            }
+        },
+        "output_collections": {
+            "out_pairs": {
+                "id": "cd75f4bddcf77046",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "ln: SRR24043307_fastq_1.fq.gz: No such file or directory\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "ln: SRR24043307_fastq_1.fq.gz: No such file or directory\n",
+        "stdout": "",
+        "job_messages": [
+            {
+                "code_desc": "",
+                "desc": "Fatal error: Exit code 1 ()",
+                "error_level": 3,
+                "exit_code": 1,
+                "type": "exit_code"
+            }
+        ],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-wqc6z-fwd29 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-wqc6z-fwd29 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.3 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "197850376.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "0 seconds",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-01-19 23:06:07",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1705705567.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-01-19 23:06:07",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1705705567.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "20401",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "20401.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "5",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "5.0000000"
+            }
+        ]
+    },
+    "status": "error",
+    "server": "http://34.138.123.6:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        503642961,
+        503642961
+    ]
+}

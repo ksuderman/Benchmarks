@@ -1,0 +1,102 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "d6564bf7d9b7ac55",
+    "history_id": "e013aa0dd114486d",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "844ad0fe648d9429",
+        "state": "deleting",
+        "exit_code": null,
+        "update_time": "2024-01-19T17:57:48.191004",
+        "create_time": "2024-01-19T17:56:26.837765",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
+        "history_id": "e013aa0dd114486d",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"1072da84b6f411ee89ec46ad1fb4e501\"",
+            "title": "\"\"",
+            "saveLog": "false",
+            "results": "[{\"__index__\": 0, \"software_cond\": {\"__current_case__\": 5, \"input\": {\"values\": [{\"id\": 718, \"src\": \"hdca\"}]}, \"software\": \"cutadapt\"}}, {\"__index__\": 1, \"software_cond\": {\"__current_case__\": 28, \"output\": [{\"__index__\": 0, \"type\": {\"__current_case__\": 0, \"input\": {\"values\": [{\"id\": 719, \"src\": \"hdca\"}]}, \"type\": \"log\"}}, {\"__index__\": 1, \"type\": {\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 722, \"src\": \"hdca\"}]}, \"type\": \"genecounts\"}}], \"software\": \"star\"}}]",
+            "flat": "false",
+            "export": "true",
+            "comment": "\"\""
+        },
+        "inputs": {
+            "results_0|software_cond|input1": {
+                "id": "adaaa00a9f161588",
+                "src": "hda",
+                "uuid": "6138c166-8a66-4ec9-b7a2-9355202c9583"
+            },
+            "results_0|software_cond|input": {
+                "id": "adaaa00a9f161588",
+                "src": "hda",
+                "uuid": "6138c166-8a66-4ec9-b7a2-9355202c9583"
+            },
+            "results_1|software_cond|output_1|type|input1": {
+                "id": "cac6772c947a1fe0",
+                "src": "hda",
+                "uuid": "6355d986-f982-4cce-9cd1-32102883d226"
+            },
+            "results_1|software_cond|output_1|type|input": {
+                "id": "cac6772c947a1fe0",
+                "src": "hda",
+                "uuid": "6355d986-f982-4cce-9cd1-32102883d226"
+            },
+            "results_1|software_cond|output_0|type|input1": {
+                "id": "3219a4aba8c94be7",
+                "src": "hda",
+                "uuid": "01cd8bb9-408e-4f03-98e2-7a000e5de6be"
+            },
+            "results_1|software_cond|output_0|type|input": {
+                "id": "3219a4aba8c94be7",
+                "src": "hda",
+                "uuid": "01cd8bb9-408e-4f03-98e2-7a000e5de6be"
+            }
+        },
+        "outputs": {
+            "html_report": {
+                "id": "e7841837e26b392e",
+                "src": "hda",
+                "uuid": "1728e2d4-3a8b-4e55-93d9-276a2adad7bc"
+            }
+        },
+        "output_collections": {
+            "plots": {
+                "id": "9ba5fc6919fba1dd",
+                "src": "hdca"
+            },
+            "stats": {
+                "id": "a37fdcdb29e7c147",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

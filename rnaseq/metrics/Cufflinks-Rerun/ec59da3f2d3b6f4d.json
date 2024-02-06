@@ -1,0 +1,118 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "col-d",
+    "workflow_id": "c6f26c88ccf8b25b",
+    "history_id": "cf9e563e62712f91",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "ec59da3f2d3b6f4d",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-01-19T16:06:37.973488",
+        "create_time": "2024-01-19T16:05:22.691344",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/2.2.1.3",
+        "history_id": "cf9e563e62712f91",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"bam\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"75d622c4b6e411eebe341ac847dd0236\"",
+            "reference_annotation": "{\"__current_case__\": 1, \"compatible_hits_norm\": \"\", \"reference_annotation_file\": {\"values\": [{\"id\": 9, \"src\": \"hda\"}]}, \"use_ref\": \"Use reference annotation\"}",
+            "pre_mrna_fraction": "\"0.15\"",
+            "multiread_correct": "true",
+            "min_isoform_fraction": "\"0.1\"",
+            "max_intron_len": "\"300000\"",
+            "length_correction": "\"--no-effective-length-correction\"",
+            "global_model": null,
+            "bias_correction": "{\"__current_case__\": 0, \"do_bias_correction\": \"Yes\", \"seq_source\": {\"__current_case__\": 0, \"index\": \"hg38\", \"index_source\": \"cached\"}}",
+            "advanced_settings": "{\"__current_case__\": 1, \"inner_dist_std_dev\": \"80\", \"inner_mean_dist\": \"200\", \"junc_alpha\": \"0.001\", \"library_type\": \"fr-secondstrand\", \"mask_file\": null, \"max_bundle_frags\": \"1000000\", \"max_bundle_length\": \"10000000\", \"max_mle_iterations\": \"5000\", \"min_intron_length\": \"50\", \"overhang_tolerance\": \"8\", \"small_anchor_fraction\": \"0.09\", \"trim_three_avgcov_thresh\": \"10\", \"trim_three_dropoff_frac\": \"0.1\", \"use_advanced_settings\": \"Yes\"}",
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}"
+        },
+        "inputs": {
+            "reference_annotation|reference_annotation_file": {
+                "id": "cda89a47fde1ba9b",
+                "src": "hda",
+                "uuid": "e328938a-038d-4820-bef8-8edc6a3244d2"
+            },
+            "input": {
+                "id": "197963016ffa783f",
+                "src": "hda",
+                "uuid": "397a0461-c387-4a12-b943-534d4cb72ed9"
+            }
+        },
+        "outputs": {
+            "skipped": {
+                "id": "0b64d4ff1468def9",
+                "src": "hda",
+                "uuid": "38acbbe1-a46d-43b0-b562-ad2fcd469374"
+            },
+            "total_map_mass": {
+                "id": "113b578ae73e93b8",
+                "src": "hda",
+                "uuid": "face905e-30e4-4ab8-9473-766775a14dd4"
+            },
+            "assembled_isoforms": {
+                "id": "96946729aa2aaaa4",
+                "src": "hda",
+                "uuid": "b92c2508-f945-4ca7-8e59-ffb146994310"
+            },
+            "transcripts_expression": {
+                "id": "e60f37e9c19e4247",
+                "src": "hda",
+                "uuid": "cd191700-b216-4140-bce6-d7bd9db8445f"
+            },
+            "genes_expression": {
+                "id": "d45323b762d63c28",
+                "src": "hda",
+                "uuid": "90a03701-d19c-45af-8db3-0bfba6c67755"
+            }
+        },
+        "output_collections": {
+            "skipped": {
+                "id": "2751dccb11eb4899",
+                "src": "hdca"
+            },
+            "total_map_mass": {
+                "id": "debadea260c3138a",
+                "src": "hdca"
+            },
+            "assembled_isoforms": {
+                "id": "f847f204e43b47f2",
+                "src": "hdca"
+            },
+            "transcripts_expression": {
+                "id": "fc0b7f157a36b032",
+                "src": "hdca"
+            },
+            "genes_expression": {
+                "id": "d005c768ae8b70ea",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

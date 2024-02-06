@@ -1,0 +1,68 @@
+{
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "d6564bf7d9b7ac55",
+    "history_id": "8336e8315423edf3",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "14acf42be877c857",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-01-19T17:59:33.510520",
+        "create_time": "2024-01-19T17:58:22.527765",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2",
+        "history_id": "8336e8315423edf3",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"tabular\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"49052668b6f411ee89ec46ad1fb4e501\"",
+            "code": "\"NR>4{print $1\\\"\\\\t\\\"$3}\""
+        },
+        "inputs": {
+            "infile": {
+                "id": "7525364f1b578145",
+                "src": "hda",
+                "uuid": "4692751c-8d6d-4bca-bfa4-cba2ad679b8f"
+            }
+        },
+        "outputs": {
+            "outfile": {
+                "id": "9d98a12166671f7a",
+                "src": "hda",
+                "uuid": "484806d7-f9dd-4e83-a582-400d5cd493a9"
+            }
+        },
+        "output_collections": {
+            "outfile": {
+                "id": "c2dcf9d1523120ad",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleted",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

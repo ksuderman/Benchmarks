@@ -1,0 +1,74 @@
+{
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "col-g",
+    "workflow_id": "8670450f0819b811",
+    "history_id": "e06302d4196aa905",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "269c41c1db6c5dc8",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2023-12-19T04:20:31.935835",
+        "create_time": "2023-12-19T03:45:42.874245",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.5.2+galaxy1",
+        "history_id": "e06302d4196aa905",
+        "external_id": "gxy-galaxy-galaxy-bj6xc",
+        "command_line": "cp '/galaxy/server/database/jobs_directory/000/247/configs/tmpf9nkwajr' '/galaxy/server/database/objects/4/f/8/dataset_4f8c2de8-9f0d-440f-aa54-742439185eba.dat' && ln -s '/galaxy/server/database/objects/8/f/f/dataset_8ff6949b-aa65-4ca6-9f28-79a02e6c0e8d.dat' localbam.bam && ln -s '/galaxy/server/database/objects/_metadata_files/1/4/d/metadata_14d3381d-ebb3-46c6-821b-b35960e3277f.dat' localbam.bam.bai && cat '/galaxy/server/database/jobs_directory/000/247/configs/tmpf9nkwajr' && bamtools filter -script '/galaxy/server/database/jobs_directory/000/247/configs/tmpf9nkwajr' -in localbam.bam -out '/galaxy/server/database/objects/8/b/9/dataset_8b940626-4003-4628-bb3c-4498274e0c7f.dat'",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"bam\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"14881d829e2111ee9e213e99e3d0037b\"",
+            "rule_configuration": "{\"__current_case__\": 0, \"rules_selector\": false}",
+            "conditions": "[{\"__index__\": 0, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"__current_case__\": 21, \"bam_property_selector\": \"tag\", \"bam_property_value\": \"NH=1\"}}]}]"
+        },
+        "inputs": {
+            "input_bam": {
+                "id": "2a23e94ae5a5b7f8",
+                "src": "hda",
+                "uuid": "8ff6949b-aa65-4ca6-9f28-79a02e6c0e8d"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "cc03fca23958f145",
+                "src": "hda",
+                "uuid": "8b940626-4003-4628-bb3c-4498274e0c7f"
+            },
+            "out_file2": {
+                "id": "5cffb18b6616d3ae",
+                "src": "hda",
+                "uuid": "4f8c2de8-9f0d-440f-aa54-742439185eba"
+            }
+        },
+        "output_collections": {
+            "out_file1": {
+                "id": "3c1e93fee0868c82",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "\n\n\n        \n{\n    \"filters\": [\n        {\n            \"id\": \"1\",\n            \"tag\": \"NH=1\"\n        }\n    ]\n}\n\n        ",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "\n\n\n        \n{\n    \"filters\": [\n        {\n            \"id\": \"1\",\n            \"tag\": \"NH=1\"\n        }\n    ]\n}\n\n        ",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.139.33.58:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        503642961,
+        503642961
+    ]
+}

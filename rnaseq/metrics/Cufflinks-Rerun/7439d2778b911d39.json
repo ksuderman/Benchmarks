@@ -1,0 +1,113 @@
+{
+    "run": "4",
+    "cloud": "cascade",
+    "job_conf": "col-d",
+    "workflow_id": "c6f26c88ccf8b25b",
+    "history_id": "18b4b384056fe984",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "7439d2778b911d39",
+        "state": "deleting",
+        "exit_code": null,
+        "update_time": "2024-01-19T16:10:37.026526",
+        "create_time": "2024-01-19T16:08:43.622030",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.8a+galaxy1",
+        "history_id": "18b4b384056fe984",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"0433fde8b6e511eeb7611ac847dd0236\"",
+            "twopass": "{\"__current_case__\": 0, \"sj_precalculated\": \"\", \"twopassMode\": \"None\", \"twopass_read_subset\": \"\"}",
+            "singlePaired": "{\"__current_case__\": 2, \"input\": {\"values\": [{\"id\": 724, \"src\": \"dce\"}]}, \"sPaired\": \"paired_collection\"}",
+            "refGenomeSource": "{\"GTFconditional\": {\"GTFselect\": \"without-gtf\", \"__current_case__\": 1, \"genomeDir\": \"hg38\", \"sjdbGTFfile\": {\"values\": [{\"id\": 9, \"src\": \"hda\"}]}, \"sjdbOverhang\": \"99\"}, \"__current_case__\": 0, \"geneSource\": \"indexed\"}",
+            "quantmode_output": "{\"__current_case__\": 1, \"quantMode\": \"GeneCounts\"}",
+            "perf": "{\"outBAMsortingBinsN\": \"50\", \"winAnchorMultimapNmax\": \"50\"}",
+            "oformat": "{\"HI_offset\": \"1\", \"outSAMattributes\": [\"NH\", \"HI\", \"AS\", \"nM\"], \"outSAMmapqUnique\": \"255\", \"outSAMprimaryFlag\": \"OneBestScore\"}",
+            "filter": "{\"basic_filters\": [\"exclude_unmapped\"], \"output_params2\": {\"__current_case__\": 0, \"outFilterMatchNmin\": \"0\", \"outFilterMatchNminOverLread\": \"0.66\", \"outFilterMismatchNmax\": \"999\", \"outFilterMismatchNoverLmax\": \"0.3\", \"outFilterMismatchNoverReadLmax\": \"0.04\", \"outFilterMultimapNmax\": \"20\", \"outFilterMultimapScoreRange\": \"1\", \"outFilterScoreMin\": \"0\", \"outFilterScoreMinOverLread\": \"0.66\", \"outFilterType\": true, \"outSAMmultNmax\": \"-1\", \"outSAMtlen\": \"1\", \"output_select2\": \"yes\"}}",
+            "chimOutType": "\"\"",
+            "algo": "{\"params\": {\"__current_case__\": 3, \"align\": {\"alignEndsType\": false, \"alignIntronMax\": \"1000000\", \"alignIntronMin\": \"20\", \"alignMatesGapMax\": \"1000000\", \"alignSJDBoverhangMin\": \"1\", \"alignSJoverhangMin\": \"8\", \"alignSJstitchMismatchNmax\": {\"alignSJstitchMismatchNmax1\": \"0\", \"alignSJstitchMismatchNmax2\": \"-1\", \"alignSJstitchMismatchNmax3\": \"0\", \"alignSJstitchMismatchNmax4\": \"0\"}, \"alignSplicedMateMapLmin\": \"0\", \"alignSplicedMateMapLminOverLmate\": \"0.66\", \"alignTranscriptsPerReadNmax\": \"10000\", \"alignTranscriptsPerWindowNmax\": \"100\", \"alignWindowsPerReadNmax\": \"10000\", \"peOverlapMMp\": \"0.01\", \"peOverlapNbasesMin\": \"0\"}, \"chim_settings\": {\"chimFilter\": true, \"chimJunctionOverhangMin\": \"20\", \"chimMainSegmentMultNmax\": \"10\", \"chimMultimapNmax\": \"1\", \"chimMultimapScoreRange\": \"1\", \"chimScoreDropMax\": \"20\", \"chimScoreJunctionNonGTAG\": \"-1\", \"chimScoreMin\": \"0\", \"chimScoreSeparation\": \"10\", \"chimSegmentMin\": \"12\", \"chimSegmentReadGapMax\": \"0\"}, \"limits\": {\"limitOutSJcollapsed\": \"1000000\", \"limitOutSJoneRead\": \"1000\", \"limitSjdbInsertNsj\": \"1000000\"}, \"seed\": {\"seedMultimapNmax\": \"10000\", \"seedNoneLociPerWindow\": \"10\", \"seedPerReadNmax\": \"1000\", \"seedPerWindowNmax\": \"50\", \"seedSearchLmax\": \"0\", \"seedSearchStartLmax\": \"50\", \"seedSearchStartLmaxOverLread\": \"1.0\"}, \"settingsType\": \"full\"}}"
+        },
+        "inputs": {
+            "singlePaired|input1": {
+                "id": "18ed7d4722557202",
+                "src": "hda",
+                "uuid": "bccb91d5-7ce6-4fc6-a2b4-7095ceef58e9"
+            },
+            "singlePaired|input2": {
+                "id": "8bfd093b80a0f0bf",
+                "src": "hda",
+                "uuid": "b084e362-4fc9-4e29-b0db-c536b7d60070"
+            },
+            "refGenomeSource|GTFconditional|sjdbGTFfile": {
+                "id": "cda89a47fde1ba9b",
+                "src": "hda",
+                "uuid": "e328938a-038d-4820-bef8-8edc6a3244d2"
+            }
+        },
+        "outputs": {
+            "reads_per_gene": {
+                "id": "d8596f45b445475c",
+                "src": "hda",
+                "uuid": "a53a1db1-4713-4196-81eb-1b77fdac3774"
+            },
+            "mapped_reads": {
+                "id": "9bd471ad380e4184",
+                "src": "hda",
+                "uuid": "ccde6b9c-7a14-49ec-aa83-2283cba227b8"
+            },
+            "splice_junctions": {
+                "id": "266b93ad86362691",
+                "src": "hda",
+                "uuid": "23165824-8ca8-48df-929a-e0f7b4971808"
+            },
+            "output_log": {
+                "id": "646b2b90a971a971",
+                "src": "hda",
+                "uuid": "81a8e566-5484-4bd5-9192-bcda8efcf14c"
+            }
+        },
+        "output_collections": {
+            "output_log": {
+                "id": "01c77c594f34d4f5",
+                "src": "hdca"
+            },
+            "mapped_reads": {
+                "id": "0af08db7d2b0fea9",
+                "src": "hdca"
+            },
+            "reads_per_gene": {
+                "id": "d2ebd3fa4a46d416",
+                "src": "hdca"
+            },
+            "splice_junctions": {
+                "id": "c7ee7ca62b77be19",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

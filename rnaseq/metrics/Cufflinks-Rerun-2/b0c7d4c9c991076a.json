@@ -1,0 +1,67 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "col-e",
+    "workflow_id": "cd1d039379b89efa",
+    "history_id": "ae439ea9e9eb28b0",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "b0c7d4c9c991076a",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-01-19T17:45:31.394600",
+        "create_time": "2024-01-19T17:44:10.357048",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lldelisle/revertr2orientationinbam/revertR2orientationInBam/0.0.2",
+        "history_id": "ae439ea9e9eb28b0",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"594fab9eb6f211eea0e9bea1fac9f299\""
+        },
+        "inputs": {
+            "input": {
+                "id": "ccffc9a81c2014af",
+                "src": "hda",
+                "uuid": "1bbe7b94-0f32-48e7-a268-959e274b7842"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "6b35bbeeb6f5541d",
+                "src": "hda",
+                "uuid": "06134629-2c17-4f84-aa6b-1f21f44dc863"
+            }
+        },
+        "output_collections": {
+            "output": {
+                "id": "ec7af229765b5b0d",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleted",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

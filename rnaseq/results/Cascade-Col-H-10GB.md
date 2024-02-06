@@ -1,0 +1,64 @@
+| Tool ID | History | State | Memory (GB) | Runtime (sec)|
+|---|---|---:|---:|---:|
+| wig_to_bigWig | Cascade-Col-H-10GB | ok | 1.9 |    24 |
+| wig_to_bigWig | Cascade-Col-H-10GB | ok | 1.8 |    24 |
+| bedtools_genomecoveragebed/2.30.0 | Cascade-Col-H-10GB | ok | 2.4 |   305 |
+| bedtools_genomecoveragebed/2.30.0 | Cascade-Col-H-10GB | ok | 3.8 |   289 |
+| revertR2orientationInBam/0.0.2 | Cascade-Col-H-10GB | ok | 3.8 |   867 |
+| wig_to_bigWig | Cascade-Col-H-10GB | ok | 3.5 |    46 |
+| bedtools_genomecoveragebed/2.30.0 | Cascade-Col-H-10GB | ok | 3.8 |   384 |
+| bamFilter/2.5.2+galaxy1 | Cascade-Col-H-10GB | ok | 3.8 |  1385 |
+| param_value_from_file | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| multiqc/1.11+galaxy1 | Cascade-Col-H-10GB | ok | 0.1 |     7 |
+| tp_awk_tool/1.1.2 | Cascade-Col-H-10GB | ok | 0.1 |     1 |
+| tp_awk_tool/1.1.2 | Cascade-Col-H-10GB | ok | 0.1 |     1 |
+| rna_star/2.7.8a+galaxy1 | Cascade-Col-H-10GB | ok | 75.0 |  1511 |
+| cutadapt/4.0+galaxy1 | Cascade-Col-H-10GB | ok | 19.0 |   722 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     3 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     3 |
+| compose_text_param/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| cufflinks/2.2.1.3 | Cascade-Col-H-10GB | ok | 9.3 |  5121 |
+| wig_to_bigWig | Cascade-Col-H-10GB | ok | 1.9 |    24 |
+| wig_to_bigWig | Cascade-Col-H-10GB | ok | 1.8 |    23 |
+| bedtools_genomecoveragebed/2.30.0 | Cascade-Col-H-10GB | ok | 3.3 |   295 |
+| bedtools_genomecoveragebed/2.30.0 | Cascade-Col-H-10GB | ok | 3.8 |   292 |
+| revertR2orientationInBam/0.0.2 | Cascade-Col-H-10GB | ok | 3.8 |   870 |
+| revertR2orientationInBam/0.0.2 | Cascade-Col-H-10GB | error |  |  |
+| wig_to_bigWig | Cascade-Col-H-10GB | ok | 3.5 |    46 |
+| bedtools_genomecoveragebed/2.30.0 | Cascade-Col-H-10GB | ok | 3.8 |   391 |
+| bamFilter/2.5.2+galaxy1 | Cascade-Col-H-10GB | ok | 3.8 |  1378 |
+| param_value_from_file | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| multiqc/1.11+galaxy1 | Cascade-Col-H-10GB | ok | 0.1 |     7 |
+| tp_awk_tool/1.1.2 | Cascade-Col-H-10GB | ok | 0.1 |     1 |
+| tp_awk_tool/1.1.2 | Cascade-Col-H-10GB | ok | 0.1 |     1 |
+| rna_star/2.7.8a+galaxy1 | Cascade-Col-H-10GB | ok | 75.7 |  1414 |
+| cutadapt/4.0+galaxy1 | Cascade-Col-H-10GB | ok | 19.0 |   720 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     3 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| compose_text_param/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| cufflinks/2.2.1.3 | Cascade-Col-H-10GB | ok | 3.4 |  5104 |
+| wig_to_bigWig | Cascade-Col-H-10GB | ok | 1.9 |    24 |
+| wig_to_bigWig | Cascade-Col-H-10GB | ok | 1.8 |    23 |
+| bedtools_genomecoveragebed/2.30.0 | Cascade-Col-H-10GB | ok | 3.4 |   298 |
+| bedtools_genomecoveragebed/2.30.0 | Cascade-Col-H-10GB | ok | 3.8 |   287 |
+| revertR2orientationInBam/0.0.2 | Cascade-Col-H-10GB | ok | 3.8 |   868 |
+| cufflinks/2.2.1.3 | Cascade-Col-H-10GB | error |  |  |
+| revertR2orientationInBam/0.0.2 | Cascade-Col-H-10GB | error |  |  |
+| wig_to_bigWig | Cascade-Col-H-10GB | ok | 3.5 |    46 |
+| bedtools_genomecoveragebed/2.30.0 | Cascade-Col-H-10GB | ok | 3.8 |   393 |
+| bamFilter/2.5.2+galaxy1 | Cascade-Col-H-10GB | ok | 3.8 |  1382 |
+| param_value_from_file | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| multiqc/1.11+galaxy1 | Cascade-Col-H-10GB | ok | 0.1 |    12 |
+| tp_awk_tool/1.1.2 | Cascade-Col-H-10GB | ok | 0.1 |     1 |
+| tp_awk_tool/1.1.2 | Cascade-Col-H-10GB | ok | 0.1 |     1 |
+| rna_star/2.7.8a+galaxy1 | Cascade-Col-H-10GB | ok | 72.6 |  1327 |
+| cutadapt/4.0+galaxy1 | Cascade-Col-H-10GB | ok | 19.0 |   719 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     3 |
+| compose_text_param/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |
+| map_param_value/0.1.1 | Cascade-Col-H-10GB | ok | 0.2 |     4 |

@@ -1,0 +1,59 @@
+{
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "col-e",
+    "workflow_id": "cd1d039379b89efa",
+    "history_id": "f3d02a715044b9f4",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "1cafed46dee8ff82",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-01-19T17:46:03.065142",
+        "create_time": "2024-01-19T17:45:44.323784",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/map_param_value/map_param_value/0.1.1",
+        "history_id": "f3d02a715044b9f4",
+        "external_id": "gxy-galaxy-galaxy-fm4qf",
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"9170d75ab6f211eea0e9bea1fac9f299\"",
+            "unmapped": "{\"__current_case__\": 1, \"on_unmapped\": \"fail\"}",
+            "output_param_type": "\"text\"",
+            "input_param_type": "{\"__current_case__\": 0, \"input_param\": \"stranded - forward\", \"mappings\": [{\"__index__\": 0, \"from\": \"stranded - forward\", \"to\": \"-strand +\"}, {\"__index__\": 1, \"from\": \"stranded - reverse\", \"to\": \"-strand -\"}, {\"__index__\": 2, \"from\": \"unstranded\", \"to\": \"-strand +\"}], \"type\": \"text\"}"
+        },
+        "inputs": {},
+        "outputs": {
+            "output_param_text": {
+                "id": "5d554883e34a329c",
+                "src": "hda",
+                "uuid": "4b7a7860-9b11-4360-a1ab-6f33c3484766"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

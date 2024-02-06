@@ -1,0 +1,63 @@
+{
+    "run": "1",
+    "cloud": "cascade",
+    "job_conf": "col-e",
+    "workflow_id": "36fa9c180c5ed4a9",
+    "history_id": "7b536219bd7368cf",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "df1c08a80005ba32",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2023-12-17T22:10:56.012416",
+        "create_time": "2023-12-17T22:09:44.052756",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2",
+        "history_id": "7b536219bd7368cf",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"txt\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"fb270a189d2811eeb0e9ae93ebfbb7e7\"",
+            "code": "\"$0~\\\"Uniquely mapped reads number\\\"{print 1000000/$NF} \""
+        },
+        "inputs": {
+            "infile": {
+                "id": "1abe9475c1e63626",
+                "src": "hda",
+                "uuid": "c85bf288-b526-49a6-8e9f-40e6a5a19cc5"
+            }
+        },
+        "outputs": {
+            "outfile": {
+                "id": "a7f1837ac8c5bc08",
+                "src": "hda",
+                "uuid": "55271f27-aab6-444f-ab4f-a038bf728239"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleted",
+    "server": "http://34.139.33.58:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        0,
+        503642961
+    ]
+}

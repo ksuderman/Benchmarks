@@ -1,0 +1,69 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "col-d",
+    "workflow_id": "c6f26c88ccf8b25b",
+    "history_id": "cf9e563e62712f91",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "8f6cc1337c4481a5",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-01-19T16:06:36.941727",
+        "create_time": "2024-01-19T16:04:45.649733",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "param_value_from_file",
+        "history_id": "cf9e563e62712f91",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"txt\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"75d622c4b6e411eebe341ac847dd0236\"",
+            "remove_newlines": "true",
+            "param_type": "\"float\""
+        },
+        "inputs": {
+            "input1": {
+                "id": "678cdafd4b096d0e",
+                "src": "hda",
+                "uuid": "3309d3ea-19cc-436f-98cf-2b2f06998592"
+            }
+        },
+        "outputs": {
+            "float_param": {
+                "id": "fff574f865eb7005",
+                "src": "hda",
+                "uuid": "0cce4b34-d482-4b45-90a6-d3c7cca4ac96"
+            }
+        },
+        "output_collections": {
+            "float_param": {
+                "id": "9f727b13c2a38382",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleted",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

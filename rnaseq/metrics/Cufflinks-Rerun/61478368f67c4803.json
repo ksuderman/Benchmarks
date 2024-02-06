@@ -1,0 +1,68 @@
+{
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "col-h",
+    "workflow_id": "1978dc6b6a4de271",
+    "history_id": "7fc33a41aa53683f",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "61478368f67c4803",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-01-19T16:15:18.855994",
+        "create_time": "2024-01-19T16:14:15.540538",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2",
+        "history_id": "7fc33a41aa53683f",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"tabular\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"bed51fe2b6e511eeb30ffac0a7772211\"",
+            "code": "\"NR>4{print $1\\\"\\\\t\\\"$3}\""
+        },
+        "inputs": {
+            "infile": {
+                "id": "5466a5e7ba5687f8",
+                "src": "hda",
+                "uuid": "26ce960d-d9f5-42ce-ae27-d8310166a7b0"
+            }
+        },
+        "outputs": {
+            "outfile": {
+                "id": "1a872a00cda7ade2",
+                "src": "hda",
+                "uuid": "f880380c-b0a5-4db1-a279-0ada24f17c3c"
+            }
+        },
+        "output_collections": {
+            "outfile": {
+                "id": "7fd0d6c5deaa9559",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

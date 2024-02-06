@@ -1,0 +1,90 @@
+{
+    "run": "1",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "2f59f6d3ea9d7314",
+    "history_id": "b077970e4bf51b8a",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "b17cc599877f9110",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-01-20T01:42:17.675356",
+        "create_time": "2024-01-20T01:42:16.432240",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.0+galaxy1",
+        "history_id": "b077970e4bf51b8a",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "output_selector": "[\"report\"]",
+            "read_mod_options": "{\"length_tag\": \"\", \"nextseq_trim\": \"0\", \"quality_cutoff\": \"30\", \"rename\": \"\", \"shorten_options\": {\"__current_case__\": 1, \"shorten_values\": \"False\"}, \"strip_suffix\": \"\", \"trim_n\": false, \"zero_cap\": false}",
+            "filter_options": "{\"discard_cassava\": false, \"discard_trimmed\": false, \"discard_untrimmed\": false, \"length_R2_options\": {\"__current_case__\": 1, \"length_R2_status\": \"False\"}, \"max_expected_errors\": \"\", \"max_n\": \"\", \"maximum_length\": \"\", \"minimum_length\": \"15\", \"pair_filter\": \"any\"}",
+            "adapter_options": "{\"action\": \"trim\", \"error_rate\": \"0.1\", \"internal\": \"\", \"match_read_wildcards\": \" \", \"no_indels\": false, \"overlap\": \"3\", \"revcomp\": false, \"times\": \"1\"}",
+            "library": "{\"__current_case__\": 2, \"input_1\": {\"values\": [{\"id\": 3, \"src\": \"dce\"}]}, \"r1\": {\"adapters\": [{\"__index__\": 0, \"adapter_source\": {\"__current_case__\": 0, \"adapter\": \"AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_name\": \"Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_source_list\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters\": [], \"cut\": \"0\", \"front_adapters\": []}, \"r2\": {\"adapters2\": [{\"__index__\": 0, \"adapter_source2\": {\"__current_case__\": 0, \"adapter2\": \"AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_name2\": \"Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_source_list2\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters2\": [], \"cut2\": \"0\", \"front_adapters2\": [], \"quality_cutoff2\": \"\"}, \"type\": \"paired_collection\"}"
+        },
+        "inputs": {
+            "library|input_12": {
+                "id": "3f8b5fec5576494b",
+                "src": "hda",
+                "uuid": "729c5d55-a34b-4b08-ac19-95e297f5191a"
+            },
+            "library|input_11": {
+                "id": "2f59f6d3ea9d7314",
+                "src": "hda",
+                "uuid": "d366c1a2-4125-4c24-be8c-a820274d7dd1"
+            }
+        },
+        "outputs": {
+            "report": {
+                "id": "4a2d226b1609a853",
+                "src": "hda",
+                "uuid": "8c425210-027e-4986-a463-919d12eb3446"
+            },
+            "out_pairs|__part__|reverse": {
+                "id": "cd7507074609ada5",
+                "src": "hda",
+                "uuid": "763b35b5-947d-4b80-8f71-b239189dcebe"
+            },
+            "out_pairs|__part__|forward": {
+                "id": "9633a2b629a0cb50",
+                "src": "hda",
+                "uuid": "b3f0623b-9238-4d97-994c-a1257e9e9f08"
+            }
+        },
+        "output_collections": {
+            "report": {
+                "id": "b07c37fb24fcd86f",
+                "src": "hdca"
+            },
+            "out_pairs": {
+                "id": "389f1069ac6e7fb9",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.138.123.6:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5099543128,
+        503642961
+    ]
+}

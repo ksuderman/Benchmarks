@@ -1,0 +1,67 @@
+{
+    "run": "1",
+    "cloud": "costs",
+    "job_conf": "Default",
+    "workflow_id": "457261f8e3c1d980",
+    "history_id": "2b054d51478ced12",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "df4ce1b90bdbbefa",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2023-12-12T22:35:49.426722",
+        "create_time": "2023-12-12T21:03:17.496641",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lldelisle/revertr2orientationinbam/revertR2orientationInBam/0.0.2",
+        "history_id": "2b054d51478ced12",
+        "external_id": null,
+        "command_line": null,
+        "traceback": "Traceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/jobs/runners/__init__.py\", line 291, in prepare_job\n    job_wrapper.prepare()\n  File \"/galaxy/server/lib/galaxy/jobs/__init__.py\", line 1248, in prepare\n    tool_evaluator.set_compute_environment(compute_environment, get_special=get_special)\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 139, in set_compute_environment\n    self._validate_incoming(incoming)\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 282, in _validate_incoming\n    visit_input_values(self.tool.inputs, incoming, validate_inputs)\n  File \"/galaxy/server/lib/galaxy/tools/parameters/__init__.py\", line 224, in visit_input_values\n    callback_helper(\n  File \"/galaxy/server/lib/galaxy/tools/parameters/__init__.py\", line 159, in callback_helper\n    new_value = callback(**args)\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 279, in validate_inputs\n    value = input.from_json(value, request_context, context)\n  File \"/galaxy/server/lib/galaxy/tools/parameters/basic.py\", line 2169, in from_json\n    raise ParameterValueError(\ngalaxy.tools.parameters.basic.ParameterValueError: parameter 'input': the previously selected dataset has entered an unusable state\n",
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"dea27620993111ee9c173ac21510d17d\""
+        },
+        "inputs": {
+            "input": {
+                "id": "f2600500f725f83a",
+                "src": "hda",
+                "uuid": "36b86480-8972-4706-b5b8-9e74ac930fac"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "823e09099c286966",
+                "src": "hda",
+                "uuid": "64cc6945-7ec1-4bd5-8d05-0681b6fda393"
+            }
+        },
+        "output_collections": {
+            "output": {
+                "id": "df4ce1b90bdbbefa",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.139.120.251:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5099543128,
+        503642961
+    ]
+}

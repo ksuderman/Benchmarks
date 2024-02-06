@@ -1,0 +1,78 @@
+{
+    "run": "2",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "5954028d45ac6b3b",
+    "history_id": "4651742e69122017",
+    "inputs": "SRR24043307-20 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "5c9c39f16ef1e244",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-01-19T23:04:20.646202",
+        "create_time": "2024-01-19T23:02:59.207454",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.5.2+galaxy1",
+        "history_id": "4651742e69122017",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"bam\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"e2d900f0b71e11ee874b8684b565b28a\"",
+            "rule_configuration": "{\"__current_case__\": 0, \"rules_selector\": false}",
+            "conditions": "[{\"__index__\": 0, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"__current_case__\": 21, \"bam_property_selector\": \"tag\", \"bam_property_value\": \"NH=1\"}}]}]"
+        },
+        "inputs": {
+            "input_bam": {
+                "id": "32ab5514e4006802",
+                "src": "hda",
+                "uuid": "c2750a91-62a1-4ee4-a2c6-2d4d829005ac"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "91327f56d5692a7f",
+                "src": "hda",
+                "uuid": "524a0602-efa5-493b-805b-6b2750fd1a36"
+            },
+            "out_file2": {
+                "id": "01d0e019ca66ac58",
+                "src": "hda",
+                "uuid": "1682ccc7-8d71-42e7-a1cd-a554c01bca79"
+            }
+        },
+        "output_collections": {
+            "out_file1": {
+                "id": "e902c02ed59aaf8d",
+                "src": "hdca"
+            },
+            "out_file2": {
+                "id": "4293563a57f6cda8",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.138.123.6:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

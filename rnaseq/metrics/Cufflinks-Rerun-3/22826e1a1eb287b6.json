@@ -1,0 +1,78 @@
+{
+    "run": "1",
+    "cloud": "cascade",
+    "job_conf": "col-d",
+    "workflow_id": "9189aa4e20880cff",
+    "history_id": "18d779cb871a0b41",
+    "inputs": "SRR24043307-20 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "22826e1a1eb287b6",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-01-19T20:26:51.277502",
+        "create_time": "2024-01-19T19:50:46.172554",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.5.2+galaxy1",
+        "history_id": "18d779cb871a0b41",
+        "external_id": null,
+        "command_line": null,
+        "traceback": "Traceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/jobs/runners/__init__.py\", line 291, in prepare_job\n    job_wrapper.prepare()\n  File \"/galaxy/server/lib/galaxy/jobs/__init__.py\", line 1248, in prepare\n    tool_evaluator.set_compute_environment(compute_environment, get_special=get_special)\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 139, in set_compute_environment\n    self._validate_incoming(incoming)\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 282, in _validate_incoming\n    visit_input_values(self.tool.inputs, incoming, validate_inputs)\n  File \"/galaxy/server/lib/galaxy/tools/parameters/__init__.py\", line 224, in visit_input_values\n    callback_helper(\n  File \"/galaxy/server/lib/galaxy/tools/parameters/__init__.py\", line 159, in callback_helper\n    new_value = callback(**args)\n  File \"/galaxy/server/lib/galaxy/tools/evaluation.py\", line 279, in validate_inputs\n    value = input.from_json(value, request_context, context)\n  File \"/galaxy/server/lib/galaxy/tools/parameters/basic.py\", line 2169, in from_json\n    raise ParameterValueError(\ngalaxy.tools.parameters.basic.ParameterValueError: parameter 'input_bam': the previously selected dataset has entered an unusable state\n",
+        "params": {
+            "__input_ext": "\"bam\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"0872733eb70411ee94efda0b0766f699\"",
+            "rule_configuration": "{\"__current_case__\": 0, \"rules_selector\": false}",
+            "conditions": "[{\"__index__\": 0, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"__current_case__\": 21, \"bam_property_selector\": \"tag\", \"bam_property_value\": \"NH=1\"}}]}]"
+        },
+        "inputs": {
+            "input_bam": {
+                "id": "5145fa3dd3145e9c",
+                "src": "hda",
+                "uuid": "1d4200be-ba34-4a46-b0ab-74c0c41b856a"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "79791d276504821f",
+                "src": "hda",
+                "uuid": "67e085dc-db5b-41f8-bc5e-001d2e93d641"
+            },
+            "out_file2": {
+                "id": "5448aa6d3c26812b",
+                "src": "hda",
+                "uuid": "878e5787-45f6-43c0-b971-a5b9cdb40057"
+            }
+        },
+        "output_collections": {
+            "out_file1": {
+                "id": "56001014e011cf8e",
+                "src": "hdca"
+            },
+            "out_file2": {
+                "id": "2f0560d824148a03",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

@@ -1,4 +1,4 @@
-name: Ice-Lake
+name: Ice-Lake-Rerun-3
 # The number of times each benchmark will be executed.
 runs: 3
 # The benchmarks that will be run as part of the experiment. Each benchmark
@@ -9,7 +9,7 @@ benchmark_confs:
   - benchmarks/rnaseq-full.yml
 # The cloud instances, as defined in the $HOME/.abm/profile.yml file.
 cloud:
-  - ice
+  - ice2
 # The Galaxy container_mapper_rules.yml files that defined the CPU and memory
 # resources allocated to tools. List the file names without the .yml extension.
 # These files are expected to be found in the rules directory.

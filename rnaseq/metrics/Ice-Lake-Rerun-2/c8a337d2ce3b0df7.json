@@ -1,0 +1,67 @@
+{
+    "run": "3",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "2f59f6d3ea9d7314",
+    "history_id": "e6c67958f80c4c3a",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "c8a337d2ce3b0df7",
+        "state": "new",
+        "exit_code": null,
+        "update_time": "2024-01-20T01:37:07.668380",
+        "create_time": "2024-01-20T01:37:07.390348",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2",
+        "history_id": "e6c67958f80c4c3a",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"html\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "code": "\"$0~\\\"Uniquely mapped reads number\\\"{print 1000000/$NF} \""
+        },
+        "inputs": {
+            "infile": {
+                "id": "2a5b99d436f3b97a",
+                "src": "hda",
+                "uuid": "5486001f-a5a7-46fa-92c2-28a3d103fd61"
+            }
+        },
+        "outputs": {
+            "outfile": {
+                "id": "d811af92d38b0a18",
+                "src": "hda",
+                "uuid": "4959d20f-6ebf-43c4-8656-5ece38f9a28d"
+            }
+        },
+        "output_collections": {
+            "outfile": {
+                "id": "bffceefd99ec223a",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "new",
+    "server": "http://34.138.123.6:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        29167384,
+        503642961
+    ]
+}

@@ -1,0 +1,456 @@
+{
+    "model_class": "WorkflowInvocation",
+    "id": "964dff107949ec3d",
+    "update_time": "2024-01-20T08:10:34.972567",
+    "create_time": "2024-01-20T07:58:56.566078",
+    "workflow_id": "5da8e8f4b6cb8b42",
+    "history_id": "7bf17889b9bb0e8a",
+    "uuid": "c2f85736-b769-11ee-831c-c64fffea80bd",
+    "state": "scheduled",
+    "steps": [
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "5817396fab280f0b",
+            "update_time": "2024-01-20T07:58:57.292097",
+            "job_id": null,
+            "workflow_step_id": "6ba1839bba032449",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 0,
+            "workflow_step_label": "PE fastq input",
+            "workflow_step_uuid": "688da967-e739-409a-b950-b4e4985a1a3b"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "8330e069301ac977",
+            "update_time": "2024-01-20T07:58:57.292099",
+            "job_id": null,
+            "workflow_step_id": "f883cfb845b9f2f3",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 1,
+            "workflow_step_label": "forward_adapter",
+            "workflow_step_uuid": "0179b655-f7e2-4b8b-b8b1-f875d0d8039f"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "bc321e6403876a88",
+            "update_time": "2024-01-20T07:58:57.292101",
+            "job_id": null,
+            "workflow_step_id": "93fcf7d03119639f",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 2,
+            "workflow_step_label": "reverse_adapter",
+            "workflow_step_uuid": "2cf82136-4f80-43f5-bf2d-fde510bf8a93"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "eab56d3cb536522c",
+            "update_time": "2024-01-20T07:58:57.292104",
+            "job_id": null,
+            "workflow_step_id": "5ec3cccd4da213c6",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 3,
+            "workflow_step_label": "reference_genome",
+            "workflow_step_uuid": "ff4a9932-6ed0-436f-a63c-d6fbe2a582a3"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "1a7f10df5a4165c1",
+            "update_time": "2024-01-20T07:58:57.292106",
+            "job_id": null,
+            "workflow_step_id": "cb0855fe6532aef8",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 4,
+            "workflow_step_label": "gtf",
+            "workflow_step_uuid": "c91756d4-f7f1-4dcc-97f6-da4c96a53c94"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "80b4a1c3b1297d61",
+            "update_time": "2024-01-20T07:58:57.292108",
+            "job_id": null,
+            "workflow_step_id": "b1fd4ff3394e50fb",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 5,
+            "workflow_step_label": "strandness",
+            "workflow_step_uuid": "fd2c51fd-58b3-43b5-b8ce-a919f5325cb7"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "b22496984272e1c2",
+            "update_time": "2024-01-20T07:58:57.292109",
+            "job_id": null,
+            "workflow_step_id": "e3ca76bc1740575f",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 6,
+            "workflow_step_label": "gtf with regions to exclude from FPKM normalization",
+            "workflow_step_uuid": "cc52d397-17a9-4c38-85f6-a7c0b8f21985"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "d5fef299cf51484e",
+            "update_time": "2024-01-20T07:58:57.425740",
+            "job_id": null,
+            "workflow_step_id": "5da8e8f4b6cb8b42",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 7,
+            "workflow_step_label": "Cutadapt (remove adapter + bad quality bases)",
+            "workflow_step_uuid": "7f7ca59a-09db-491f-b185-1caa51e9d2aa"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "b97125ff04a12adf",
+            "update_time": "2024-01-20T07:59:23.202472",
+            "job_id": "923f6616679cefc4",
+            "workflow_step_id": "f4572678d972e2ac",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 8,
+            "workflow_step_label": "get reference_genome as text parameter",
+            "workflow_step_uuid": "19dceb12-2f4e-46e6-bb2b-2f718dc4438c"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "a4fd99aa2494dfcf",
+            "update_time": "2024-01-20T07:59:23.643824",
+            "job_id": "6313c405c5402ba1",
+            "workflow_step_id": "6af7926c999c6dfd",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 9,
+            "workflow_step_label": "awk command from strand",
+            "workflow_step_uuid": "98da5820-124e-4fe5-8e6c-efc602e700a8"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "f0c8577665ccec05",
+            "update_time": "2024-01-20T07:59:21.420861",
+            "job_id": "949a5c8bed0bf712",
+            "workflow_step_id": "b1946f930302ccea",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 10,
+            "workflow_step_label": "bedtools orientation for forward coverage",
+            "workflow_step_uuid": "444fab77-156b-4364-aefd-315a7fd7f6ae"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "b0b0ab8b38862188",
+            "update_time": "2024-01-20T07:59:25.315240",
+            "job_id": "4f15855cb4d065c2",
+            "workflow_step_id": "201e41274c15da45",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 11,
+            "workflow_step_label": "bedtools orientation for reverse coverage",
+            "workflow_step_uuid": "976207f7-b8d2-43bb-9009-5474ad77e423"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "bda2b5bf5153e0a4",
+            "update_time": "2024-01-20T07:59:26.732254",
+            "job_id": "d3abb28a619b8028",
+            "workflow_step_id": "3c12d436aa02fe5e",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 12,
+            "workflow_step_label": "Get cufflinks strandess parameter",
+            "workflow_step_uuid": "0ddb2881-64bd-4d87-8697-9cfbbf6a1885"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "e1bedbeee3f244b8",
+            "update_time": "2024-01-20T07:58:57.764369",
+            "job_id": null,
+            "workflow_step_id": "7b8003704816db2b",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 13,
+            "workflow_step_label": "STAR: map and count",
+            "workflow_step_uuid": "49fb2364-339b-4524-befb-c983f97d2a7a"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "ffc6725546cf87d7",
+            "update_time": "2024-01-20T08:10:26.145050",
+            "job_id": "ec80b539fcf4df2c",
+            "workflow_step_id": "c75ef5b395afddf4",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 14,
+            "workflow_step_label": "MultiQC",
+            "workflow_step_uuid": "a4e1b954-a475-4a3c-b84a-5dc44947e1c8"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "4dc6775133090b6a",
+            "update_time": "2024-01-20T07:59:24.667612",
+            "job_id": null,
+            "workflow_step_id": "980cf7a42e08d1d4",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 15,
+            "workflow_step_label": "Extract gene counts",
+            "workflow_step_uuid": "3b5e2b1f-bb92-4b81-8b47-12dc83f81b02"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "bee54b764ea4f02a",
+            "update_time": "2024-01-20T07:58:57.899692",
+            "job_id": null,
+            "workflow_step_id": "f5c73654067d34a4",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 16,
+            "workflow_step_label": "Keep only uniquely mapped reads",
+            "workflow_step_uuid": "e39f8468-742e-4cc7-8b29-3955c4adb0d0"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "8dcc4ca9a39e5790",
+            "update_time": "2024-01-20T07:58:57.981878",
+            "job_id": null,
+            "workflow_step_id": "d64e408218f6e23c",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 17,
+            "workflow_step_label": "get scaling factor",
+            "workflow_step_uuid": "bf5398ae-c2a2-4545-bee1-29f2f77b4e3e"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "03d9842d67b6ac63",
+            "update_time": "2024-01-20T07:59:27.210237",
+            "job_id": null,
+            "workflow_step_id": "e52311217340b8ef",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 18,
+            "workflow_step_label": "Compute FPKM",
+            "workflow_step_uuid": "a3371ab0-86dd-4302-bdbc-4e79421186d9"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "7352654743933718",
+            "update_time": "2024-01-20T07:58:58.051903",
+            "job_id": null,
+            "workflow_step_id": "7a058c4ea37423b7",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 19,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "405ecc3a-86fc-4371-8857-5f5c13d35360"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "2caf2adae48f08bc",
+            "update_time": "2024-01-20T07:58:58.139916",
+            "job_id": null,
+            "workflow_step_id": "645460fe433603d6",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 20,
+            "workflow_step_label": "convert dataset to parameter",
+            "workflow_step_uuid": "f703b0e5-d079-4428-8850-9e0dac01a2f9"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "de2dc82e9c954ed6",
+            "update_time": "2024-01-20T08:10:34.605821",
+            "job_id": null,
+            "workflow_step_id": "467111209d662bb5",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 21,
+            "workflow_step_label": "Scaled Coverage both strands combined",
+            "workflow_step_uuid": "da5b255c-7906-4c1d-954a-5dbac6c40e30"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "01af6c2dbc62eb75",
+            "update_time": "2024-01-20T08:10:34.694721",
+            "job_id": null,
+            "workflow_step_id": "944e136d874fd138",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 22,
+            "workflow_step_label": "Scaled Coverage positive",
+            "workflow_step_uuid": "2949dec8-08e1-47d8-a046-b10f601b4e4f"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "a6a89e0504dc1bc3",
+            "update_time": "2024-01-20T08:10:34.767457",
+            "job_id": null,
+            "workflow_step_id": "31a8e789da906f1e",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 23,
+            "workflow_step_label": "Scaled Coverage negative",
+            "workflow_step_uuid": "109391e9-3f11-4003-86cb-5997860ce259"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "8022b095ae79fb7a",
+            "update_time": "2024-01-20T08:10:34.841891",
+            "job_id": null,
+            "workflow_step_id": "ef9ab68b523e122a",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 24,
+            "workflow_step_label": "convert both strands coverage to bigwig",
+            "workflow_step_uuid": "164a4c62-2e72-4090-b645-4cf55b803336"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "1002946c4ef8889c",
+            "update_time": "2024-01-20T08:10:34.915108",
+            "job_id": null,
+            "workflow_step_id": "86bd793c208c1752",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 25,
+            "workflow_step_label": "convert positive coverage to bigwig",
+            "workflow_step_uuid": "5c7b4f5f-50d1-4050-a40c-43d075c84779"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "3534c85f1ce4660f",
+            "update_time": "2024-01-20T08:10:34.973660",
+            "job_id": null,
+            "workflow_step_id": "c2ca1297138b8d0a",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 26,
+            "workflow_step_label": "convert negative coverage to bigwig",
+            "workflow_step_uuid": "852c1da8-6826-4a58-afc7-7eb26b668f00"
+        }
+    ],
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "input_step_parameters": {
+        "strandness": {
+            "parameter_value": "stranded - forward",
+            "label": "strandness",
+            "workflow_step_id": "b1fd4ff3394e50fb"
+        },
+        "reference_genome": {
+            "parameter_value": "hg38",
+            "label": "reference_genome",
+            "workflow_step_id": "5ec3cccd4da213c6"
+        },
+        "reverse_adapter": {
+            "parameter_value": "AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT",
+            "label": "reverse_adapter",
+            "workflow_step_id": "93fcf7d03119639f"
+        },
+        "forward_adapter": {
+            "parameter_value": "AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC",
+            "label": "forward_adapter",
+            "workflow_step_id": "f883cfb845b9f2f3"
+        }
+    },
+    "outputs": {
+        "MultiQC webpage": {
+            "src": "hda",
+            "id": "00686dc3c675d98c",
+            "workflow_step_id": "c75ef5b395afddf4"
+        }
+    },
+    "output_collections": {
+        "reads_per_gene from STAR": {
+            "src": "hdca",
+            "id": "45959cae87b84c55",
+            "workflow_step_id": "7b8003704816db2b"
+        },
+        "output_log": {
+            "src": "hdca",
+            "id": "6b32044ce5de906b",
+            "workflow_step_id": "7b8003704816db2b"
+        },
+        "mapped-reads": {
+            "src": "hdca",
+            "id": "c2a210e39ee11077",
+            "workflow_step_id": "7b8003704816db2b"
+        },
+        "MultiQC on input dataset(s): Stats": {
+            "src": "hdca",
+            "id": "1cf58066f09ba3fe",
+            "workflow_step_id": "c75ef5b395afddf4"
+        },
+        "HTS count like output": {
+            "src": "hdca",
+            "id": "4af2e156c561e7d9",
+            "workflow_step_id": "980cf7a42e08d1d4"
+        },
+        "transcripts_expression": {
+            "src": "hdca",
+            "id": "2ea34e1935e4f361",
+            "workflow_step_id": "e52311217340b8ef"
+        },
+        "genes_expression": {
+            "src": "hdca",
+            "id": "fac1a32a4f472208",
+            "workflow_step_id": "e52311217340b8ef"
+        },
+        "both strands coverage": {
+            "src": "hdca",
+            "id": "48e314a425ec0b8d",
+            "workflow_step_id": "ef9ab68b523e122a"
+        },
+        "positive strand coverage": {
+            "src": "hdca",
+            "id": "916c92add29cbfe5",
+            "workflow_step_id": "86bd793c208c1752"
+        },
+        "negative strand coverage": {
+            "src": "hdca",
+            "id": "b0403f8ce9d81815",
+            "workflow_step_id": "c2ca1297138b8d0a"
+        }
+    },
+    "output_values": {},
+    "messages": [],
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "col-e",
+    "output_dir": "metrics/Cufflinks-Rerun-4",
+    "ref_data_size": [],
+    "input_data_size": [
+        17,
+        503642961
+    ]
+}

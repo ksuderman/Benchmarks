@@ -1,0 +1,62 @@
+{
+    "run": "1",
+    "cloud": "ice2",
+    "job_conf": "ice-lake",
+    "workflow_id": "57b34d610b01b7e1",
+    "history_id": "d0ec93c740e3d86e",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bf31e0be12922055",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-01-21T18:53:36.483964",
+        "create_time": "2024-01-21T18:52:25.033854",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lldelisle/revertr2orientationinbam/revertR2orientationInBam/0.0.2",
+        "history_id": "d0ec93c740e3d86e",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"36bd58d6b88e11eebab16a5fa6a97397\""
+        },
+        "inputs": {
+            "input": {
+                "id": "72d7334f80328809",
+                "src": "hda",
+                "uuid": "29356cc5-9eaa-4a0c-9c33-8197d69bccc6"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "85051b127ca216b1",
+                "src": "hda",
+                "uuid": "9494ce2a-9212-4913-ada0-4e5d121218af"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.23.81.130:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        9,
+        503642961
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "run": "1",
+    "cloud": "costs",
+    "job_conf": "8x64",
+    "workflow_id": "a3faceb995c7bec7",
+    "history_id": "8eddba36470f5f8e",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "474eaf3c082d0f1b",
+        "state": "queued",
+        "exit_code": null,
+        "update_time": "2023-12-15T00:14:43.138219",
+        "create_time": "2023-12-14T22:45:12.265336",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
+        "history_id": "8eddba36470f5f8e",
+        "external_id": null,
+        "command_line": "die() { echo \"$@\" 1>&2 ; exit 1; } &&  mkdir multiqc_WDir &&   mkdir multiqc_WDir/cutadapt_0 &&    ln -s '/galaxy/server/database/objects/2/7/5/dataset_275e635d-33fb-4038-ae2c-d6191353814e.dat' 'multiqc_WDir/cutadapt_0/SRR24043307_fastq.txt' && sed -i.old 's/You are running/This is/' 'multiqc_WDir/cutadapt_0/SRR24043307_fastq.txt' && grep -q \"This is cutadapt\" 'multiqc_WDir/cutadapt_0/SRR24043307_fastq.txt' || die \"'This is cutadapt' or 'You are running cutadapt' not found in the file\" && mkdir multiqc_WDir/star_1 &&    mkdir 'multiqc_WDir/star_1/log_0' &&     ln -s '/galaxy/server/database/objects/0/2/7/dataset_027cb3ed-3566-445e-9c5e-4ddbb3e0c5e1.dat' 'multiqc_WDir/star_1/log_0/SRR24043307_fastq_Log.final.out' &&   mkdir 'multiqc_WDir/star_1/genecounts_1' &&     ln -s '/galaxy/server/database/objects/7/7/b/dataset_77b64208-397b-4724-8054-7108ff549f98.dat' 'multiqc_WDir/star_1/genecounts_1/SRR24043307_fastq_ReadsPerGene.out.tab' &&   multiqc multiqc_WDir --filename 'report'    --export",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"7013bb7c9ad211ee845ac23d6ba0b9ac\"",
+            "title": "\"\"",
+            "saveLog": "false",
+            "results": "[{\"__index__\": 0, \"software_cond\": {\"__current_case__\": 5, \"input\": {\"values\": [{\"id\": 490, \"src\": \"hdca\"}]}, \"software\": \"cutadapt\"}}, {\"__index__\": 1, \"software_cond\": {\"__current_case__\": 28, \"output\": [{\"__index__\": 0, \"type\": {\"__current_case__\": 0, \"input\": {\"values\": [{\"id\": 491, \"src\": \"hdca\"}]}, \"type\": \"log\"}}, {\"__index__\": 1, \"type\": {\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 494, \"src\": \"hdca\"}]}, \"type\": \"genecounts\"}}], \"software\": \"star\"}}]",
+            "flat": "false",
+            "export": "true",
+            "comment": "\"\""
+        },
+        "inputs": {
+            "results_0|software_cond|input1": {
+                "id": "b3689f21aafda998",
+                "src": "hda",
+                "uuid": "275e635d-33fb-4038-ae2c-d6191353814e"
+            },
+            "results_0|software_cond|input": {
+                "id": "b3689f21aafda998",
+                "src": "hda",
+                "uuid": "275e635d-33fb-4038-ae2c-d6191353814e"
+            },
+            "results_1|software_cond|output_0|type|input1": {
+                "id": "191868c4d0d7cd6b",
+                "src": "hda",
+                "uuid": "76b419ad-a502-4bf1-bef1-b63a2fe648e9"
+            },
+            "results_1|software_cond|output_0|type|input": {
+                "id": "191868c4d0d7cd6b",
+                "src": "hda",
+                "uuid": "76b419ad-a502-4bf1-bef1-b63a2fe648e9"
+            },
+            "results_1|software_cond|output_1|type|input": {
+                "id": "b1ccc6cfb9476578",
+                "src": "hda",
+                "uuid": "77b64208-397b-4724-8054-7108ff549f98"
+            },
+            "results_1|software_cond|output_1|type|input1": {
+                "id": "b1ccc6cfb9476578",
+                "src": "hda",
+                "uuid": "77b64208-397b-4724-8054-7108ff549f98"
+            }
+        },
+        "outputs": {
+            "html_report": {
+                "id": "87b60d95b348a338",
+                "src": "hda",
+                "uuid": "d4309bdf-1a7f-4aee-abbb-c5ad4f5a2cc3"
+            }
+        },
+        "output_collections": {
+            "plots": {
+                "id": "63cf6f032c9133e2",
+                "src": "hdca"
+            },
+            "stats": {
+                "id": "8235a608fe0ee9e9",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "queued",
+    "server": "http://34.139.120.251:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5099543128,
+        503642961
+    ]
+}

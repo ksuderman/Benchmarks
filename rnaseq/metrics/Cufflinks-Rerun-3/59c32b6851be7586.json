@@ -1,0 +1,67 @@
+{
+    "run": "1",
+    "cloud": "cascade",
+    "job_conf": "col-d",
+    "workflow_id": "9189aa4e20880cff",
+    "history_id": "18d779cb871a0b41",
+    "inputs": "SRR24043307-20 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "59c32b6851be7586",
+        "state": "new",
+        "exit_code": null,
+        "update_time": "2024-01-19T20:27:21.852466",
+        "create_time": "2024-01-19T20:27:21.185588",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2",
+        "history_id": "18d779cb871a0b41",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"html\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "code": "\"$0~\\\"Uniquely mapped reads number\\\"{print 1000000/$NF} \""
+        },
+        "inputs": {
+            "infile": {
+                "id": "7448228017b00883",
+                "src": "hda",
+                "uuid": "1a10d733-1366-4f55-ac1e-d81ec9e258ab"
+            }
+        },
+        "outputs": {
+            "outfile": {
+                "id": "68763eb9912c512a",
+                "src": "hda",
+                "uuid": "cf025f9f-a1c8-41dc-933b-288bdb809357"
+            }
+        },
+        "output_collections": {
+            "outfile": {
+                "id": "0b8fb28f80fe1e45",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "new",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

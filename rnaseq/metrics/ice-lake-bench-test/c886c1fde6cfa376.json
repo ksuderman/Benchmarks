@@ -1,0 +1,142 @@
+{
+    "run": 0,
+    "cloud": "N/A",
+    "job_conf": "Unknown",
+    "workflow_id": "8c65c8241b2c61de",
+    "history_id": "674fc5419e31d53b",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "c886c1fde6cfa376",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2024-01-20T20:29:38.842204",
+        "create_time": "2024-01-20T20:14:18.031185",
+        "galaxy_version": "23.1",
+        "command_version": "",
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.5.2+galaxy1",
+        "history_id": "674fc5419e31d53b",
+        "external_id": "gxy-galaxy-galaxy-lpqqm",
+        "command_line": "cp '/galaxy/server/database/jobs_directory/000/595/configs/tmpmhbzkjrp' '/galaxy/server/database/objects/c/c/f/dataset_ccf9c10f-35e6-49a1-b1e3-c1c46a55a6a1.dat' && ln -s '/galaxy/server/database/objects/9/5/1/dataset_95136ca8-022e-4fa2-9fc6-d0af1218cb81.dat' localbam.bam && ln -s '/galaxy/server/database/objects/_metadata_files/7/c/5/metadata_7c5b5fe6-95d3-42f1-9793-ebce81861191.dat' localbam.bam.bai && cat '/galaxy/server/database/jobs_directory/000/595/configs/tmpmhbzkjrp' && bamtools filter -script '/galaxy/server/database/jobs_directory/000/595/configs/tmpmhbzkjrp' -in localbam.bam -out '/galaxy/server/database/objects/8/7/5/dataset_875cd0f7-9713-42cd-8f67-ee4e97b2980d.dat'",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"bam\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"7cc0fcacb7d011eea6aa4e3cf7a37720\"",
+            "rule_configuration": "{\"__current_case__\": 0, \"rules_selector\": false}",
+            "conditions": "[{\"__index__\": 0, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"__current_case__\": 21, \"bam_property_selector\": \"tag\", \"bam_property_value\": \"NH=1\"}}]}]"
+        },
+        "inputs": {
+            "input_bam": {
+                "id": "948f465f58778fe9",
+                "src": "hda",
+                "uuid": "95136ca8-022e-4fa2-9fc6-d0af1218cb81"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "06c622085f7cd77d",
+                "src": "hda",
+                "uuid": "875cd0f7-9713-42cd-8f67-ee4e97b2980d"
+            },
+            "out_file2": {
+                "id": "35d82aaddb3ec5ac",
+                "src": "hda",
+                "uuid": "ccf9c10f-35e6-49a1-b1e3-c1c46a55a6a1"
+            }
+        },
+        "output_collections": {
+            "out_file1": {
+                "id": "335226d5b09b6e62",
+                "src": "hdca"
+            },
+            "out_file2": {
+                "id": "7f2a4c68c1642089",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "\n\n\n        \n{\n    \"filters\": [\n        {\n            \"id\": \"1\",\n            \"tag\": \"NH=1\"\n        }\n    ]\n}\n\n        ",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "",
+        "stdout": "\n\n\n        \n{\n    \"filters\": [\n        {\n            \"id\": \"1\",\n            \"tag\": \"NH=1\"\n        }\n    ]\n}\n\n        ",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-lpqqm-mhht2 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-lpqqm-mhht2 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.3 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "197850376.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "4 minutes",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "296.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-01-20 20:29:15",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1705782555.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-01-20 20:24:19",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1705782259.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "4080",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "4080.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "http://34.138.123.6:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        29167384,
+        503642961
+    ]
+}

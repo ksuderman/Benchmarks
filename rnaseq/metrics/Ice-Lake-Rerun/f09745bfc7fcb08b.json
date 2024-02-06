@@ -1,0 +1,158 @@
+{
+    "run": "3",
+    "cloud": "ice",
+    "job_conf": "ice-lake",
+    "workflow_id": "5954028d45ac6b3b",
+    "history_id": "a2266e81d704a049",
+    "inputs": "SRR24043307-20 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "f09745bfc7fcb08b",
+        "state": "error",
+        "exit_code": 1,
+        "update_time": "2024-01-19T23:05:00.469430",
+        "create_time": "2024-01-19T23:04:51.541570",
+        "galaxy_version": "23.1",
+        "command_version": "4.0",
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.0+galaxy1",
+        "history_id": "a2266e81d704a049",
+        "external_id": "gxy-galaxy-galaxy-r4bkc",
+        "command_line": "ln -f -s '' 'downsampled-SRR24043307_fastq_gz_1.fq.gz' &&  ln -f -s '' 'downsampled-SRR24043307_fastq_gz_2.fq.gz' &&    cutadapt  -j=${GALAXY_SLOTS:-4}      -a 'Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'='AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'         -A 'Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'='AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'      --output='out1.fq.gz' --paired-output='out2.fq.gz'  --error-rate=0.1 --times=1 --overlap=3   --action=trim      --minimum-length=15 --pair-filter=any   --quality-cutoff=30     'downsampled-SRR24043307_fastq_gz_1.fq.gz' 'downsampled-SRR24043307_fastq_gz_2.fq.gz'  > report.txt",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "output_selector": "[\"report\"]",
+            "read_mod_options": "{\"length_tag\": \"\", \"nextseq_trim\": \"0\", \"quality_cutoff\": \"30\", \"rename\": \"\", \"shorten_options\": {\"__current_case__\": 1, \"shorten_values\": \"False\"}, \"strip_suffix\": \"\", \"trim_n\": false, \"zero_cap\": false}",
+            "filter_options": "{\"discard_cassava\": false, \"discard_trimmed\": false, \"discard_untrimmed\": false, \"length_R2_options\": {\"__current_case__\": 1, \"length_R2_status\": \"False\"}, \"max_expected_errors\": \"\", \"max_n\": \"\", \"maximum_length\": \"\", \"minimum_length\": \"15\", \"pair_filter\": \"any\"}",
+            "adapter_options": "{\"action\": \"trim\", \"error_rate\": \"0.1\", \"internal\": \"\", \"match_read_wildcards\": \" \", \"no_indels\": false, \"overlap\": \"3\", \"revcomp\": false, \"times\": \"1\"}",
+            "library": "{\"__current_case__\": 2, \"input_1\": {\"values\": [{\"id\": 6, \"src\": \"dce\"}]}, \"r1\": {\"adapters\": [{\"__index__\": 0, \"adapter_source\": {\"__current_case__\": 0, \"adapter\": \"AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_name\": \"Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_source_list\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters\": [], \"cut\": \"0\", \"front_adapters\": []}, \"r2\": {\"adapters2\": [{\"__index__\": 0, \"adapter_source2\": {\"__current_case__\": 0, \"adapter2\": \"AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_name2\": \"Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_source_list2\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters2\": [], \"cut2\": \"0\", \"front_adapters2\": [], \"quality_cutoff2\": \"\"}, \"type\": \"paired_collection\"}"
+        },
+        "inputs": {
+            "library|input_12": {
+                "id": "59e23e1b76fad6fa",
+                "src": "hda",
+                "uuid": "8c00b462-647f-4080-b0fa-7333cea8a323"
+            },
+            "library|input_11": {
+                "id": "fb101768b2180df7",
+                "src": "hda",
+                "uuid": "806fd6ea-6e82-44f3-abe3-75686f234062"
+            }
+        },
+        "outputs": {
+            "report": {
+                "id": "154088ebfc2b0428",
+                "src": "hda",
+                "uuid": "f10c17f6-bb33-492c-a053-e150d668aff0"
+            },
+            "out_pairs|__part__|reverse": {
+                "id": "a265b246fb179745",
+                "src": "hda",
+                "uuid": "c5a2b636-878c-46d8-8642-d5cae46f5567"
+            },
+            "out_pairs|__part__|forward": {
+                "id": "8abfb2301c2dc6ea",
+                "src": "hda",
+                "uuid": "a9320db8-b63b-45e9-9d0e-ecb8e2f2dddd"
+            }
+        },
+        "output_collections": {
+            "out_pairs": {
+                "id": "b8d3a3a3d2e47e4d",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "ln: downsampled-SRR24043307_fastq_gz_1.fq.gz: No such file or directory\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "ln: downsampled-SRR24043307_fastq_gz_1.fq.gz: No such file or directory\n",
+        "stdout": "",
+        "job_messages": [
+            {
+                "code_desc": "",
+                "desc": "Fatal error: Exit code 1 ()",
+                "error_level": 3,
+                "exit_code": 1,
+                "type": "exit_code"
+            }
+        ],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-r4bkc-d7dj2 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-r4bkc-d7dj2 5.15.0-1039-gke #44-Ubuntu SMP Wed Jul 26 11:00:17 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.3 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "197850376.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "0 seconds",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-01-19 23:04:53",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1705705493.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-01-19 23:04:53",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1705705493.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "20401",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "20401.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "5",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "5.0000000"
+            }
+        ]
+    },
+    "status": "error",
+    "server": "http://34.138.123.6:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}

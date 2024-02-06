@@ -1,0 +1,217 @@
+{
+    "run": "1",
+    "cloud": "costs",
+    "job_conf": "col-f",
+    "workflow_id": "428fb8d6a5f9f7d2",
+    "history_id": "c154aafc9207ba0d",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "27abce7acad6a481",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2023-12-15T10:06:42.417547",
+        "create_time": "2023-12-15T09:59:46.644714",
+        "galaxy_version": "23.1",
+        "command_version": "4.0",
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.0+galaxy1",
+        "history_id": "c154aafc9207ba0d",
+        "external_id": "gxy-galaxy-galaxy-jghh8",
+        "command_line": "ln -f -s '/galaxy/server/database/objects/6/a/9/dataset_6a91822e-b87b-410c-b945-adf4e618f954.dat' 'SRR24043307_fastq_1.fq.gz' &&  ln -f -s '/galaxy/server/database/objects/b/e/7/dataset_be7b8cbc-3bc8-4577-a2e6-b5603605b6a5.dat' 'SRR24043307_fastq_2.fq.gz' &&    cutadapt  -j=${GALAXY_SLOTS:-4}      -a 'Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'='AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'         -A 'Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'='AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'      --output='out1.fq.gz' --paired-output='out2.fq.gz'  --error-rate=0.1 --times=1 --overlap=3   --action=trim      --minimum-length=15 --pair-filter=any   --quality-cutoff=30     'SRR24043307_fastq_1.fq.gz' 'SRR24043307_fastq_2.fq.gz'  > report.txt",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "output_selector": "[\"report\"]",
+            "read_mod_options": "{\"length_tag\": \"\", \"nextseq_trim\": \"0\", \"quality_cutoff\": \"30\", \"rename\": \"\", \"shorten_options\": {\"__current_case__\": 1, \"shorten_values\": \"False\"}, \"strip_suffix\": \"\", \"trim_n\": false, \"zero_cap\": false}",
+            "filter_options": "{\"discard_cassava\": false, \"discard_trimmed\": false, \"discard_untrimmed\": false, \"length_R2_options\": {\"__current_case__\": 1, \"length_R2_status\": \"False\"}, \"max_expected_errors\": \"\", \"max_n\": \"\", \"maximum_length\": \"\", \"minimum_length\": \"15\", \"pair_filter\": \"any\"}",
+            "adapter_options": "{\"action\": \"trim\", \"error_rate\": \"0.1\", \"internal\": \"\", \"match_read_wildcards\": \" \", \"no_indels\": false, \"overlap\": \"3\", \"revcomp\": false, \"times\": \"1\"}",
+            "library": "{\"__current_case__\": 2, \"input_1\": {\"values\": [{\"id\": 6, \"src\": \"dce\"}]}, \"r1\": {\"adapters\": [{\"__index__\": 0, \"adapter_source\": {\"__current_case__\": 0, \"adapter\": \"AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_name\": \"Please use: For R1: - For Nextera: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC - For TrueSeq: GATCGGAAGAGCACACGTCTGAACTCCAGTCAC or AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC\", \"adapter_source_list\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters\": [], \"cut\": \"0\", \"front_adapters\": []}, \"r2\": {\"adapters2\": [{\"__index__\": 0, \"adapter_source2\": {\"__current_case__\": 0, \"adapter2\": \"AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_name2\": \"Please use: For R2: - For Nextera: CTGTCTCTTATACACATCTGACGCTGCCGACGA - For TruSeq: GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT or AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\", \"adapter_source_list2\": \"user\"}, \"single_noindels\": false}], \"anywhere_adapters2\": [], \"cut2\": \"0\", \"front_adapters2\": [], \"quality_cutoff2\": \"\"}, \"type\": \"paired_collection\"}"
+        },
+        "inputs": {
+            "library|input_12": {
+                "id": "5f8e0aa2cc002773",
+                "src": "hda",
+                "uuid": "be7b8cbc-3bc8-4577-a2e6-b5603605b6a5"
+            },
+            "library|input_11": {
+                "id": "447f37f1877c0cf2",
+                "src": "hda",
+                "uuid": "6a91822e-b87b-410c-b945-adf4e618f954"
+            }
+        },
+        "outputs": {
+            "report": {
+                "id": "0e115945a84336b4",
+                "src": "hda",
+                "uuid": "326d5cbb-8dda-4ef4-9f91-d0d0419209d2"
+            },
+            "out_pairs|__part__|reverse": {
+                "id": "3e65c1c7fcec5c33",
+                "src": "hda",
+                "uuid": "fa209f07-b719-42e5-b754-e8b85dfa19c7"
+            },
+            "out_pairs|__part__|forward": {
+                "id": "ab34fc6aeaabd359",
+                "src": "hda",
+                "uuid": "7923e6d4-b504-4a48-a8d7-10cd11f0cf41"
+            }
+        },
+        "output_collections": {
+            "report": {
+                "id": "86eb22c36ef1c938",
+                "src": "hdca"
+            },
+            "out_pairs": {
+                "id": "f6a8c3b28d3d92d2",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-jghh8-krxt6 5.15.0-1036-gke #41-Ubuntu SMP Wed Jun 7 04:23:11 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-jghh8-krxt6 5.15.0-1036-gke #41-Ubuntu SMP Wed Jun 7 04:23:11 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.4 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "198047180.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Memory softlimit on cgroup",
+                "value": "8.0 EB",
+                "plugin": "cgroup",
+                "name": "memory.soft_limit_in_bytes",
+                "raw_value": "9223372036854771712.0000000"
+            },
+            {
+                "title": "Was OOM Killer active?",
+                "value": "No",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.under_oom",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "OOM Control enabled",
+                "value": "Yes",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.oom_kill_disable",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage (MEM+SWP)",
+                "value": "9.1 GB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.max_usage_in_bytes",
+                "raw_value": "9739980800.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM+SWP)",
+                "value": "19.0 GB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.limit_in_bytes",
+                "raw_value": "20401094656.0000000"
+            },
+            {
+                "title": "Max memory usage (MEM)",
+                "value": "9.1 GB",
+                "plugin": "cgroup",
+                "name": "memory.max_usage_in_bytes",
+                "raw_value": "9739980800.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM)",
+                "value": "19.0 GB",
+                "plugin": "cgroup",
+                "name": "memory.limit_in_bytes",
+                "raw_value": "20401094656.0000000"
+            },
+            {
+                "title": "Failed to allocate memory count",
+                "value": 0.0,
+                "plugin": "cgroup",
+                "name": "memory.failcnt",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU Time",
+                "value": "27 minutes",
+                "plugin": "cgroup",
+                "name": "cpuacct.usage",
+                "raw_value": "1649497315646.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "6 minutes",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "386.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2023-12-15 10:06:34",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1702634794.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2023-12-15 10:00:08",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1702634408.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "20401",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "20401.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "5",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "5.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "http://34.139.120.251:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5157505870,
+        503642961
+    ]
+}
