@@ -1,0 +1,73 @@
+{
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "28887f967f9cebd2",
+    "history_id": "42f30d39b383629f",
+    "inputs": "10k_mouse_R1.fastq.gz 10k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "b5c1054a44ffa4ac",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-02-06T23:46:34.082404",
+        "create_time": "2024-02-06T22:53:59.470279",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/ebi-gxa/droplet_barcode_plot/_dropletBarcodePlot/1.6.1+galaxy2",
+        "history_id": "42f30d39b383629f",
+        "external_id": "gxy-galaxy-galaxy-jsxnp",
+        "command_line": "dropletBarcodePlot.R --output-plot \"/galaxy/server/database/objects/6/a/5/dataset_6a5cfc43-f1be-445b-8b87-2fa87fd0c292.dat\" --output-thresholds \"/galaxy/server/database/objects/d/7/7/dataset_d77997a4-c8f6-4642-bc98-892400181e6f.dat\" --label \"Barcode rank plot (raw barcode frequencies)\" --density-bins \"50\" --roryk-multiplier \"1.5\" --barcode-frequencies /galaxy/server/database/objects/3/6/a/dataset_36a8bdcb-c377-4df8-a70f-ab1f0030abc2.dat",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"9c191d1cc54211eea6d37235aed0f9b1\"",
+            "roryk_multiplier": "\"1.5\"",
+            "label": "\"Barcode rank plot (raw barcode frequencies)\"",
+            "input": "{\"__current_case__\": 1, \"barcode_frequencies\": {\"values\": [{\"id\": 2843, \"src\": \"hda\"}]}, \"type\": false}",
+            "density_bins": "\"50\""
+        },
+        "inputs": {
+            "input|barcode_frequencies": {
+                "id": "a0867c4a0347c62e",
+                "src": "hda",
+                "uuid": "36a8bdcb-c377-4df8-a70f-ab1f0030abc2"
+            }
+        },
+        "outputs": {
+            "thresholds_file": {
+                "id": "d1ac987aada0aed7",
+                "src": "hda",
+                "uuid": "d77997a4-c8f6-4642-bc98-892400181e6f"
+            },
+            "plot_file": {
+                "id": "495906b6eae5ccd5",
+                "src": "hda",
+                "uuid": "6a5cfc43-f1be-445b-8b87-2fa87fd0c292"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "/galaxy/server/database/jobs_directory/001/1367/tool_script.sh: line 22:    26 Killed                  dropletBarcodePlot.R --output-plot \"/galaxy/server/database/objects/6/a/5/dataset_6a5cfc43-f1be-445b-8b87-2fa87fd0c292.dat\" --output-thresholds \"/galaxy/server/database/objects/d/7/7/dataset_d77997a4-c8f6-4642-bc98-892400181e6f.dat\" --label \"Barcode rank plot (raw barcode frequencies)\" --density-bins \"50\" --roryk-multiplier \"1.5\" --barcode-frequencies /galaxy/server/database/objects/3/6/a/dataset_36a8bdcb-c377-4df8-a70f-ab1f0030abc2.dat\n",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "/galaxy/server/database/jobs_directory/001/1367/tool_script.sh: line 22:    26 Killed                  dropletBarcodePlot.R --output-plot \"/galaxy/server/database/objects/6/a/5/dataset_6a5cfc43-f1be-445b-8b87-2fa87fd0c292.dat\" --output-thresholds \"/galaxy/server/database/objects/d/7/7/dataset_d77997a4-c8f6-4642-bc98-892400181e6f.dat\" --label \"Barcode rank plot (raw barcode frequencies)\" --density-bins \"50\" --roryk-multiplier \"1.5\" --barcode-frequencies /galaxy/server/database/objects/3/6/a/dataset_36a8bdcb-c377-4df8-a70f-ab1f0030abc2.dat\n",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5366619049,
+        12660906216,
+        50744153,
+        879834076
+    ]
+}

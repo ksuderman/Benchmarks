@@ -1,0 +1,72 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "28887f967f9cebd2",
+    "history_id": "248edeac106c8d88",
+    "inputs": "10k_mouse_R1.fastq.gz 10k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "0db57302f6592b79",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-02-06T22:52:29.895436",
+        "create_time": "2024-02-06T22:51:40.038714",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/ebi-gxa/droplet_barcode_plot/_dropletBarcodePlot/1.6.1+galaxy2",
+        "history_id": "248edeac106c8d88",
+        "external_id": "gxy-galaxy-galaxy-rrtd9",
+        "command_line": "dropletBarcodePlot.R --output-plot \"/galaxy/server/database/objects/d/2/4/dataset_d2443396-4304-484d-a88e-b723843efd8b.dat\" --output-thresholds \"/galaxy/server/database/objects/1/0/2/dataset_1021948c-1061-4446-8d88-a683c52455f7.dat\" --label \"Barcode rank plot (raw barcode frequencies)\" --density-bins \"50\" --roryk-multiplier \"1.5\" --barcode-frequencies /galaxy/server/database/objects/9/1/9/dataset_9190b5b2-724b-4f1d-89ab-6ae7d214eefe.dat",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "roryk_multiplier": "\"1.5\"",
+            "density_bins": "\"50\"",
+            "label": "\"Barcode rank plot (raw barcode frequencies)\"",
+            "input": "{\"__current_case__\": 1, \"barcode_frequencies\": {\"values\": [{\"id\": 2803, \"src\": \"hda\"}]}, \"type\": false}"
+        },
+        "inputs": {
+            "input|barcode_frequencies": {
+                "id": "94c0a6372827b04d",
+                "src": "hda",
+                "uuid": "9190b5b2-724b-4f1d-89ab-6ae7d214eefe"
+            }
+        },
+        "outputs": {
+            "thresholds_file": {
+                "id": "39d9d8f61a9de321",
+                "src": "hda",
+                "uuid": "1021948c-1061-4446-8d88-a683c52455f7"
+            },
+            "plot_file": {
+                "id": "70f4c77662f4429d",
+                "src": "hda",
+                "uuid": "d2443396-4304-484d-a88e-b723843efd8b"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "/galaxy/server/database/jobs_directory/001/1359/tool_script.sh: line 22:    26 Killed                  dropletBarcodePlot.R --output-plot \"/galaxy/server/database/objects/d/2/4/dataset_d2443396-4304-484d-a88e-b723843efd8b.dat\" --output-thresholds \"/galaxy/server/database/objects/1/0/2/dataset_1021948c-1061-4446-8d88-a683c52455f7.dat\" --label \"Barcode rank plot (raw barcode frequencies)\" --density-bins \"50\" --roryk-multiplier \"1.5\" --barcode-frequencies /galaxy/server/database/objects/9/1/9/dataset_9190b5b2-724b-4f1d-89ab-6ae7d214eefe.dat\n",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "/galaxy/server/database/jobs_directory/001/1359/tool_script.sh: line 22:    26 Killed                  dropletBarcodePlot.R --output-plot \"/galaxy/server/database/objects/d/2/4/dataset_d2443396-4304-484d-a88e-b723843efd8b.dat\" --output-thresholds \"/galaxy/server/database/objects/1/0/2/dataset_1021948c-1061-4446-8d88-a683c52455f7.dat\" --label \"Barcode rank plot (raw barcode frequencies)\" --density-bins \"50\" --roryk-multiplier \"1.5\" --barcode-frequencies /galaxy/server/database/objects/9/1/9/dataset_9190b5b2-724b-4f1d-89ab-6ae7d214eefe.dat\n",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5366619049,
+        12660906216,
+        50744153,
+        879834076
+    ]
+}

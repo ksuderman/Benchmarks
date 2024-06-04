@@ -1,0 +1,75 @@
+{
+    "run": "1",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "28887f967f9cebd2",
+    "history_id": "adc4cfeaadfbdbdd",
+    "inputs": "5k_mouse_R1.fastq.gz 5k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "a125b5ec5c58c708",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-02-06T19:38:48.558342",
+        "create_time": "2024-02-06T18:56:56.698015",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/ebi-gxa/dropletutils_read_10x/dropletutils_read_10x/1.0.4+galaxy0",
+        "history_id": "adc4cfeaadfbdbdd",
+        "external_id": "gxy-galaxy-galaxy-frcsv",
+        "command_line": "ln -s '/galaxy/server/database/objects/d/b/c/dataset_dbc68512-cd7e-4ad6-9081-932b097d029b.dat' matrix.mtx && ln -s '/galaxy/server/database/objects/f/c/5/dataset_fc5bdec1-0bbb-4fe6-9b7c-a68ca8279193.dat' genes.tsv && ln -s '/galaxy/server/database/objects/8/c/7/dataset_8c71ef34-3ea3-4441-8085-be9897ecbab0.dat' barcodes.tsv && dropletutils-read-10x-counts.R -s . -c TRUE -o '/galaxy/server/database/objects/f/a/c/dataset_facd2418-bc13-4c0f-b88b-938f5cd39c78.dat'",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"mtx\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"7f4204b8c52111ee8ca37235aed0f9b1\"",
+            "add_metadata": "{\"__current_case__\": 1, \"add_metadata_file\": false}"
+        },
+        "inputs": {
+            "barcodes": {
+                "id": "9ad40f35daf30d91",
+                "src": "hda",
+                "uuid": "8c71ef34-3ea3-4441-8085-be9897ecbab0"
+            },
+            "genes": {
+                "id": "fe21cc156c96f27e",
+                "src": "hda",
+                "uuid": "fc5bdec1-0bbb-4fe6-9b7c-a68ca8279193"
+            },
+            "matrix": {
+                "id": "9cc62ee188da2942",
+                "src": "hda",
+                "uuid": "dbc68512-cd7e-4ad6-9081-932b097d029b"
+            }
+        },
+        "outputs": {
+            "output_rds": {
+                "id": "f6a168c50a90149e",
+                "src": "hda",
+                "uuid": "facd2418-bc13-4c0f-b88b-938f5cd39c78"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "# Object summary\nclass: SingleCellExperiment \ndim: 35495 98679 \nmetadata(0):\nassays(1): counts\nrownames(35495): ENSMUSG00000104385 ENSMUSG00000101231 ...\n  ENSMUSG00000079808 ENSMUSG00000095041\nrowData names(3): ID Symbol NA\ncolnames(98679): TCACAAGCATTC CATGGTAGTAGG ... AAACCAATCCTA\n  AAAAAGAGTTGT\ncolData names(2): Sample Barcode\nreducedDimNames(0):\nspikeNames(0):\n\n# Metadata sample\nDataFrame with 6 rows and 2 columns\n                  Sample      Barcode\n             <character>  <character>\nTCACAAGCATTC           . TCACAAGCATTC\nCATGGTAGTAGG           . CATGGTAGTAGG\nGTCCCATAGAGA           . GTCCCATAGAGA\nACTTATCCAGGA           . ACTTATCCAGGA\nAGTCTCCGTCCT           . AGTCTCCGTCCT\nTTACCATTCTTG           . TTACCATTCTTG\n",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "# Object summary\nclass: SingleCellExperiment \ndim: 35495 98679 \nmetadata(0):\nassays(1): counts\nrownames(35495): ENSMUSG00000104385 ENSMUSG00000101231 ...\n  ENSMUSG00000079808 ENSMUSG00000095041\nrowData names(3): ID Symbol NA\ncolnames(98679): TCACAAGCATTC CATGGTAGTAGG ... AAACCAATCCTA\n  AAAAAGAGTTGT\ncolData names(2): Sample Barcode\nreducedDimNames(0):\nspikeNames(0):\n\n# Metadata sample\nDataFrame with 6 rows and 2 columns\n                  Sample      Barcode\n             <character>  <character>\nTCACAAGCATTC           . TCACAAGCATTC\nCATGGTAGTAGG           . CATGGTAGTAGG\nGTCCCATAGAGA           . GTCCCATAGAGA\nACTTATCCAGGA           . ACTTATCCAGGA\nAGTCTCCGTCCT           . AGTCTCCGTCCT\nTTACCATTCTTG           . TTACCATTCTTG\n",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        1576462154,
+        3780120314,
+        50744153,
+        879834076
+    ]
+}

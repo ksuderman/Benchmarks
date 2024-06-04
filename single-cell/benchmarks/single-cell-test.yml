@@ -1,0 +1,13 @@
+- output_history_base_name: SC-Test
+  workflow_id: Single-Cell
+  runs:
+  - history_name: Single-Cell
+    inputs:
+    - name: Read 1 - containing cell barcode & UMI
+      dataset_id: SLX-7632.TAAGGCGA.N701.s_1.r_1.fq-400k.fastq
+    - name: Read 2 - containing transcript
+      dataset_id: SLX-7632.TAAGGCGA.N701.s_1.r_2.fq-400k.fastq
+    - name: Mus_musculus.GRCm38.cdna.all.fa
+      dataset_id: Mus_musculus.GRCm38.cdna.all.fa.fasta
+    - name: Mus_musculus.GRCm38.100.gtf.gz
+      dataset_id: Mus_musculus.GRCm38.100.gtf.gff

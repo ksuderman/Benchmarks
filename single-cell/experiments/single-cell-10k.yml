@@ -1,10 +1,10 @@
-name: Singe-Cell-Experiment
+name: Singe-Cell-Experiment-10k
 # The number of times each benchmark will be executed.
 runs: 3
 # The benchmarks that will be run as part of the experiment. Each benchmark
 # configuration defines the Galaxy workflow and input datasets to be used.
 benchmark_confs:
-  - benchmarks/single-cell-test.yml
+  - benchmarks/mouse-10k.yml
 # The cloud instances, as defined in the $HOME/.abm/profile.yml file.
 cloud:
   - cascade

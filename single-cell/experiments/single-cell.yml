@@ -4,7 +4,9 @@ runs: 3
 # The benchmarks that will be run as part of the experiment. Each benchmark
 # configuration defines the Galaxy workflow and input datasets to be used.
 benchmark_confs:
-  - benchmarks/single-cell-test.yml
+  - benchmarks/mouse-1k.yml
+  - benchmarks/mouse-5k.yml
+  - benchmarks/mouse-10k.yml
 # The cloud instances, as defined in the $HOME/.abm/profile.yml file.
 cloud:
   - cascade

@@ -1,0 +1,76 @@
+{
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "28887f967f9cebd2",
+    "history_id": "7550a34491c8572b",
+    "inputs": "5k_mouse_R1.fastq.gz 5k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "715d38c0a5b63d59",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-02-06T21:04:05.037939",
+        "create_time": "2024-02-06T20:23:06.646629",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/ebi-gxa/dropletutils_empty_drops/dropletutils_empty_drops/1.0.4+galaxy0",
+        "history_id": "7550a34491c8572b",
+        "external_id": "gxy-galaxy-galaxy-pj2j9",
+        "command_line": "dropletutils-empty-drops.R --input-object-file \"/galaxy/server/database/objects/b/a/7/dataset_ba74c027-17f8-41c1-8742-78d95710d4d1.dat\" --output-object-file \"/galaxy/server/database/objects/8/c/9/dataset_8c974f01-73a5-44a8-908c-eedbfb728715.dat\" --output-text-file \"/galaxy/server/database/objects/a/4/8/dataset_a482ceaa-4375-45ba-8aba-7c2068ffea2c.dat\" --lower \"100\" --niters \"1000\" --filter-fdr \"0.01\" --test-ambient \"false\" --filter-empty \"true\"",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"rdata\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"88c998f0c52d11ee8ca37235aed0f9b1\"",
+            "testambient": "false",
+            "retain": null,
+            "niters": "\"1000\"",
+            "lower": "\"100\"",
+            "ignore": null,
+            "filter_fdr": "\"0.01\"",
+            "filter_empty": "true"
+        },
+        "inputs": {
+            "input": {
+                "id": "56258065f0751f41",
+                "src": "hda",
+                "uuid": "ba74c027-17f8-41c1-8742-78d95710d4d1"
+            }
+        },
+        "outputs": {
+            "output_txt": {
+                "id": "56bf1fd446c52b0d",
+                "src": "hda",
+                "uuid": "a482ceaa-4375-45ba-8aba-7c2068ffea2c"
+            },
+            "output_rdata": {
+                "id": "ab88730e9931d8a8",
+                "src": "hda",
+                "uuid": "8c974f01-73a5-44a8-908c-eedbfb728715"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "At an FDR of 0.01, estimate that 6647 barcodes have cells.\nWill filter to 6647 barcodes.\n\nParameter values:\n             value\nlower          100\nniters        1000\ntest_ambient FALSE\nfilter_empty  TRUE\nfilter_fdr    0.01\n",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "At an FDR of 0.01, estimate that 6647 barcodes have cells.\nWill filter to 6647 barcodes.\n\nParameter values:\n             value\nlower          100\nniters        1000\ntest_ambient FALSE\nfilter_empty  TRUE\nfilter_fdr    0.01\n",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        1576462154,
+        3780120314,
+        50744153,
+        879834076
+    ]
+}

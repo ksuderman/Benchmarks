@@ -1,0 +1,124 @@
+{
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "28887f967f9cebd2",
+    "history_id": "42f30d39b383629f",
+    "inputs": "10k_mouse_R1.fastq.gz 10k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "6a35389deeb532dc",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-02-06T23:48:50.610931",
+        "create_time": "2024-02-06T22:53:58.503241",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/alevin/alevin/1.9.0+galaxy2",
+        "history_id": "42f30d39b383629f",
+        "external_id": "gxy-galaxy-galaxy-q6s29",
+        "command_line": "mkdir ./index && mkdir ./output && salmon index -i ./index --kmerLen '31' --gencode --transcripts '/galaxy/server/database/objects/9/5/0/dataset_950719b4-be40-431e-a62e-49a143051f8f.dat' && cp '/galaxy/server/database/objects/2/b/6/dataset_2b60c0a3-8a65-4f49-bc1d-e6cc2a4eb92a.dat' ./mate1.fastq.gz && gunzip ./mate1.fastq.gz && cp '/galaxy/server/database/objects/0/a/2/dataset_0a2bf449-feef-47b1-a5a9-eaa1f35e5959.dat' ./mate2.fastq.gz && gunzip ./mate2.fastq.gz  && ln -s '/galaxy/server/database/objects/c/2/e/dataset_c2eabc0d-a104-4ea7-a3fc-32d2042df68d.dat' ./alevinmap.tsv && salmon alevin -l A -i ./index -1 ./mate1.fastq -2 ./mate2.fastq -o ./output -p \"${GALAXY_SLOTS:-4}\" --dropseq --tgMap ./alevinmap.tsv --keepCBFraction '1.0'  --dumpFeatures --dumpMtx --maxNumBarcodes '100000' --freqThreshold '3' && gunzip output/alevin/quants_mat.mtx.gz",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"9c191d1cc54211eea6d37235aed0f9b1\"",
+            "refTranscriptSource": "{\"TranscriptSource\": \"history\", \"__current_case__\": 1, \"s_index\": {\"fasta\": {\"values\": [{\"id\": 2836, \"src\": \"hda\"}]}, \"genome\": null, \"kmer\": \"31\", \"phash\": false}}",
+            "protocol_cond": "{\"__current_case__\": 0, \"protocol\": \"--dropseq\"}",
+            "pairstraight": "{\"__current_case__\": 0, \"file1\": {\"values\": [{\"id\": 2471, \"src\": \"hda\"}]}, \"file2\": {\"values\": [{\"id\": 2472, \"src\": \"hda\"}]}, \"libtype\": {\"__current_case__\": 0, \"strandedness\": \"A\"}, \"readselect\": \"paired\"}",
+            "output_files": "[\"dumpFeatures\", \"salmon_log\"]",
+            "optional": "{\"dumpMtx\": true, \"expectCells\": null, \"forceCells\": null, \"freqThreshold\": \"3\", \"keepCBFraction\": \"1.0\", \"maxNumBarcodes\": \"100000\", \"minScoreFraction\": null, \"mrna\": null, \"noDedup\": false, \"numCellBootstraps\": null, \"rrna\": null, \"whitelist\": null}"
+        },
+        "inputs": {
+            "tgmap": {
+                "id": "5dee96b54e50ce15",
+                "src": "hda",
+                "uuid": "c2eabc0d-a104-4ea7-a3fc-32d2042df68d"
+            },
+            "pairstraight|file2": {
+                "id": "843cf2719d89b75a",
+                "src": "hda",
+                "uuid": "0a2bf449-feef-47b1-a5a9-eaa1f35e5959"
+            },
+            "pairstraight|file1": {
+                "id": "1d50144773cf7580",
+                "src": "hda",
+                "uuid": "2b60c0a3-8a65-4f49-bc1d-e6cc2a4eb92a"
+            },
+            "refTranscriptSource|s_index|fasta": {
+                "id": "facf00a03d67a2ae",
+                "src": "hda",
+                "uuid": "950719b4-be40-431e-a62e-49a143051f8f"
+            }
+        },
+        "outputs": {
+            "salmon_quant_log": {
+                "id": "fb1194961fd461fd",
+                "src": "hda",
+                "uuid": "94845c45-19e8-49a5-9749-7a5acf800e3c"
+            },
+            "whitelist_txt": {
+                "id": "81fd60230dee3d3f",
+                "src": "hda",
+                "uuid": "91e50d9f-00ee-49d4-8e4e-9e2a9ae48dd9"
+            },
+            "raw_cb_frequency_txt": {
+                "id": "8681260455915749",
+                "src": "hda",
+                "uuid": "00807a4f-10cc-4e72-b014-585cb91ca31c"
+            },
+            "featureDump_txt": {
+                "id": "277a54c147cfd490",
+                "src": "hda",
+                "uuid": "8c9f3d26-ed4c-4e67-a1e3-b9ce8f64e402"
+            },
+            "quants_tier_mat": {
+                "id": "4c9c4b984171940d",
+                "src": "hda",
+                "uuid": "f7ee37c7-45c4-4695-be3a-5d1b2a3f3f02"
+            },
+            "quants_mat_rows_txt": {
+                "id": "f218edf34afbe345",
+                "src": "hda",
+                "uuid": "c99f111c-9a81-4e13-afd7-f2f2c3d5ff18"
+            },
+            "quants_mat_cols_txt": {
+                "id": "c5e4e84b58a45050",
+                "src": "hda",
+                "uuid": "f7219fba-9eb8-4999-8bbf-4bada70a6b93"
+            },
+            "quants_mat_gz": {
+                "id": "376323100342fa1c",
+                "src": "hda",
+                "uuid": "8b57ba8d-381b-438c-b3b6-c97032ce32ff"
+            },
+            "quants_mat_mtx": {
+                "id": "7ee90a6248860124",
+                "src": "hda",
+                "uuid": "2a819f12-5c92-4fd5-bc6f-f984ac0cc9e3"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleted",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5366619049,
+        12660906216,
+        50744153,
+        879834076
+    ]
+}

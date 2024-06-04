@@ -1,0 +1,75 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "28887f967f9cebd2",
+    "history_id": "248edeac106c8d88",
+    "inputs": "10k_mouse_R1.fastq.gz 10k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "284503961b2324ab",
+        "state": "deleting",
+        "exit_code": null,
+        "update_time": "2024-02-06T22:53:41.313988",
+        "create_time": "2024-02-06T22:00:51.959972",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "join1",
+        "history_id": "248edeac106c8d88",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"tabular\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"2fb345dcc53b11eea1e57235aed0f9b1\"",
+            "unmatched": "\"-u\"",
+            "partial": "\"-p\"",
+            "header": "\"\"",
+            "fill_empty_columns": "{\"__current_case__\": 0, \"fill_empty_columns_switch\": \"no_fill\"}",
+            "field2": "\"1\"",
+            "field1": "\"1\""
+        },
+        "inputs": {
+            "input2": {
+                "id": "3760b7431c717daf",
+                "src": "hda",
+                "uuid": "413ece5f-e9d2-4eca-9414-f5f8396f47b4"
+            },
+            "input1": {
+                "id": "77a302457dfccf8f",
+                "src": "hda",
+                "uuid": "197d21d4-298f-4898-90ae-d856028e34af"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "c728a0dfd610a5e9",
+                "src": "hda",
+                "uuid": "6ac2bcb4-43b3-4934-8444-45edcb71cf55"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5366619049,
+        12660906216,
+        50744153,
+        879834076
+    ]
+}

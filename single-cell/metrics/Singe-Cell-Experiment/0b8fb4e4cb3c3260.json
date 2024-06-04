@@ -1,0 +1,66 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "28887f967f9cebd2",
+    "history_id": "248edeac106c8d88",
+    "inputs": "10k_mouse_R1.fastq.gz 10k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "0b8fb4e4cb3c3260",
+        "state": "deleting",
+        "exit_code": null,
+        "update_time": "2024-02-06T22:53:41.413587",
+        "create_time": "2024-02-06T22:00:52.370997",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "Cut1",
+        "history_id": "248edeac106c8d88",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"tabular\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"2fb345dcc53b11eea1e57235aed0f9b1\"",
+            "delimiter": "\"T\"",
+            "columnList": "\"c1,c4,c5\""
+        },
+        "inputs": {
+            "input": {
+                "id": "c728a0dfd610a5e9",
+                "src": "hda",
+                "uuid": "6ac2bcb4-43b3-4934-8444-45edcb71cf55"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "bb1d8e4a9a826efd",
+                "src": "hda",
+                "uuid": "b8412d01-1f03-416d-b30a-3ad307f59719"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5366619049,
+        12660906216,
+        50744153,
+        879834076
+    ]
+}

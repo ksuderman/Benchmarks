@@ -1,0 +1,76 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "28887f967f9cebd2",
+    "history_id": "248edeac106c8d88",
+    "inputs": "10k_mouse_R1.fastq.gz 10k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "4d2c1ddcf4a2eba8",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-02-06T22:53:41.267414",
+        "create_time": "2024-02-06T22:00:53.028565",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/ebi-gxa/dropletutils_empty_drops/dropletutils_empty_drops/1.0.4+galaxy0",
+        "history_id": "248edeac106c8d88",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"rdata\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"2fb345dcc53b11eea1e57235aed0f9b1\"",
+            "testambient": "false",
+            "retain": null,
+            "niters": "\"1000\"",
+            "lower": "\"100\"",
+            "ignore": null,
+            "filter_fdr": "\"0.01\"",
+            "filter_empty": "true"
+        },
+        "inputs": {
+            "input": {
+                "id": "4aba0f03bfd9a867",
+                "src": "hda",
+                "uuid": "5d3b3eb3-6d39-40a1-8321-ab46182b567b"
+            }
+        },
+        "outputs": {
+            "output_txt": {
+                "id": "aa6982ec0a48a1e8",
+                "src": "hda",
+                "uuid": "31ca71c5-f6ed-41dc-8d5a-ac5495588cda"
+            },
+            "output_rdata": {
+                "id": "4d89c9a5d87822cf",
+                "src": "hda",
+                "uuid": "304e4679-14fc-4bb1-a22f-5baa48f80925"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleted",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5366619049,
+        12660906216,
+        50744153,
+        879834076
+    ]
+}

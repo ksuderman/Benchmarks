@@ -1,0 +1,203 @@
+{
+    "run": "1",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "7b495e5fd5680d21",
+    "history_id": "0603069e5e9bbb70",
+    "inputs": "10k_mouse_R1.fastq.gz 10k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "808bef5c16c77ebf",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2024-02-07T19:08:57.596640",
+        "create_time": "2024-02-07T17:13:19.410210",
+        "galaxy_version": "23.1",
+        "command_version": "",
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/ebi-gxa/dropletutils_empty_drops/dropletutils_empty_drops/1.0.4+galaxy0",
+        "history_id": "0603069e5e9bbb70",
+        "external_id": "gxy-galaxy-galaxy-q5qqg",
+        "command_line": "dropletutils-empty-drops.R --input-object-file \"/galaxy/server/database/objects/3/e/9/dataset_3e91f41d-dc39-4f4f-b89b-e493c8f06793.dat\" --output-object-file \"/galaxy/server/database/objects/f/3/3/dataset_f3352df5-6c15-4221-b37f-1f6fc6553239.dat\" --output-text-file \"/galaxy/server/database/objects/e/0/c/dataset_e0c7b7e3-5f72-4400-98f1-1d1e0cef2d17.dat\" --lower \"100\" --niters \"1000\" --filter-fdr \"0.01\" --test-ambient \"false\" --filter-empty \"true\"",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"rdata\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"2fae3a78c5dc11eea5ef162b6f3173f6\"",
+            "testambient": "false",
+            "retain": null,
+            "niters": "\"1000\"",
+            "lower": "\"100\"",
+            "ignore": null,
+            "filter_fdr": "\"0.01\"",
+            "filter_empty": "true"
+        },
+        "inputs": {
+            "input": {
+                "id": "58c29dff0d169d98",
+                "src": "hda",
+                "uuid": "3e91f41d-dc39-4f4f-b89b-e493c8f06793"
+            }
+        },
+        "outputs": {
+            "output_txt": {
+                "id": "9258a3610e90c520",
+                "src": "hda",
+                "uuid": "e0c7b7e3-5f72-4400-98f1-1d1e0cef2d17"
+            },
+            "output_rdata": {
+                "id": "d3cfda3a673a5f5a",
+                "src": "hda",
+                "uuid": "f3352df5-6c15-4221-b37f-1f6fc6553239"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "At an FDR of 0.01, estimate that 10587 barcodes have cells.\nWill filter to 10587 barcodes.\n\nParameter values:\n             value\nlower          100\nniters        1000\ntest_ambient FALSE\nfilter_empty  TRUE\nfilter_fdr    0.01\n",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "",
+        "stdout": "At an FDR of 0.01, estimate that 10587 barcodes have cells.\nWill filter to 10587 barcodes.\n\nParameter values:\n             value\nlower          100\nniters        1000\ntest_ambient FALSE\nfilter_empty  TRUE\nfilter_fdr    0.01\n",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-q5qqg-m7bm9 5.15.0-1045-gke #50-Ubuntu SMP Wed Oct 18 03:16:55 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-q5qqg-m7bm9 5.15.0-1045-gke #50-Ubuntu SMP Wed Oct 18 03:16:55 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.4 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "198046800.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Memory softlimit on cgroup",
+                "value": "8.0 EB",
+                "plugin": "cgroup",
+                "name": "memory.soft_limit_in_bytes",
+                "raw_value": "9223372036854771712.0000000"
+            },
+            {
+                "title": "Was OOM Killer active?",
+                "value": "No",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.under_oom",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "OOM Control enabled",
+                "value": "Yes",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.oom_kill_disable",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage (MEM+SWP)",
+                "value": "2.7 GB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.max_usage_in_bytes",
+                "raw_value": "2932097024.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM+SWP)",
+                "value": "5.0 GB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.limit_in_bytes",
+                "raw_value": "5368709120.0000000"
+            },
+            {
+                "title": "Max memory usage (MEM)",
+                "value": "2.7 GB",
+                "plugin": "cgroup",
+                "name": "memory.max_usage_in_bytes",
+                "raw_value": "2932097024.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM)",
+                "value": "5.0 GB",
+                "plugin": "cgroup",
+                "name": "memory.limit_in_bytes",
+                "raw_value": "5368709120.0000000"
+            },
+            {
+                "title": "Failed to allocate memory count",
+                "value": 0.0,
+                "plugin": "cgroup",
+                "name": "memory.failcnt",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU Time",
+                "value": "41.275034703 seconds",
+                "plugin": "cgroup",
+                "name": "cpuacct.usage",
+                "raw_value": "41275034703.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "41 seconds",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "41.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-02-07 19:08:49",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1707332929.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-02-07 19:08:08",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1707332888.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "5368",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "5368.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5366619049,
+        12660906216,
+        50744153,
+        879834076
+    ]
+}

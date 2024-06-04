@@ -1,0 +1,66 @@
+{
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "7b495e5fd5680d21",
+    "history_id": "35ffd898134b0f96",
+    "inputs": "10k_mouse_R1.fastq.gz 10k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "34b8f71dc1ddbff7",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-02-07T22:28:55.080917",
+        "create_time": "2024-02-07T21:09:57.512669",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "Cut1",
+        "history_id": "35ffd898134b0f96",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"tabular\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"3e6fb6c4c5fd11eea5ef162b6f3173f6\"",
+            "delimiter": "\"T\"",
+            "columnList": "\"c1,c4,c5\""
+        },
+        "inputs": {
+            "input": {
+                "id": "25e3795dcee23fdc",
+                "src": "hda",
+                "uuid": "1e2cf03f-c279-402d-a90b-21ea9002ddc1"
+            }
+        },
+        "outputs": {
+            "out_file1": {
+                "id": "8fb5b0d2be7f1dd5",
+                "src": "hda",
+                "uuid": "28641b80-d2d9-486a-a939-33878b29b8a6"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5366619049,
+        12660906216,
+        50744153,
+        879834076
+    ]
+}

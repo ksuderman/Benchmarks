@@ -1,0 +1,13 @@
+- output_history_base_name: Mouse-5k
+  workflow_id: Single-Cell-2
+  runs:
+  - history_name: Single-Cell
+    inputs:
+    - name: Read 1 - containing cell barcode & UMI
+      dataset_id: 5k_mouse_R1.fastq.gz
+    - name: Read 2 - containing transcript
+      dataset_id: 5k_mouse_R2.fastq.gz
+    - name: Mus_musculus.GRCm38.cdna.all.fa
+      dataset_id: Mus_musculus.GRCm39.cdna.all.fa.gz
+    - name: Mus_musculus.GRCm38.100.gtf.gz
+      dataset_id: Mus_musculus.GRCm39.111.gtf.gz

@@ -1,0 +1,69 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "54939f4ff75e1a16",
+    "history_id": "4688cc1b16c92aec",
+    "inputs": "SLX-7632.TAAGGCGA.N701.s_1.r_1.fq-400k.fastq SLX-7632.TAAGGCGA.N701.s_1.r_2.fq-400k.fastq Mus_musculus.GRCm38.cdna.all.fa.fasta Mus_musculus.GRCm38.100.gtf.gff",
+    "metrics": {
+        "model_class": "Job",
+        "id": "fe38f68b29b9e7f7",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-01-31T17:49:57.513360",
+        "create_time": "2024-01-31T17:41:15.582573",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/ebi-gxa/anndata_ops/anndata_ops/0.0.1+galaxy1",
+        "history_id": "4688cc1b16c92aec",
+        "external_id": "gxy-galaxy-galaxy-pvbrf",
+        "command_line": "ln -s '/galaxy/server/database/objects/6/8/d/dataset_68d1dbe2-74e9-4dc0-9585-cab96bc04b36.dat' input.h5 && python /galaxy/server/database/jobs_directory/001/1174/configs/tmpg7a4p1_n",
+        "traceback": "Traceback (most recent call last):\n  File \"/galaxy/server/lib/galaxy/jobs/runners/__init__.py\", line 649, in _finish_or_resubmit_job\n    job_wrapper.finish(\n  File \"/galaxy/server/lib/galaxy/jobs/__init__.py\", line 1964, in finish\n    self._finish_dataset(output_name, dataset, job, context, final_job_state, remote_metadata_directory)\n  File \"/galaxy/server/lib/galaxy/jobs/__init__.py\", line 1781, in _finish_dataset\n    dataset.datatype.set_meta(dataset, overwrite=False)\n  File \"/galaxy/server/lib/galaxy/datatypes/binary.py\", line 1500, in set_meta\n    if \"index\" in tmp:\nTypeError: Cannot compare structured or void to non-void arrays.\n",
+        "params": {
+            "__input_ext": "\"h5\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"edcb6a44c05f11eebcf47235aed0f9b1\"",
+            "top_genes": "\"50\"",
+            "output_format": "\"anndata_h5ad\"",
+            "modifications": "[]",
+            "gene_symbols_field": "\"NA.\"",
+            "gene_flags": "[{\"__index__\": 0, \"flag\": \"mito\", \"startswith\": \"True\"}]"
+        },
+        "inputs": {
+            "input_obj_file": {
+                "id": "e4f34eff00a7dabf",
+                "src": "hda",
+                "uuid": "68d1dbe2-74e9-4dc0-9585-cab96bc04b36"
+            }
+        },
+        "outputs": {
+            "output_h5ad": {
+                "id": "50fdb2d7c1d55344",
+                "src": "hda",
+                "uuid": "84cc63e6-3913-4e22-8b57-27fb2a817b4b"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        39834229,
+        102234229,
+        253580346,
+        1036917979
+    ]
+}

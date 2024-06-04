@@ -1,0 +1,73 @@
+{
+    "run": "2",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "28887f967f9cebd2",
+    "history_id": "ddf2fa9635ff98e6",
+    "inputs": "5k_mouse_R1.fastq.gz 5k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "e614abbd12365469",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-02-06T19:54:47.568454",
+        "create_time": "2024-02-06T19:41:01.288291",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/ebi-gxa/droplet_barcode_plot/_dropletBarcodePlot/1.6.1+galaxy2",
+        "history_id": "ddf2fa9635ff98e6",
+        "external_id": "gxy-galaxy-galaxy-s2jnx",
+        "command_line": "dropletBarcodePlot.R --output-plot \"/galaxy/server/database/objects/a/0/b/dataset_a0b71de0-d91a-44f7-9a1d-57d81f8fd73e.dat\" --output-thresholds \"/galaxy/server/database/objects/0/f/9/dataset_0f97f5e3-d167-47be-8899-6bad7bfa360d.dat\" --label \"Barcode rank plot (raw barcode frequencies)\" --density-bins \"50\" --roryk-multiplier \"1.5\" --barcode-frequencies /galaxy/server/database/objects/0/d/6/dataset_0d6d60f4-72b5-47e5-97c9-9bc7c3b6f161.dat",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"a7d3a336c52711eea1e57235aed0f9b1\"",
+            "roryk_multiplier": "\"1.5\"",
+            "label": "\"Barcode rank plot (raw barcode frequencies)\"",
+            "input": "{\"__current_case__\": 1, \"barcode_frequencies\": {\"values\": [{\"id\": 2685, \"src\": \"hda\"}]}, \"type\": false}",
+            "density_bins": "\"50\""
+        },
+        "inputs": {
+            "input|barcode_frequencies": {
+                "id": "a7f36bf96f46a184",
+                "src": "hda",
+                "uuid": "0d6d60f4-72b5-47e5-97c9-9bc7c3b6f161"
+            }
+        },
+        "outputs": {
+            "thresholds_file": {
+                "id": "756f768fa8e09eb3",
+                "src": "hda",
+                "uuid": "0f97f5e3-d167-47be-8899-6bad7bfa360d"
+            },
+            "plot_file": {
+                "id": "c091ffdea5ba27c9",
+                "src": "hda",
+                "uuid": "a0b71de0-d91a-44f7-9a1d-57d81f8fd73e"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "null device \n          1 \n",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "null device \n          1 \n",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        1576462154,
+        3780120314,
+        50744153,
+        879834076
+    ]
+}

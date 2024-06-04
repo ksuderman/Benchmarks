@@ -1,0 +1,85 @@
+{
+    "run": "3",
+    "cloud": "cascade",
+    "job_conf": "Default",
+    "workflow_id": "7b495e5fd5680d21",
+    "history_id": "35ffd898134b0f96",
+    "inputs": "10k_mouse_R1.fastq.gz 10k_mouse_R2.fastq.gz Mus_musculus.GRCm39.cdna.all.fa.gz Mus_musculus.GRCm39.111.gtf.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "35b29abf8f6e1b3a",
+        "state": "deleting",
+        "exit_code": null,
+        "update_time": "2024-02-07T22:28:54.823113",
+        "create_time": "2024-02-07T21:09:57.409265",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/ebi-gxa/salmon_kallisto_mtx_to_10x/_salmon_kallisto_mtx_to_10x/0.0.1+galaxy6",
+        "history_id": "35ffd898134b0f96",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"3e6fb6c4c5fd11eea5ef162b6f3173f6\"",
+            "cell_prefix": "\"\""
+        },
+        "inputs": {
+            "genes_file": {
+                "id": "d6b84aa8011d7c0f",
+                "src": "hda",
+                "uuid": "7d24ea66-9178-4e0d-9c38-b52ee1c64d02"
+            },
+            "mtx_file": {
+                "id": "fb89ea7eb6885271",
+                "src": "hda",
+                "uuid": "86138054-d27f-4124-b5ac-954f0e11e231"
+            },
+            "barcodes_file": {
+                "id": "4c17b2969d90647f",
+                "src": "hda",
+                "uuid": "29a2d3cb-1542-48c7-8658-72ae390709c6"
+            }
+        },
+        "outputs": {
+            "matrix_out": {
+                "id": "ec0e6ea06e315a4a",
+                "src": "hda",
+                "uuid": "02d9a754-dd70-491d-94a3-779e89785cb6"
+            },
+            "barcodes_out": {
+                "id": "d07b51caf8b01add",
+                "src": "hda",
+                "uuid": "cb468a1d-4656-4b03-af1c-22a94b8b07c8"
+            },
+            "genes_out": {
+                "id": "e44adfc8e06a9baf",
+                "src": "hda",
+                "uuid": "69ff873d-b078-412e-bd5a-3e43ba655161"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "http://34.73.87.59:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5366619049,
+        12660906216,
+        50744153,
+        879834076
+    ]
+}
