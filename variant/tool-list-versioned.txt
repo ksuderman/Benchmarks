@@ -1,0 +1,12 @@
+snpEff,4.3+T.galaxy1
+lofreq_filter,2.1.5+galaxy0
+lofreq_call,2.1.5+galaxy1
+lofreq_indelqual,2.1.5+galaxy0
+lofreq_viterbi,2.1.5+galaxy0
+multiqc,1.11+galaxy0
+picard_MarkDuplicates,2.18.2.2
+samtools_stats,2.0.2+galaxy2
+samtools_view,1.13+galaxy1
+bwa_mem,0.7.17.2
+snpEff_build_gb,4.3+T.galaxy4
+fastp,0.23.2+galaxy0

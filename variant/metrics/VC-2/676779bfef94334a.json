@@ -1,0 +1,73 @@
+{
+    "run": "3",
+    "cloud": "c4",
+    "job_conf": "Default",
+    "workflow_id": "576169e85cfeb2a8",
+    "history_id": "6a9d214dffcd8bab",
+    "inputs": "SRR24043307-5GB GRCh38.p14.gbff.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "676779bfef94334a",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-02-11T16:04:30.720898",
+        "create_time": "2024-02-11T10:43:02.414833",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/lofreq_indelqual/lofreq_indelqual/2.1.5+galaxy0",
+        "history_id": "6a9d214dffcd8bab",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"53d2d472c8ca11ee8c12368873019f56\"",
+            "strategy": "{\"__current_case__\": 1, \"reference_source\": {\"__current_case__\": 1, \"ref\": {\"values\": [{\"id\": 133, \"src\": \"hda\"}]}, \"ref_selector\": \"history\"}, \"selector\": \"dindel\"}"
+        },
+        "inputs": {
+            "reads": {
+                "id": "bd1223a9e2888160",
+                "src": "hda",
+                "uuid": "7f9ec4df-8f5c-407b-9b64-64f4628e276b"
+            },
+            "strategy|reference_source|ref": {
+                "id": "17497d12de76cd55",
+                "src": "hda",
+                "uuid": "ff7d1753-d2d3-4e1c-a31f-ddc2e0137d8d"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "69492e54414a8208",
+                "src": "hda",
+                "uuid": "a0a4a112-29e6-489a-a6c8-68b715f24db4"
+            }
+        },
+        "output_collections": {
+            "output": {
+                "id": "c4d1841437da8574",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleted",
+    "server": "http://34.139.129.229:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        957932045,
+        1289376399
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "run": "3",
+    "cloud": "c4",
+    "job_conf": "Default",
+    "workflow_id": "576169e85cfeb2a8",
+    "history_id": "6a9d214dffcd8bab",
+    "inputs": "SRR24043307-5GB GRCh38.p14.gbff.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "0ca2f239cbaeb696",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2024-02-11T16:04:30.725683",
+        "create_time": "2024-02-11T10:43:02.650894",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.3+T.galaxy1",
+        "history_id": "6a9d214dffcd8bab",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"vcf\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"53d2d472c8ca11ee8c12368873019f56\"",
+            "udLength": "\"0\"",
+            "transcripts": null,
+            "spliceSiteSize": null,
+            "spliceRegion": "{\"__current_case__\": 0, \"setSpliceRegions\": \"no\"}",
+            "snpDb": "{\"__current_case__\": 3, \"codon_table\": \"Standard\", \"genomeSrc\": \"custom\", \"snpeff_db\": {\"values\": [{\"id\": 132, \"src\": \"hda\"}]}}",
+            "outputConditional": "{\"__current_case__\": 0, \"outputFormat\": \"vcf\"}",
+            "offset": "\"default\"",
+            "noLog": "true",
+            "intervals": null,
+            "inputFormat": "\"vcf\"",
+            "generate_stats": "true",
+            "filterOut": "[\"-no-downstream\", \"-no-intergenic\", \"-no-intron\", \"-no-upstream\", \"-no-utr\"]",
+            "filter": "{\"__current_case__\": 0, \"specificEffects\": \"no\"}",
+            "csvStats": "false",
+            "chr": "\"\"",
+            "annotations": "[\"-formatEff\", \"-classic\"]"
+        },
+        "inputs": {
+            "snpDb|snpeff_db": {
+                "id": "6f4e7c912a963bfe",
+                "src": "hda",
+                "uuid": "ca8c5091-7d93-4e12-8c98-cbc145c8ca12"
+            },
+            "input": {
+                "id": "245cc45c8a2ded22",
+                "src": "hda",
+                "uuid": "12097d7f-c7f8-4cd2-9b50-e631242ed984"
+            }
+        },
+        "outputs": {
+            "snpeff_output": {
+                "id": "542a4f3e6bc6e6a6",
+                "src": "hda",
+                "uuid": "5002a914-2593-424a-bb1b-0c314a6d337e"
+            },
+            "statsFile": {
+                "id": "ed5a0039639c3a57",
+                "src": "hda",
+                "uuid": "6343a9f5-39ed-4987-95c9-85ec84382d9d"
+            }
+        },
+        "output_collections": {
+            "snpeff_output": {
+                "id": "70a6380a09580cd9",
+                "src": "hdca"
+            },
+            "statsFile": {
+                "id": "bba9368922bebad1",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "deleted",
+    "server": "http://34.139.129.229:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        957932045,
+        1289376399
+    ]
+}

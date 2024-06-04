@@ -1,0 +1,12 @@
+bwa_mem
+fastp
+lofreq_call
+lofreq_filter
+lofreq_indelqual
+lofreq_viterbi
+multiqc
+picard_MarkDuplicates
+samtools_stats
+samtools_view
+snpEff_build_gb
+snpEffx

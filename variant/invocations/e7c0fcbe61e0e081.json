@@ -1,0 +1,310 @@
+{
+    "model_class": "WorkflowInvocation",
+    "id": "e7c0fcbe61e0e081",
+    "update_time": "2024-02-09T06:42:56.108488",
+    "create_time": "2024-02-09T06:42:54.895380",
+    "workflow_id": "3da94c735c4527d0",
+    "history_id": "85ecad3b51b000b5",
+    "uuid": "74440cc2-c716-11ee-893a-6aa67e759f3c",
+    "state": "scheduled",
+    "steps": [
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "588dfc6b3341af87",
+            "update_time": "2024-02-09T06:42:55.504124",
+            "job_id": null,
+            "workflow_step_id": "717a91f8842b1f22",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 0,
+            "workflow_step_label": "Paired Collection",
+            "workflow_step_uuid": "2352cd98-29f2-456b-a807-ede1227f6089"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "16e7c3a63e15df07",
+            "update_time": "2024-02-09T06:42:55.504126",
+            "job_id": null,
+            "workflow_step_id": "d87073ceb6512bdc",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 1,
+            "workflow_step_label": "Name for genome database",
+            "workflow_step_uuid": "7e5e0a5f-4386-44cb-8941-f04ec7d8b725"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "68ab348088f6c766",
+            "update_time": "2024-02-09T06:42:55.504128",
+            "job_id": null,
+            "workflow_step_id": "18202a4e347f4976",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 2,
+            "workflow_step_label": "GenBank genome",
+            "workflow_step_uuid": "5e6e8cac-8a75-42e8-9932-6c63bcebb861"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "9949492334fe8914",
+            "update_time": "2024-02-09T06:42:55.567640",
+            "job_id": "659a3d826a68bfab",
+            "workflow_step_id": "3da94c735c4527d0",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 3,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "6410c94d-827d-4d1b-b15d-be13df2db0ac"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "15abf824bc685689",
+            "update_time": "2024-02-09T06:42:55.636051",
+            "job_id": "45d177840a6c2aac",
+            "workflow_step_id": "e7c0fcbe61e0e081",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 4,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "1406c6b2-51c9-47f7-9f9d-190c0e9ad515"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "61f1473ca35daeb5",
+            "update_time": "2024-02-09T06:42:55.686223",
+            "job_id": "e9fc7c93ccd690eb",
+            "workflow_step_id": "6b1029a3d83aacc1",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 5,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "a6bd6dbf-d3e7-439f-b826-16ec60bfb33f"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "c1bc25a2a922bafb",
+            "update_time": "2024-02-09T06:42:55.731695",
+            "job_id": "0f5ad0910a996546",
+            "workflow_step_id": "75e2bcc026f61263",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 6,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "6186b9e0-5841-4572-bec3-3f5c11a1c1cf"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "db1a3cbac7298fff",
+            "update_time": "2024-02-09T06:42:55.777337",
+            "job_id": "e17d2e1d8c2b5f97",
+            "workflow_step_id": "0b35f9914310f984",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 7,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "cd152e82-b33b-4cca-9126-a4bd63138593"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "a023d36d4f5cc0ed",
+            "update_time": "2024-02-09T06:42:55.830575",
+            "job_id": "d375f48ea9729c65",
+            "workflow_step_id": "85ecad3b51b000b5",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 8,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "0ba8c049-f7f1-487f-aa23-3bc6cb2d23aa"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "da26e567c3f601f9",
+            "update_time": "2024-02-09T06:42:55.888583",
+            "job_id": "dae73b9e1ee198d3",
+            "workflow_step_id": "a7e9270800c36dce",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 9,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "f22634d5-0472-4b37-9f1f-55693be5109d"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "659a3d826a68bfab",
+            "update_time": "2024-02-09T06:42:55.943114",
+            "job_id": "2f8753e579103a5a",
+            "workflow_step_id": "f34dfef42a0bddda",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 10,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "1eab5364-f845-4668-9bb0-c820b2c61ab1"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "45d177840a6c2aac",
+            "update_time": "2024-02-09T06:42:55.992562",
+            "job_id": "f4301f56d8430478",
+            "workflow_step_id": "bff8b139342c81c0",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 11,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "8568254e-a9a6-4d67-a4a9-97947d7bc10e"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "e9fc7c93ccd690eb",
+            "update_time": "2024-02-09T06:42:56.033562",
+            "job_id": "a3b73699f1e3e354",
+            "workflow_step_id": "3ee0f0ad6e812bea",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 12,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "b8c2b602-396e-4727-8774-cd87edbe3a07"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "0f5ad0910a996546",
+            "update_time": "2024-02-09T06:42:56.085118",
+            "job_id": "b68d2799518eda39",
+            "workflow_step_id": "d9205dc28dfdb630",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 13,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "72fc0a88-0fff-4434-9c7b-cff1694f8fbf"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "e17d2e1d8c2b5f97",
+            "update_time": "2024-02-09T06:42:56.112166",
+            "job_id": "16ec285bd30e6021",
+            "workflow_step_id": "87a161c4925ca11c",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 14,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "2fa5e8fd-9282-4156-ba29-93d6ad2b65e1"
+        }
+    ],
+    "inputs": "Paired Collection GRCh38.p14.gbff.gz",
+    "input_step_parameters": {
+        "Name for genome database": {
+            "parameter_value": "h38",
+            "label": "Name for genome database",
+            "workflow_step_id": "d87073ceb6512bdc"
+        }
+    },
+    "outputs": {
+        "fastp_html_report": {
+            "src": "hda",
+            "id": "9eabfe91429efce7",
+            "workflow_step_id": "3da94c735c4527d0"
+        },
+        "Fasta sequences for genbank file": {
+            "src": "hda",
+            "id": "348d702f91827205",
+            "workflow_step_id": "e7c0fcbe61e0e081"
+        },
+        "SnpEff4.3 database": {
+            "src": "hda",
+            "id": "d619850b7c311fb7",
+            "workflow_step_id": "e7c0fcbe61e0e081"
+        },
+        "bwa_mem_alignments": {
+            "src": "hda",
+            "id": "f1d2b8e42a6e9ac6",
+            "workflow_step_id": "6b1029a3d83aacc1"
+        },
+        "filtered_alignment": {
+            "src": "hda",
+            "id": "3f2115b6c919b2af",
+            "workflow_step_id": "75e2bcc026f61263"
+        },
+        "markduplicates_reads": {
+            "src": "hda",
+            "id": "ad5a1628c6fd87d8",
+            "workflow_step_id": "0b35f9914310f984"
+        },
+        "markduplicates_stats": {
+            "src": "hda",
+            "id": "2832dcab739ed587",
+            "workflow_step_id": "0b35f9914310f984"
+        },
+        "mapped_reads_stats": {
+            "src": "hda",
+            "id": "38bb7479fa3baf35",
+            "workflow_step_id": "85ecad3b51b000b5"
+        },
+        "realigned_deduplicated_filtered_mapped_reads": {
+            "src": "hda",
+            "id": "77a0c1f383bd3c2e",
+            "workflow_step_id": "a7e9270800c36dce"
+        },
+        "preprocessing_and_mapping_reports": {
+            "src": "hda",
+            "id": "3ce84976e43ef402",
+            "workflow_step_id": "f34dfef42a0bddda"
+        },
+        "realigned_deduplicated_filtered_mapped_reads_with_indel_quals": {
+            "src": "hda",
+            "id": "05ac281b51b3c217",
+            "workflow_step_id": "bff8b139342c81c0"
+        },
+        "called_variants": {
+            "src": "hda",
+            "id": "a603590fc8de2fbe",
+            "workflow_step_id": "3ee0f0ad6e812bea"
+        },
+        "soft_filtered_variants": {
+            "src": "hda",
+            "id": "7186e28b0561f953",
+            "workflow_step_id": "d9205dc28dfdb630"
+        },
+        "SnpEff variants": {
+            "src": "hda",
+            "id": "03871cf9b1e01f68",
+            "workflow_step_id": "87a161c4925ca11c"
+        },
+        "SnpEff eff: stats": {
+            "src": "hda",
+            "id": "7649e5ce7a5d274e",
+            "workflow_step_id": "87a161c4925ca11c"
+        }
+    },
+    "output_collections": {
+        "fastp_pe": {
+            "src": "hdca",
+            "id": "a7e9270800c36dce",
+            "workflow_step_id": "3da94c735c4527d0"
+        }
+    },
+    "output_values": {},
+    "messages": [],
+    "run": 0,
+    "cloud": "N/A",
+    "job_conf": "Unknown",
+    "output_dir": "metrics",
+    "ref_data_size": [],
+    "input_data_size": [
+        2322481938,
+        1289376399
+    ]
+}

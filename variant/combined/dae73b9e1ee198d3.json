@@ -1,0 +1,69 @@
+{
+    "run": 0,
+    "cloud": "N/A",
+    "job_conf": "Unknown",
+    "workflow_id": "3da94c735c4527d0",
+    "history_id": "85ecad3b51b000b5",
+    "inputs": "Paired Collection GRCh38.p14.gbff.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "dae73b9e1ee198d3",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-02-09T08:21:05.054251",
+        "create_time": "2024-02-09T06:42:55.828623",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/lofreq_viterbi/lofreq_viterbi/2.1.5+galaxy0",
+        "history_id": "85ecad3b51b000b5",
+        "external_id": "gxy-galaxy-galaxy-nwtvg",
+        "command_line": "ln -s '/galaxy/server/database/objects/b/4/8/dataset_b4876224-5fef-446f-b3ee-5d95c830b4e7.dat' reference.fa && lofreq faidx reference.fa 2>&1 || echo \"Error running samtools faidx for indexing fasta reference for lofreq\" >&2 &&  lofreq viterbi --ref 'reference.fa'  --defqual 2 --out tmp.bam '/galaxy/server/database/objects/4/a/e/dataset_4ae68957-5050-40b5-9277-429f4e71cccd.dat' &&  samtools sort --no-PG -T \"${TMPDIR:-.}\" -@ ${GALAXY_SLOTS:-1} -O BAM -o '/galaxy/server/database/objects/c/f/5/dataset_cf53fce8-3644-4c00-91fb-a3c75f0014b7.dat' tmp.bam",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"74440cc2c71611ee893a6aa67e759f3c\"",
+            "reference_source": "{\"__current_case__\": 1, \"ref\": {\"values\": [{\"id\": 41, \"src\": \"hda\"}]}, \"ref_selector\": \"history\"}",
+            "adv_options": "{\"bq2_handling\": {\"__current_case__\": 0, \"defqual\": \"2\", \"replace_bq2\": \"keep\"}, \"keepflags\": false}"
+        },
+        "inputs": {
+            "reference_source|ref": {
+                "id": "348d702f91827205",
+                "src": "hda",
+                "uuid": "b4876224-5fef-446f-b3ee-5d95c830b4e7"
+            },
+            "reads": {
+                "id": "ad5a1628c6fd87d8",
+                "src": "hda",
+                "uuid": "4ae68957-5050-40b5-9277-429f4e71cccd"
+            }
+        },
+        "outputs": {
+            "realigned": {
+                "id": "77a0c1f383bd3c2e",
+                "src": "hda",
+                "uuid": "cf53fce8-3644-4c00-91fb-a3c75f0014b7"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "[bam_sort_core] merging from 2 files and 4 in-memory blocks...\n",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "[bam_sort_core] merging from 2 files and 4 in-memory blocks...\n",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.75.156.48:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        2322481938,
+        1289376399
+    ]
+}

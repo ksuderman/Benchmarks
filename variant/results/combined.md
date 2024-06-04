@@ -1,0 +1,119 @@
+|Run|Inputs|Job Conf|Tool|State|Runtime (Sec)|Max Memory (GB)|
+|---|---|---|---|---|---:|---:|
+| 2 | Paired |Default | samtools_stats,2.0.2+galaxy2 | ok | 40.0  | 0.005 |
+| 0 | Paired |Unknown | lofreq_viterbi,2.1.5+galaxy0 | error |   |  |
+| 1 | Paired |Default | samtools_view,1.13+galaxy1 | ok | 87.0  | 3.458 |
+| 2 | Paired |Default | lofreq_call,2.1.5+galaxy1 | ok | 1699.0  | 0.498 |
+| 2 | Paired |Default | multiqc,1.11+galaxy0 | ok |  3.0  | 0.077 |
+| 0 | Paired |Unknown | lofreq_filter,2.1.5+galaxy0 | ok |  0.0  | 0.014 |
+| 1 | Paired |Default | lofreq_call,2.1.5+galaxy1 | ok | 1696.0  | 0.495 |
+| 1 | Paired |Default | lofreq_call,2.1.5+galaxy1 | ok | 1700.0  | 0.498 |
+| 0 | Paired |Unknown | multiqc,1.11+galaxy0 | ok |  3.0  | 0.077 |
+| 0 | Paired |Unknown | lofreq_call,2.1.5+galaxy1 | ok | 1700.0  | 0.498 |
+| 2 | Paired |Default | bwa_mem,0.7.17.2 | ok | 4636.0  | 19.424 |
+| 1 | Paired |Default | multiqc,1.11+galaxy0 | ok |  4.0  | 0.077 |
+| 0 | Paired |Unknown | samtools_view,1.13+galaxy1 | ok | 89.0  | 3.458 |
+| 0 | Paired |Unknown | lofreq_indelqual,2.1.5+galaxy0 | ok | 154.0  | 2.759 |
+| 1 | Paired |Default | lofreq_filter,2.1.5+galaxy0 | ok |  0.0  | 0.013 |
+| 2 | Paired |Default | multiqc,1.11+galaxy0 | ok |  3.0  | 0.077 |
+| 2 | Paired |Default | lofreq_indelqual,2.1.5+galaxy0 | ok | 156.0  | 2.759 |
+| 2 | Paired |Default | snpEff_build_gb,4.3+T.galaxy4 | ok | 158.0  | 4.245 |
+| 1 | Paired |Default | snpEff_build_gb,4.3+T.galaxy4 | ok | 156.0  | 4.225 |
+| 2 | Paired |Default | snpEff,4.3+T.galaxy1 | ok |  4.0  | 0.170 |
+| 2 | Paired |Default | lofreq_call,2.1.5+galaxy1 | ok | 1696.0  | 0.498 |
+| 0 | Paired |Unknown | picard_MarkDuplicates,2.18.2.2 | ok | 759.0  | 11.376 |
+| 1 | Paired |Default | multiqc,1.11+galaxy0 | ok |  3.0  | 0.078 |
+| 0 | Paired |Unknown | bwa_mem,0.7.17.2 | ok | 4501.0  | 24.212 |
+| 2 | Paired |Default | lofreq_viterbi,2.1.5+galaxy0 | ok | 250.0  | 6.483 |
+| 1 | Paired |Default | picard_MarkDuplicates,2.18.2.2 | ok | 726.0  | 11.393 |
+| 0 | Paired |Unknown | samtools_stats,2.0.2+galaxy2 | ok | 40.0  | 0.005 |
+| 0 | Paired |Unknown | bwa_mem,0.7.17.2 | ok | 4520.0  | 24.219 |
+| 1 | Paired |Default | lofreq_viterbi,2.1.5+galaxy0 | ok | 250.0  | 6.483 |
+| 1 | Paired |Default | samtools_view,1.13+galaxy1 | ok | 86.0  | 3.457 |
+| 1 | Paired |Default | samtools_stats,2.0.2+galaxy2 | ok | 39.0  | 0.005 |
+| 1 | Paired |Default | lofreq_viterbi,2.1.5+galaxy0 | ok | 253.0  | 6.750 |
+| 0 | Paired |Unknown | picard_MarkDuplicates,2.18.2.2 | ok | 729.0  | 11.371 |
+| 1 | Paired |Default | picard_MarkDuplicates,2.18.2.2 | error |   |  |
+| 1 | Paired |Default | samtools_view,1.13+galaxy1 | ok | 86.0  | 3.457 |
+| 1 | Paired |Default | lofreq_call,2.1.5+galaxy1 | ok | 1698.0  | 0.496 |
+| 1 | Paired |Default | lofreq_call,2.1.5+galaxy1 | error |   |  |
+| 0 | Paired |Unknown | lofreq_indelqual,2.1.5+galaxy0 | ok | 155.0  | 2.759 |
+| 0 | Paired |Unknown | lofreq_viterbi,2.1.5+galaxy0 | ok | 251.0  | 6.483 |
+| 0 | Paired |Unknown | lofreq_viterbi,2.1.5+galaxy0 | ok | 252.0  | 5.612 |
+| 0 | Paired |Unknown | snpEff,4.3+T.galaxy1 | ok |  4.0  | 0.171 |
+| 0 | Paired |Unknown | samtools_stats,2.0.2+galaxy2 | ok | 40.0  | 0.005 |
+| 0 | Paired |Unknown | lofreq_call,2.1.5+galaxy1 | ok | 1696.0  | 0.738 |
+| 2 | Paired |Default | lofreq_filter,2.1.5+galaxy0 | ok |  0.0  | 0.013 |
+| 2 | Paired |Default | samtools_view,1.13+galaxy1 | ok | 87.0  | 3.457 |
+| 1 | Paired |Default | picard_MarkDuplicates,2.18.2.2 | ok | 698.0  | 11.389 |
+| 1 | Paired |Default | snpEff,4.3+T.galaxy1 | ok |  4.0  | 0.171 |
+| 1 | Paired |Default | bwa_mem,0.7.17.2 | ok | 4595.0  | 24.211 |
+| 1 | Paired |Default | snpEff,4.3+T.galaxy1 | ok |  4.0  | 0.171 |
+| 1 | Paired |Default | fastp,0.23.2+galaxy0 | ok | 90.0  | 3.957 |
+| 2 | Paired |Default | picard_MarkDuplicates,2.18.2.2 | ok | 725.0  | 11.375 |
+| 2 | Paired |Default | snpEff_build_gb,4.3+T.galaxy4 | ok | 169.0  | 4.235 |
+| 1 | Paired |Default | lofreq_filter,2.1.5+galaxy0 | ok |  0.0  | 0.013 |
+| 0 | Paired |Unknown | fastp,0.23.2+galaxy0 | ok | 92.0  | 4.014 |
+| 0 | Paired |Unknown | picard_MarkDuplicates,2.18.2.2 | ok | 711.0  | 11.393 |
+| 1 | Paired |Default | snpEff_build_gb,4.3+T.galaxy4 | ok | 169.0  | 4.226 |
+| 0 | Paired |Unknown | bwa_mem,0.7.17.2 | error |   |  |
+| 0 | Paired |Unknown | snpEff_build_gb,4.3+T.galaxy4 | ok | 161.0  | 5.429 |
+| 1 | Paired |Default | snpEff_build_gb,4.3+T.galaxy4 | ok | 149.0  | 4.223 |
+| 1 | Paired |Default | snpEff,4.3+T.galaxy1 | ok |  4.0  | 0.168 |
+| 0 | Paired |Unknown | multiqc,1.11+galaxy0 | error |   |  |
+| 1 | Paired |Default | samtools_stats,2.0.2+galaxy2 | ok | 40.0  | 0.005 |
+| 0 | Paired |Unknown | fastp,0.23.2+galaxy0 | ok | 93.0  | 5.885 |
+| 0 | Paired |Unknown | fastp,0.23.2+galaxy0 | ok | 98.0  | 4.033 |
+| 2 | Paired |Default | lofreq_indelqual,2.1.5+galaxy0 | ok | 155.0  | 2.759 |
+| 0 | Paired |Unknown | samtools_view,1.13+galaxy1 | ok | 87.0  | 3.457 |
+| 0 | Paired |Unknown | samtools_stats,2.0.2+galaxy2 | ok | 39.0  | 0.005 |
+| 2 | Paired |Default | snpEff,4.3+T.galaxy1 | ok |  4.0  | 0.175 |
+| 2 | Paired |Default | picard_MarkDuplicates,2.18.2.2 | ok | 723.0  | 11.376 |
+| 2 | Paired |Default | samtools_view,1.13+galaxy1 | ok | 88.0  | 3.457 |
+| 2 | Paired |Default | lofreq_filter,2.1.5+galaxy0 | ok |  0.0  | 0.013 |
+| 1 | Paired |Default | lofreq_indelqual,2.1.5+galaxy0 | ok | 154.0  | 2.759 |
+| 2 | Paired |Default | lofreq_indelqual,2.1.5+galaxy0 | ok | 154.0  | 2.759 |
+| 0 | Paired |Unknown | snpEff_build_gb,4.3+T.galaxy4 | ok | 168.0  | 4.228 |
+| 1 | Paired |Default | samtools_stats,2.0.2+galaxy2 | ok | 40.0  | 0.005 |
+| 1 | Paired |Default | lofreq_call,2.1.5+galaxy1 | error |   |  |
+| 0 | Paired |Unknown | samtools_view,1.13+galaxy1 | ok | 87.0  | 3.457 |
+| 1 | Paired |Default | bwa_mem,0.7.17.2 | ok | 4670.0  | 23.369 |
+| 2 | Paired |Default | lofreq_viterbi,2.1.5+galaxy0 | ok | 252.0  | 6.789 |
+| 2 | Paired |Default | samtools_stats,2.0.2+galaxy2 | ok | 40.0  | 0.005 |
+| 2 | Paired |Default | lofreq_viterbi,2.1.5+galaxy0 | ok | 250.0  | 6.781 |
+| 1 | Paired |Default | fastp,0.23.2+galaxy0 | ok | 95.0  | 4.104 |
+| 0 | Paired |Unknown | lofreq_viterbi,2.1.5+galaxy0 | ok | 251.0  | 6.483 |
+| 1 | Paired |Default | lofreq_filter,2.1.5+galaxy0 | ok |  0.0  | 0.013 |
+| 2 | Paired |Default | samtools_stats,2.0.2+galaxy2 | ok | 39.0  | 0.005 |
+| 2 | Paired |Default | snpEff,4.3+T.galaxy1 | ok |  4.0  | 0.172 |
+| 0 | Paired |Unknown | lofreq_filter,2.1.5+galaxy0 | error |   |  |
+| 1 | Paired |Default | picard_MarkDuplicates,2.18.2.2 | ok | 758.0  | 11.390 |
+| 0 | Paired |Unknown | snpEff,4.3+T.galaxy1 | ok |  4.0  | 0.172 |
+| 2 | Paired |Default | fastp,0.23.2+galaxy0 | ok | 95.0  | 4.116 |
+| 0 | Paired |Unknown | lofreq_filter,2.1.5+galaxy0 | ok |  0.0  | 0.013 |
+| 2 | Paired |Default | bwa_mem,0.7.17.2 | error |   |  |
+| 2 | Paired |Default | samtools_view,1.13+galaxy1 | ok | 88.0  | 3.457 |
+| 1 | Paired |Default | lofreq_viterbi,2.1.5+galaxy0 | ok | 250.0  | 6.675 |
+| 0 | Paired |Unknown | lofreq_call,2.1.5+galaxy1 | ok | 1699.0  | 0.498 |
+| 2 | Paired |Default | lofreq_filter,2.1.5+galaxy0 | ok |  1.0  | 0.013 |
+| 2 | Paired |Default | lofreq_call,2.1.5+galaxy1 | ok | 1700.0  | 0.498 |
+| 1 | Paired |Default | lofreq_indelqual,2.1.5+galaxy0 | ok | 154.0  | 2.759 |
+| 2 | Paired |Default | fastp,0.23.2+galaxy0 | ok | 96.0  | 3.996 |
+| 2 | Paired |Default | fastp,0.23.2+galaxy0 | ok | 93.0  | 4.020 |
+| 2 | Paired |Default | bwa_mem,0.7.17.2 | ok | 4748.0  | 23.682 |
+| 1 | Paired |Default | snpEff_build_gb,4.3+T.galaxy4 | error |   |  |
+| 2 | Paired |Default | snpEff_build_gb,4.3+T.galaxy4 | ok | 159.0  | 4.228 |
+| 0 | Paired |Unknown | bwa_mem,0.7.17.2 | ok | 4656.0  | 19.426 |
+| 2 | Paired |Default | multiqc,1.11+galaxy0 | ok |  3.0  | 0.077 |
+| 0 | Paired |Unknown | snpEff,4.3+T.galaxy1 | ok |  4.0  | 0.169 |
+| 0 | Paired |Unknown | multiqc,1.11+galaxy0 | ok |  3.0  | 0.077 |
+| 1 | Paired |Default | multiqc,1.11+galaxy0 | ok |  3.0  | 0.077 |
+| 1 | Paired |Default | lofreq_indelqual,2.1.5+galaxy0 | ok | 155.0  | 2.759 |
+| 1 | Paired |Default | fastp,0.23.2+galaxy0 | ok | 98.0  | 3.933 |
+| 1 | Paired |Default | bwa_mem,0.7.17.2 | ok | 4746.0  | 24.001 |
+| 0 | Paired |Unknown | lofreq_filter,2.1.5+galaxy0 | ok |  1.0  | 0.013 |
+| 0 | Paired |Unknown | snpEff_build_gb,4.3+T.galaxy4 | ok | 168.0  | 4.225 |
+| 0 | Paired |Unknown | multiqc,1.11+galaxy0 | ok |  3.0  | 0.078 |
+| 2 | Paired |Default | picard_MarkDuplicates,2.18.2.2 | ok | 758.0  | 11.365 |
+| 2 | Paired |Default | bwa_mem,0.7.17.2 | ok | 5022.0  | 23.729 |
+| 0 | Paired |Unknown | lofreq_indelqual,2.1.5+galaxy0 | ok | 155.0  | 2.759 |

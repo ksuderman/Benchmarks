@@ -1,0 +1,16 @@
+- output_history_base_name: Variant-Calling
+  workflow_id: Variant analysis on WGS PE data
+  runs:
+  - history_name: 10GB
+    inputs:
+    - name: Paired Collection
+      collection: SRR24043307-10GB
+#      dataset_id: 111628a2f48d8e17
+#      history: Variant calling inputs - 10GB
+#      paired:
+#        - forward: a7e9270800c36dce
+#          reverse: f34dfef42a0bddda
+    - name: GenBank genome
+      dataset_id: GRCh38.p14.gbff.gz
+    - name: Name for genome database
+      value: h38

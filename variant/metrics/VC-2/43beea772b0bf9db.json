@@ -1,0 +1,227 @@
+{
+    "run": "2",
+    "cloud": "c4",
+    "job_conf": "Default",
+    "workflow_id": "576169e85cfeb2a8",
+    "history_id": "5e75cd2e92665559",
+    "inputs": "SRR24043307-5GB GRCh38.p14.gbff.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "43beea772b0bf9db",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2024-02-11T05:59:56.196214",
+        "create_time": "2024-02-11T05:56:02.620836",
+        "galaxy_version": "23.1",
+        "command_version": "fastp 0.23.2",
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.23.2+galaxy0",
+        "history_id": "5e75cd2e92665559",
+        "external_id": "gxy-galaxy-galaxy-ctdk2",
+        "command_line": "ln -s '/galaxy/server/database/objects/6/a/9/dataset_6a91822e-b87b-410c-b945-adf4e618f954.dat' 'SRR24043307_fastq.fastq.gz' && ln -s '/galaxy/server/database/objects/b/e/7/dataset_be7b8cbc-3bc8-4577-a2e6-b5603605b6a5.dat' 'SRR24043307_fastq_R2.fastq.gz' &&    fastp  --thread ${GALAXY_SLOTS:-1} --report_title 'fastp report for SRR24043307_fastq.fastq.gz'   -i 'SRR24043307_fastq.fastq.gz' -o first.fastq.gz  -I 'SRR24043307_fastq_R2.fastq.gz' -O second.fastq.gz       --detect_adapter_for_pe                                          &&  mv first.fastq.gz '/galaxy/server/database/objects/7/7/8/dataset_77819660-4f02-4b74-ab8b-b81ad43a5386.dat' && mv second.fastq.gz '/galaxy/server/database/objects/4/e/a/dataset_4ea68879-ecff-4935-b678-14f207b21966.dat'",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"fastqsanger.gz\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"3c9e94a8c8a211eeaa4f368873019f56\"",
+            "single_paired": "{\"__current_case__\": 2, \"adapter_trimming_options\": {\"adapter_sequence1\": \"\", \"adapter_sequence2\": \"\", \"disable_adapter_trimming\": false}, \"global_trimming_options\": {\"trim_front1\": null, \"trim_front2\": null, \"trim_tail1\": null, \"trim_tail2\": null}, \"paired_input\": {\"values\": [{\"id\": 6, \"src\": \"dce\"}]}, \"single_paired_selector\": \"paired_collection\"}",
+            "read_mod_options": "{\"base_correction_options\": {\"correction\": false}, \"cutting_by_quality_options\": {\"cut_by_quality3\": false, \"cut_by_quality5\": false, \"cut_mean_quality\": null, \"cut_window_size\": null}, \"polyg_tail_trimming\": {\"__current_case__\": 1, \"poly_g_min_len\": null, \"trimming_select\": \"\"}, \"polyx_tail_trimming\": {\"__current_case__\": 1, \"polyx_trimming_select\": \"\"}, \"umi_processing\": {\"umi\": false, \"umi_len\": null, \"umi_loc\": \"\", \"umi_prefix\": \"\"}}",
+            "overrepresented_sequence_analysis": "{\"overrepresentation_analysis\": false, \"overrepresentation_sampling\": null}",
+            "output_options": "{\"report_html\": true, \"report_json\": true}",
+            "filter_options": "{\"length_filtering_options\": {\"disable_length_filtering\": false, \"length_limit\": null, \"length_required\": null}, \"low_complexity_filter\": {\"complexity_threshold\": null, \"enable_low_complexity_filter\": false}, \"quality_filtering_options\": {\"disable_quality_filtering\": false, \"n_base_limit\": null, \"qualified_quality_phred\": null, \"unqualified_percent_limit\": null}}"
+        },
+        "inputs": {
+            "single_paired|paired_input1": {
+                "id": "4575e7112245e97f",
+                "src": "hda",
+                "uuid": "6a91822e-b87b-410c-b945-adf4e618f954"
+            },
+            "single_paired|paired_input2": {
+                "id": "d86ff1eec4ccabc4",
+                "src": "hda",
+                "uuid": "be7b8cbc-3bc8-4577-a2e6-b5603605b6a5"
+            }
+        },
+        "outputs": {
+            "output_paired_coll|__part__|forward": {
+                "id": "359eeb08f4b7142c",
+                "src": "hda",
+                "uuid": "77819660-4f02-4b74-ab8b-b81ad43a5386"
+            },
+            "output_paired_coll|__part__|reverse": {
+                "id": "ea0c51384854c858",
+                "src": "hda",
+                "uuid": "4ea68879-ecff-4935-b678-14f207b21966"
+            },
+            "report_html": {
+                "id": "cdf9f919acd9d8f2",
+                "src": "hda",
+                "uuid": "180abe4d-c391-4c82-b781-70d9ba9a21fd"
+            },
+            "report_json": {
+                "id": "4d60e2c32fdbe6ad",
+                "src": "hda",
+                "uuid": "2a9ea742-708c-4f0d-8f88-b6a1ed17e401"
+            }
+        },
+        "output_collections": {
+            "report_json": {
+                "id": "b7a43bcd66107d31",
+                "src": "hdca"
+            },
+            "output_paired_coll": {
+                "id": "ef2aa17cd4e26ddc",
+                "src": "hdca"
+            },
+            "report_html": {
+                "id": "c422807868bcc4d8",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "Detecting adapter sequence for read1...\n>Illumina TruSeq Adapter Read 1\nAGATCGGAAGAGCACACGTCTGAACTCCAGTCA\n\nDetecting adapter sequence for read2...\n>Illumina TruSeq Adapter Read 2\nAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\n\nRead1 before filtering:\ntotal reads: 46159997\ntotal bases: 4662159697\nQ20 bases: 4587039447(98.3887%)\nQ30 bases: 4441826643(95.274%)\n\nRead2 before filtering:\ntotal reads: 46159997\ntotal bases: 4662159697\nQ20 bases: 4575312651(98.1372%)\nQ30 bases: 4412441445(94.6437%)\n\nRead1 after filtering:\ntotal reads: 45839674\ntotal bases: 4605333747\nQ20 bases: 4537283783(98.5224%)\nQ30 bases: 4395890157(95.4522%)\n\nRead2 after filtering:\ntotal reads: 45839674\ntotal bases: 4605326624\nQ20 bases: 4533638688(98.4434%)\nQ30 bases: 4376327066(95.0275%)\n\nFiltering result:\nreads passed filter: 91679348\nreads failed due to low quality: 600990\nreads failed due to too many N: 9090\nreads failed due to too short: 30566\nreads with adapter trimmed: 4400707\nbases trimmed due to adapters: 53730533\n\nDuplication rate: 25.0711%\n\nInsert size peak (evaluated by paired-end reads): 137\n\nJSON report: fastp.json\nHTML report: fastp.html\n\nfastp --thread 4 --report_title fastp report for SRR24043307_fastq.fastq.gz -i SRR24043307_fastq.fastq.gz -o first.fastq.gz -I SRR24043307_fastq_R2.fastq.gz -O second.fastq.gz --detect_adapter_for_pe \nfastp v0.23.2, time used: 220 seconds\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "Detecting adapter sequence for read1...\n>Illumina TruSeq Adapter Read 1\nAGATCGGAAGAGCACACGTCTGAACTCCAGTCA\n\nDetecting adapter sequence for read2...\n>Illumina TruSeq Adapter Read 2\nAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT\n\nRead1 before filtering:\ntotal reads: 46159997\ntotal bases: 4662159697\nQ20 bases: 4587039447(98.3887%)\nQ30 bases: 4441826643(95.274%)\n\nRead2 before filtering:\ntotal reads: 46159997\ntotal bases: 4662159697\nQ20 bases: 4575312651(98.1372%)\nQ30 bases: 4412441445(94.6437%)\n\nRead1 after filtering:\ntotal reads: 45839674\ntotal bases: 4605333747\nQ20 bases: 4537283783(98.5224%)\nQ30 bases: 4395890157(95.4522%)\n\nRead2 after filtering:\ntotal reads: 45839674\ntotal bases: 4605326624\nQ20 bases: 4533638688(98.4434%)\nQ30 bases: 4376327066(95.0275%)\n\nFiltering result:\nreads passed filter: 91679348\nreads failed due to low quality: 600990\nreads failed due to too many N: 9090\nreads failed due to too short: 30566\nreads with adapter trimmed: 4400707\nbases trimmed due to adapters: 53730533\n\nDuplication rate: 25.0711%\n\nInsert size peak (evaluated by paired-end reads): 137\n\nJSON report: fastp.json\nHTML report: fastp.html\n\nfastp --thread 4 --report_title fastp report for SRR24043307_fastq.fastq.gz -i SRR24043307_fastq.fastq.gz -o first.fastq.gz -I SRR24043307_fastq_R2.fastq.gz -O second.fastq.gz --detect_adapter_for_pe \nfastp v0.23.2, time used: 220 seconds\n",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-ctdk2-bddnv 5.15.0-1047-gke #52-Ubuntu SMP Mon Nov 13 02:39:43 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-ctdk2-bddnv 5.15.0-1047-gke #52-Ubuntu SMP Mon Nov 13 02:39:43 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "184.4 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "198046776.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Memory softlimit on cgroup",
+                "value": "8.0 EB",
+                "plugin": "cgroup",
+                "name": "memory.soft_limit_in_bytes",
+                "raw_value": "9223372036854771712.0000000"
+            },
+            {
+                "title": "Was OOM Killer active?",
+                "value": "No",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.under_oom",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "OOM Control enabled",
+                "value": "Yes",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.oom_kill_disable",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage (MEM+SWP)",
+                "value": "7.0 GB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.max_usage_in_bytes",
+                "raw_value": "7466291200.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM+SWP)",
+                "value": "15.2 GB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.limit_in_bytes",
+                "raw_value": "16320872448.0000000"
+            },
+            {
+                "title": "Max memory usage (MEM)",
+                "value": "7.0 GB",
+                "plugin": "cgroup",
+                "name": "memory.max_usage_in_bytes",
+                "raw_value": "7466291200.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM)",
+                "value": "15.2 GB",
+                "plugin": "cgroup",
+                "name": "memory.limit_in_bytes",
+                "raw_value": "16320872448.0000000"
+            },
+            {
+                "title": "Failed to allocate memory count",
+                "value": 0.0,
+                "plugin": "cgroup",
+                "name": "memory.failcnt",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU Time",
+                "value": "14 minutes",
+                "plugin": "cgroup",
+                "name": "cpuacct.usage",
+                "raw_value": "864499149738.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "3 minutes",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "220.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-02-11 05:59:46",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1707631186.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-02-11 05:56:06",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1707630966.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "16320",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "16320.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "4",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "4.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "http://34.139.129.229:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        957932045,
+        1289376399
+    ]
+}

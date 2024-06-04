@@ -1,0 +1,93 @@
+{
+    "run": 0,
+    "cloud": "N/A",
+    "job_conf": "Unknown",
+    "workflow_id": "3da94c735c4527d0",
+    "history_id": "a7e9270800c36dce",
+    "inputs": "Paired Collection GRCh38.p14.gbff.gz",
+    "metrics": {
+        "model_class": "Job",
+        "id": "38bb7479fa3baf35",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2024-02-09T17:15:31.384196",
+        "create_time": "2024-02-09T14:22:25.210823",
+        "galaxy_version": "23.1",
+        "command_version": null,
+        "copied_from_job_id": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy0",
+        "history_id": "a7e9270800c36dce",
+        "external_id": "gxy-galaxy-galaxy-w5fhz",
+        "command_line": "die() { echo \"$@\" 1>&2 ; exit 1; } &&  mkdir multiqc_WDir &&   mkdir multiqc_WDir/fastp_0 &&    ln -s '/galaxy/server/database/objects/8/8/5/dataset_88544c87-3ccd-47d6-946b-061c07273f83.dat' 'multiqc_WDir/fastp_0/fastp on data 6 and data 5_ JSON reportfastp.json' && grep -q \"report_title\" 'multiqc_WDir/fastp_0/fastp on data 6 and data 5_ JSON reportfastp.json' || die \"'report_title' or 'report_title' not found in the file\" && mkdir multiqc_WDir/samtools_1 &&    mkdir 'multiqc_WDir/samtools_1/stats_0' &&      grep -q 'This file was produced by samtools stats' /galaxy/server/database/objects/8/4/5/dataset_845fe403-9ba4-4195-878a-0ca45aeaa19f.dat || die \"Module 'samtools: 'This file was produced by samtools stats' not found in the file 'Samtools stats on data 9'\" && ln -s '/galaxy/server/database/objects/8/4/5/dataset_845fe403-9ba4-4195-878a-0ca45aeaa19f.dat' 'multiqc_WDir/samtools_1/stats_0/Samtools stats on data 9'  &&    mkdir multiqc_WDir/picard_2 &&      mkdir 'multiqc_WDir/picard_2/markdups_0' &&    grep -q 'MarkDuplicates' /galaxy/server/database/objects/b/f/e/dataset_bfeca1d3-df21-43af-94d6-8b8ab5d58246.dat || die \"Module 'picard: 'MarkDuplicates' not found in the file 'MarkDuplicates on data 9_ MarkDuplicate metrics'\" && ln -s '/galaxy/server/database/objects/b/f/e/dataset_bfeca1d3-df21-43af-94d6-8b8ab5d58246.dat' 'multiqc_WDir/picard_2/markdups_0/MarkDuplicates on data 9_ MarkDuplicate metrics'  &&     multiqc multiqc_WDir --filename 'report'",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"a4ca57dac75611eeaa906aa67e759f3c\"",
+            "title": "\"\"",
+            "saveLog": "false",
+            "results": "[{\"__index__\": 0, \"software_cond\": {\"__current_case__\": 7, \"input\": {\"values\": [{\"id\": 63, \"src\": \"hda\"}]}, \"software\": \"fastp\"}}, {\"__index__\": 1, \"software_cond\": {\"__current_case__\": 24, \"output\": [{\"__index__\": 0, \"type\": {\"__current_case__\": 0, \"input\": {\"values\": [{\"id\": 70, \"src\": \"hda\"}]}, \"type\": \"stats\"}}], \"software\": \"samtools\"}}, {\"__index__\": 2, \"software_cond\": {\"__current_case__\": 17, \"output\": [{\"__index__\": 0, \"input\": {\"values\": [{\"id\": 68, \"src\": \"hda\"}]}, \"type\": \"markdups\"}], \"software\": \"picard\"}}]",
+            "flat": "false",
+            "export": "false",
+            "comment": "\"\""
+        },
+        "inputs": {
+            "results_1|software_cond|output_0|type|input1": {
+                "id": "8fceebbceea7f847",
+                "src": "hda",
+                "uuid": "845fe403-9ba4-4195-878a-0ca45aeaa19f"
+            },
+            "results_1|software_cond|output_0|type|input": {
+                "id": "8fceebbceea7f847",
+                "src": "hda",
+                "uuid": "845fe403-9ba4-4195-878a-0ca45aeaa19f"
+            },
+            "results_0|software_cond|input1": {
+                "id": "3036c034d41f9dd7",
+                "src": "hda",
+                "uuid": "88544c87-3ccd-47d6-946b-061c07273f83"
+            },
+            "results_0|software_cond|input": {
+                "id": "3036c034d41f9dd7",
+                "src": "hda",
+                "uuid": "88544c87-3ccd-47d6-946b-061c07273f83"
+            },
+            "results_2|software_cond|output_0|input1": {
+                "id": "6a4ed3efb5e05c0a",
+                "src": "hda",
+                "uuid": "bfeca1d3-df21-43af-94d6-8b8ab5d58246"
+            },
+            "results_2|software_cond|output_0|input": {
+                "id": "6a4ed3efb5e05c0a",
+                "src": "hda",
+                "uuid": "bfeca1d3-df21-43af-94d6-8b8ab5d58246"
+            }
+        },
+        "outputs": {
+            "html_report": {
+                "id": "9cf1c2f3a212cdc0",
+                "src": "hda",
+                "uuid": "23310a92-0a7f-4918-bbd6-cf4acf898746"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "|         searching | \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 100% 3/3  ",
+        "tool_stderr": "\n  /// MultiQC \ud83d\udd0d | v1.11\n\n|           multiqc | MultiQC Version v1.19 now available!\n|           multiqc | Search path : /galaxy/server/database/jobs_directory/000/46/working/multiqc_WDir\n|            picard | Found 1 MarkDuplicates reports\n|          samtools | Found 1 stats reports\n|             fastp | Found 1 reports\n|           multiqc | Compressing plot data\n|           multiqc | Report      : report.html\n|           multiqc | Data        : report_data\n|           multiqc | MultiQC complete\n",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "\n  /// MultiQC \ud83d\udd0d | v1.11\n\n|           multiqc | MultiQC Version v1.19 now available!\n|           multiqc | Search path : /galaxy/server/database/jobs_directory/000/46/working/multiqc_WDir\n|            picard | Found 1 MarkDuplicates reports\n|          samtools | Found 1 stats reports\n|             fastp | Found 1 reports\n|           multiqc | Compressing plot data\n|           multiqc | Report      : report.html\n|           multiqc | Data        : report_data\n|           multiqc | MultiQC complete\n",
+        "stdout": "|         searching | \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 100% 3/3  ",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "tests@fake.org",
+        "job_metrics": []
+    },
+    "status": "error",
+    "server": "http://34.75.156.48:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        2322481938,
+        1289376399
+    ]
+}
