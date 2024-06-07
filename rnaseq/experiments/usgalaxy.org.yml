@@ -1,6 +1,6 @@
 name: usegalaxy.org
 # The number of times each benchmark will be executed.
-runs: 3
+runs: 1
 # The benchmarks that will be run as part of the experiment. Each benchmark
 # configuration defines the Galaxy workflow and input datasets to be used.
 benchmark_confs:
