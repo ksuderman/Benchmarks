@@ -1,0 +1,58 @@
+{
+    "run": "2",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "aad95f55ea316dff",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b552fb19eb6ac71715",
+        "history_id": "aad95f55ea316dff",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-07T04:38:19.248612",
+        "update_time": "2024-06-07T04:38:41.224196",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "user_email": null,
+        "command_version": null,
+        "params": {
+            "components": "[{\"__index__\": 0, \"param_type\": {\"__current_case__\": 0, \"component_value\": \"hg38\", \"select_param_type\": \"text\"}}]",
+            "__workflow_invocation_uuid__": "\"c2697d28248711ef8bea005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {},
+        "outputs": {
+            "out1": {
+                "id": "f9cad7b01a472135e3fc00ea79c88323",
+                "src": "hda",
+                "uuid": "cbc4db9b-b87d-4dd1-b44b-70c16f8e180d"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": null
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}

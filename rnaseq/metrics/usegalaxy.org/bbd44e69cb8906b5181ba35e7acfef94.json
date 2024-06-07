@@ -1,0 +1,69 @@
+{
+    "run": "3",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "58b307c1a363f0a8",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b5181ba35e7acfef94",
+        "history_id": "58b307c1a363f0a8",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.2",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-07T07:37:03.738067",
+        "update_time": "2024-06-07T08:38:29.446765",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "env -i $(which awk) --sandbox -v FS='\t' -v OFS='\t' --re-interval -f \"/corral4/main/jobs/058/434/58434392/configs/tmpw6rw3b0u\" \"/corral4/main/objects/b/8/8/dataset_b88c4697-54eb-41d2-9a95-1481ff5396ad.dat\" > \"/corral4/main/jobs/058/434/58434392/outputs/dataset_0e5f2c53-d47a-478d-83d3-f91a9e390456.dat\"",
+        "user_email": null,
+        "command_version": "GNU Awk 4.2.0, API: 2.0",
+        "params": {
+            "code": "\"$0~\\\"Uniquely mapped reads number\\\"{print 1000000/$NF} \"",
+            "__workflow_invocation_uuid__": "\"ba10ea5824a011efa9c1005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"txt\""
+        },
+        "inputs": {
+            "infile": {
+                "id": "f9cad7b01a472135d0557ec7bfba577b",
+                "src": "hda",
+                "uuid": "b88c4697-54eb-41d2-9a95-1481ff5396ad"
+            }
+        },
+        "outputs": {
+            "outfile": {
+                "id": "f9cad7b01a472135d8d7564b3d2aea8b",
+                "src": "hda",
+                "uuid": "0e5f2c53-d47a-478d-83d3-f91a9e390456"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "outfile": {
+                "src": "hdca",
+                "id": "b1e11c52fea8c978"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": null
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}

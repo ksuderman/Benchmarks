@@ -1,0 +1,79 @@
+{
+    "run": "1",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "5c3f128ff2d6d36c",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b50b4b2a469a2cc089",
+        "history_id": "5c3f128ff2d6d36c",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.5.2+galaxy1",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-07T01:40:51.478631",
+        "update_time": "2024-06-07T03:19:20.091001",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "cp '/corral4/main/jobs/058/426/58426851/configs/tmpfchnwu_x' '/corral4/main/jobs/058/426/58426851/outputs/dataset_13d368d5-8a2b-476d-9ce7-c56f8017b347.dat' && ln -s '/corral4/main/objects/b/2/0/dataset_b202405e-3445-48c2-b8a2-c4eec074892b.dat' localbam.bam && ln -s '/corral4/main/objects/_metadata_files/9/3/e/metadata_93e5a8ef-20b9-4ddb-af3a-e09c7102c4c2.dat' localbam.bam.bai && cat '/corral4/main/jobs/058/426/58426851/configs/tmpfchnwu_x' && bamtools filter -script '/corral4/main/jobs/058/426/58426851/configs/tmpfchnwu_x' -in localbam.bam -out '/corral4/main/jobs/058/426/58426851/outputs/dataset_2b62f082-efe1-4cfb-ad4e-44d59378c3dc.dat'",
+        "user_email": null,
+        "command_version": null,
+        "params": {
+            "conditions": "[{\"__index__\": 0, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"__current_case__\": 21, \"bam_property_selector\": \"tag\", \"bam_property_value\": \"NH=1\"}}]}]",
+            "rule_configuration": "{\"__current_case__\": 0, \"rules_selector\": false}",
+            "__workflow_invocation_uuid__": "\"f7256ab8246e11efa78e005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"bam\""
+        },
+        "inputs": {
+            "input_bam": {
+                "id": "f9cad7b01a472135600754ee720c558e",
+                "src": "hda",
+                "uuid": "b202405e-3445-48c2-b8a2-c4eec074892b"
+            }
+        },
+        "outputs": {
+            "out_file2": {
+                "id": "f9cad7b01a4721355f9ead5d1f594f02",
+                "src": "hda",
+                "uuid": "13d368d5-8a2b-476d-9ce7-c56f8017b347"
+            },
+            "out_file1": {
+                "id": "f9cad7b01a4721353a4d210f2ef465c3",
+                "src": "hda",
+                "uuid": "2b62f082-efe1-4cfb-ad4e-44d59378c3dc"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "out_file2": {
+                "src": "hdca",
+                "id": "309a21d733d87ff5"
+            },
+            "out_file1": {
+                "src": "hdca",
+                "id": "e1fe4e4169c78681"
+            }
+        },
+        "tool_stdout": "\n\n\n        \n{\n    \"filters\": [\n        {\n            \"id\": \"1\",\n            \"tag\": \"NH=1\"\n        }\n    ]\n}\n\n        ",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "\n\n\n        \n{\n    \"filters\": [\n        {\n            \"id\": \"1\",\n            \"tag\": \"NH=1\"\n        }\n    ]\n}\n\n        ",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": null
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}

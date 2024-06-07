@@ -1,0 +1,68 @@
+{
+    "run": "2",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "aad95f55ea316dff",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b5ebc06c22be48c337",
+        "history_id": "aad95f55ea316dff",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lldelisle/revertr2orientationinbam/revertR2orientationInBam/0.0.2",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-07T04:38:20.094503",
+        "update_time": "2024-06-07T06:48:17.258472",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "set -o pipefail; bash /cvmfs/main.galaxyproject.org/shed_tools/toolshed.g2.bx.psu.edu/repos/lldelisle/revertr2orientationinbam/21ddefab2e4f/revertr2orientationinbam/revertR2orientationInBam.sh '/corral4/main/objects/a/1/1/dataset_a1197fa3-4e93-4f07-92b0-879b8e70ce5f.dat' '/corral4/main/jobs/058/430/58430359/outputs/dataset_424e9f1b-765d-41bb-97ac-d2b105b29980.dat'",
+        "user_email": null,
+        "command_version": null,
+        "params": {
+            "__workflow_invocation_uuid__": "\"c2697d28248711ef8bea005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input": {
+                "id": "f9cad7b01a4721355d3ca201725397f7",
+                "src": "hda",
+                "uuid": "a1197fa3-4e93-4f07-92b0-879b8e70ce5f"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "f9cad7b01a4721359c1e73851ab569a5",
+                "src": "hda",
+                "uuid": "424e9f1b-765d-41bb-97ac-d2b105b29980"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "output": {
+                "src": "hdca",
+                "id": "476de607e3b43c4d"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": null
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}

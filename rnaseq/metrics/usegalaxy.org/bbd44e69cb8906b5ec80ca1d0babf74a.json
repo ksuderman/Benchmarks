@@ -1,0 +1,119 @@
+{
+    "run": "1",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "5c3f128ff2d6d36c",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b5ec80ca1d0babf74a",
+        "history_id": "5c3f128ff2d6d36c",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/2.2.1.3",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-07T01:41:35.331456",
+        "update_time": "2024-06-07T04:37:27.048443",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "cufflinks -q --no-update-check '/corral4/main/objects/b/2/0/dataset_b202405e-3445-48c2-b8a2-c4eec074892b.dat' --num-threads \"${GALAXY_SLOTS:-4}\" -I 300000 -F 0.1 -j 0.15 --no-effective-length-correction  -G '/corral4/main/objects/e/3/2/dataset_e328938a-038d-4820-bef8-8edc6a3244d2.dat'   -b '/cvmfs/data.galaxyproject.org/byhand/hg38/sam_index/hg38.fa'  -u  --library-type fr-secondstrand --frag-len-mean 200 --frag-len-std-dev 80 --max-mle-iterations 5000 --junc-alpha 0.001 --small-anchor-fraction 0.09 --overhang-tolerance 8 --max-bundle-length 10000000 --max-bundle-frags 1000000 --min-intron-length 50 --trim-3-avgcov-thresh 10 --trim-3-dropoff-frac 0.1 2> stderr  && python '/cvmfs/main.galaxyproject.org/shed_tools/toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/d080005cffe1/cufflinks/mass.py' stderr 'None' \"transcripts.gtf\"",
+        "user_email": null,
+        "command_version": "cufflinks v2.2.1",
+        "params": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advanced_settings": "{\"__current_case__\": 1, \"inner_dist_std_dev\": \"80\", \"inner_mean_dist\": \"200\", \"junc_alpha\": \"0.001\", \"library_type\": \"fr-secondstrand\", \"mask_file\": null, \"max_bundle_frags\": \"1000000\", \"max_bundle_length\": \"10000000\", \"max_mle_iterations\": \"5000\", \"min_intron_length\": \"50\", \"overhang_tolerance\": \"8\", \"small_anchor_fraction\": \"0.09\", \"trim_three_avgcov_thresh\": \"10\", \"trim_three_dropoff_frac\": \"0.1\", \"use_advanced_settings\": \"Yes\"}",
+            "bias_correction": "{\"__current_case__\": 0, \"do_bias_correction\": \"Yes\", \"seq_source\": {\"__current_case__\": 0, \"index\": \"hg38\", \"index_source\": \"cached\"}}",
+            "global_model": null,
+            "length_correction": "\"--no-effective-length-correction\"",
+            "max_intron_len": "\"300000\"",
+            "min_isoform_fraction": "\"0.1\"",
+            "multiread_correct": "true",
+            "pre_mrna_fraction": "\"0.15\"",
+            "reference_annotation": "{\"__current_case__\": 1, \"compatible_hits_norm\": \"\", \"reference_annotation_file\": {\"values\": [{\"id\": 130283116, \"src\": \"hda\"}]}, \"use_ref\": \"Use reference annotation\"}",
+            "__workflow_invocation_uuid__": "\"f7256ab8246e11efa78e005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"bam\""
+        },
+        "inputs": {
+            "input": {
+                "id": "f9cad7b01a472135600754ee720c558e",
+                "src": "hda",
+                "uuid": "b202405e-3445-48c2-b8a2-c4eec074892b"
+            },
+            "reference_annotation|reference_annotation_file": {
+                "id": "f9cad7b01a47213501eeee2e1692d014",
+                "src": "hda",
+                "uuid": "e328938a-038d-4820-bef8-8edc6a3244d2"
+            }
+        },
+        "outputs": {
+            "genes_expression": {
+                "id": "f9cad7b01a4721359f3f7a1236186bcb",
+                "src": "hda",
+                "uuid": "73928233-986f-426c-97ec-10c5d8c75504"
+            },
+            "transcripts_expression": {
+                "id": "f9cad7b01a4721354b2d9f52c6c9daec",
+                "src": "hda",
+                "uuid": "de5823cc-073e-4529-841b-b3c752855930"
+            },
+            "assembled_isoforms": {
+                "id": "f9cad7b01a4721353bab906b7e160dbf",
+                "src": "hda",
+                "uuid": "00f86ecd-85bd-4ad1-ad77-ae962be4255c"
+            },
+            "total_map_mass": {
+                "id": "f9cad7b01a4721351505bb1ad26de720",
+                "src": "hda",
+                "uuid": "3ef4b062-ef87-46f1-8b5f-881118079cd4"
+            },
+            "skipped": {
+                "id": "f9cad7b01a472135043bea45fbc6295c",
+                "src": "hda",
+                "uuid": "b3012e7e-07c8-4b41-98f3-0cb75f256997"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "genes_expression": {
+                "src": "hdca",
+                "id": "33e4fec01c603da7"
+            },
+            "transcripts_expression": {
+                "src": "hdca",
+                "id": "dd2ebdfee5cfa426"
+            },
+            "assembled_isoforms": {
+                "src": "hdca",
+                "id": "e9747826f187dc8a"
+            },
+            "total_map_mass": {
+                "src": "hdca",
+                "id": "9bb575f67b8e0e3d"
+            },
+            "skipped": {
+                "src": "hdca",
+                "id": "24fc2151eaf6ced6"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": null
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}

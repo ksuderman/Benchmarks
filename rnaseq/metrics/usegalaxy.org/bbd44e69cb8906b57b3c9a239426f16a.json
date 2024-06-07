@@ -1,0 +1,76 @@
+{
+    "run": "1",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "5c3f128ff2d6d36c",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b57b3c9a239426f16a",
+        "history_id": "5c3f128ff2d6d36c",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.30.0",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-07T02:37:34.308866",
+        "update_time": "2024-06-07T04:12:28.713348",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "bedtools genomecov  -ibam '/corral4/main/objects/7/8/4/dataset_7848c7ca-d622-4f69-a1da-d53d7fcd8fa6.dat'   -split -strand -  -bg  -scale 0.0116211     > '/corral4/main/jobs/058/427/58427334/outputs/dataset_46ccdec9-be47-44b7-b453-b0e161b6f218.dat'",
+        "user_email": null,
+        "command_version": "bedtools v2.30.0",
+        "params": {
+            "d": "false",
+            "dz": "false",
+            "five": "false",
+            "input_type": "{\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 57405027, \"src\": \"dce\"}]}, \"input_type_select\": \"bam\"}",
+            "report": "{\"__current_case__\": 0, \"report_select\": \"bg\", \"scale\": \"0.0116211\", \"zero_regions\": false}",
+            "split": "true",
+            "strand": "\"-strand -\"",
+            "three": "false",
+            "__workflow_invocation_uuid__": "\"f7256ab8246e11efa78e005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"bam\""
+        },
+        "inputs": {
+            "input_type|input": {
+                "id": "f9cad7b01a4721354462f654bc6fc8fc",
+                "src": "hda",
+                "uuid": "7848c7ca-d622-4f69-a1da-d53d7fcd8fa6"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "f9cad7b01a472135dc5a8b95e902d431",
+                "src": "hda",
+                "uuid": "46ccdec9-be47-44b7-b453-b0e161b6f218"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "output": {
+                "src": "hdca",
+                "id": "8d43e9754d0ff6e6"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": null
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}
