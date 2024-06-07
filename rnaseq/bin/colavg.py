@@ -147,7 +147,7 @@ def run(args):
     # print('header', header)
     for i in range(0, len(columns)):
         column = int(columns[i])
-        print(f"{header[column]:<20}: {averages[i]:5.1f}")
+        print(f"{header[column]:<20}: {averages[i]:5.2f}")
 
 
 def print_args(args):
