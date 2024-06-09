@@ -1,0 +1,79 @@
+{
+    "run": "3",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "e7e1c1c0a1c9d5fb",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b5c5310c5fdffec658",
+        "history_id": "e7e1c1c0a1c9d5fb",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.5.2+galaxy1",
+        "state": "deleted",
+        "exit_code": null,
+        "create_time": "2024-06-09T05:32:35.099354",
+        "update_time": "2024-06-09T05:34:00.127391",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": null,
+        "user_email": null,
+        "command_version": null,
+        "params": {
+            "conditions": "[{\"__index__\": 0, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"__current_case__\": 21, \"bam_property_selector\": \"tag\", \"bam_property_value\": \"NH=1\"}}]}]",
+            "rule_configuration": "{\"__current_case__\": 0, \"rules_selector\": false}",
+            "__workflow_invocation_uuid__": "\"abb95f44262111efa81b005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"bam\""
+        },
+        "inputs": {
+            "input_bam": {
+                "id": "f9cad7b01a472135c9a69e737811b80d",
+                "src": "hda",
+                "uuid": "c3cba87d-2b74-40e5-8593-96221661159c"
+            }
+        },
+        "outputs": {
+            "out_file2": {
+                "id": "f9cad7b01a4721353ffa4c5da47555bc",
+                "src": "hda",
+                "uuid": "ab53ec8f-d395-4962-8e7e-36c8741c8e45"
+            },
+            "out_file1": {
+                "id": "f9cad7b01a4721358814d9181fd8c18a",
+                "src": "hda",
+                "uuid": "51ee832c-97e2-4847-8f49-0b450e7cd951"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "out_file2": {
+                "src": "hdca",
+                "id": "f6fae45cce9d725f"
+            },
+            "out_file1": {
+                "src": "hdca",
+                "id": "0d48cd92e28cb3de"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stdout": "",
+        "stderr": "",
+        "job_messages": null,
+        "dependencies": [],
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}

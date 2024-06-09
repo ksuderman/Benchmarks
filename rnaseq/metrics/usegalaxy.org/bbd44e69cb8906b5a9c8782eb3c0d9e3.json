@@ -1,0 +1,159 @@
+{
+    "run": "2",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "67ddf4009a428b84",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b5a9c8782eb3c0d9e3",
+        "history_id": "67ddf4009a428b84",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/map_param_value/map_param_value/0.1.1",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-09T01:50:34.372777",
+        "update_time": "2024-06-09T01:50:54.496531",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "user_email": null,
+        "command_version": null,
+        "params": {
+            "input_param_type": "{\"__current_case__\": 0, \"input_param\": \"stranded - forward\", \"mappings\": [{\"__index__\": 0, \"from\": \"stranded - forward\", \"to\": \"NR>4{print $1\\\"\\\\t\\\"$3}\"}, {\"__index__\": 1, \"from\": \"stranded - reverse\", \"to\": \"NR>4{print $1\\\"\\\\t\\\"$4}\"}, {\"__index__\": 2, \"from\": \"unstranded\", \"to\": \"NR>4{print $1\\\"\\\\t\\\"$2}\"}], \"type\": \"text\"}",
+            "output_param_type": "\"text\"",
+            "unmapped": "{\"__current_case__\": 1, \"on_unmapped\": \"fail\"}",
+            "__workflow_invocation_uuid__": "\"a68cec4e260211ef9a8e005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {},
+        "outputs": {
+            "output_param_text": {
+                "id": "f9cad7b01a472135acee2746c1e30b46",
+                "src": "hda",
+                "uuid": "8234b036-e6a2-42f8-a37f-7a8d3c0b515c"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux galaxy-main-set02-4 5.14.0-362.24.1.el9_3.0.1.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 4 22:31:43 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux galaxy-main-set02-4 5.14.0-362.24.1.el9_3.0.1.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 4 22:31:43 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "2765",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "2765.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-06-08 20:50:37",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1717897837.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-06-08 20:50:53",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1717897853.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "16 seconds",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "16.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "23",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "23.0000000"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "86.6 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "93002312.0000000"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU usage time",
+                "value": "12.8774370 seconds",
+                "plugin": "cgroup",
+                "name": "cpu.stat.usage_usec",
+                "raw_value": "12877437.0000000"
+            },
+            {
+                "title": "CPU user time",
+                "value": "11.5086120 seconds",
+                "plugin": "cgroup",
+                "name": "cpu.stat.user_usec",
+                "raw_value": "11508612.0000000"
+            },
+            {
+                "title": "CPU system time",
+                "value": "1.3688240 seconds",
+                "plugin": "cgroup",
+                "name": "cpu.stat.system_usec",
+                "raw_value": "1368824.0000000"
+            },
+            {
+                "title": "Number of processes belonging to this cgroup killed by any kind of OOM killer",
+                "value": "0",
+                "plugin": "cgroup",
+                "name": "memory.events.oom_kill",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage recorded",
+                "value": "278.4 MB",
+                "plugin": "cgroup",
+                "name": "memory.peak",
+                "raw_value": "291909632.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "run": "2",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "67ddf4009a428b84",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b58f943a90ac87e224",
+        "history_id": "67ddf4009a428b84",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/lldelisle/revertr2orientationinbam/revertR2orientationInBam/0.0.2",
+        "state": "deleted",
+        "exit_code": null,
+        "create_time": "2024-06-09T01:50:35.227372",
+        "update_time": "2024-06-09T01:52:05.686523",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": null,
+        "user_email": null,
+        "command_version": null,
+        "params": {
+            "__workflow_invocation_uuid__": "\"a68cec4e260211ef9a8e005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input": {
+                "id": "f9cad7b01a472135d1e59d50fac64e07",
+                "src": "hda",
+                "uuid": "42aa8bfe-13ff-4892-aa73-3dde54c5bd74"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "f9cad7b01a472135ae420b759e4eaa80",
+                "src": "hda",
+                "uuid": "48beecae-58f8-43d3-a5b7-0318b62ae05f"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "output": {
+                "src": "hdca",
+                "id": "a1a980ae0451f4a1"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stdout": "",
+        "stderr": "",
+        "job_messages": null,
+        "dependencies": [],
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}

@@ -1,0 +1,218 @@
+{
+    "run": "2",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "97d2fa5cb0964aba",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b52a24f31f029fc090",
+        "history_id": "97d2fa5cb0964aba",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/2.2.1.3",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-09T00:06:20.294706",
+        "update_time": "2024-06-09T01:49:39.921870",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "cufflinks -q --no-update-check '/corral4/main/objects/b/6/c/dataset_b6ca1a70-2bbd-4690-98b0-5556c84cc63f.dat' --num-threads \"${GALAXY_SLOTS:-4}\" -I 300000 -F 0.1 -j 0.15 --no-effective-length-correction  -G '/corral4/main/objects/e/3/2/dataset_e328938a-038d-4820-bef8-8edc6a3244d2.dat'   -b '/cvmfs/data.galaxyproject.org/byhand/hg38/sam_index/hg38.fa'  -u  --library-type fr-secondstrand --frag-len-mean 200 --frag-len-std-dev 80 --max-mle-iterations 5000 --junc-alpha 0.001 --small-anchor-fraction 0.09 --overhang-tolerance 8 --max-bundle-length 10000000 --max-bundle-frags 1000000 --min-intron-length 50 --trim-3-avgcov-thresh 10 --trim-3-dropoff-frac 0.1 2> stderr  && python '/cvmfs/main.galaxyproject.org/shed_tools/toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/d080005cffe1/cufflinks/mass.py' stderr 'None' \"transcripts.gtf\"",
+        "user_email": null,
+        "command_version": "cufflinks v2.2.1",
+        "params": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advanced_settings": "{\"__current_case__\": 1, \"inner_dist_std_dev\": \"80\", \"inner_mean_dist\": \"200\", \"junc_alpha\": \"0.001\", \"library_type\": \"fr-secondstrand\", \"mask_file\": null, \"max_bundle_frags\": \"1000000\", \"max_bundle_length\": \"10000000\", \"max_mle_iterations\": \"5000\", \"min_intron_length\": \"50\", \"overhang_tolerance\": \"8\", \"small_anchor_fraction\": \"0.09\", \"trim_three_avgcov_thresh\": \"10\", \"trim_three_dropoff_frac\": \"0.1\", \"use_advanced_settings\": \"Yes\"}",
+            "bias_correction": "{\"__current_case__\": 0, \"do_bias_correction\": \"Yes\", \"seq_source\": {\"__current_case__\": 0, \"index\": \"hg38\", \"index_source\": \"cached\"}}",
+            "global_model": null,
+            "length_correction": "\"--no-effective-length-correction\"",
+            "max_intron_len": "\"300000\"",
+            "min_isoform_fraction": "\"0.1\"",
+            "multiread_correct": "true",
+            "pre_mrna_fraction": "\"0.15\"",
+            "reference_annotation": "{\"__current_case__\": 1, \"compatible_hits_norm\": \"\", \"reference_annotation_file\": {\"values\": [{\"id\": 130469419, \"src\": \"hda\"}]}, \"use_ref\": \"Use reference annotation\"}",
+            "__workflow_invocation_uuid__": "\"0bb55a0225f411ef8fd4005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"bam\""
+        },
+        "inputs": {
+            "input": {
+                "id": "f9cad7b01a4721357f3a25e950447482",
+                "src": "hda",
+                "uuid": "b6ca1a70-2bbd-4690-98b0-5556c84cc63f"
+            },
+            "reference_annotation|reference_annotation_file": {
+                "id": "f9cad7b01a472135b4212e7c83aab49f",
+                "src": "hda",
+                "uuid": "e328938a-038d-4820-bef8-8edc6a3244d2"
+            }
+        },
+        "outputs": {
+            "genes_expression": {
+                "id": "f9cad7b01a47213572b95b63c9f7391c",
+                "src": "hda",
+                "uuid": "2fab4998-8342-4538-8d96-64dbc225681c"
+            },
+            "transcripts_expression": {
+                "id": "f9cad7b01a47213507e937e973e94b87",
+                "src": "hda",
+                "uuid": "093e9304-9868-4073-a5f0-0b3d43b65207"
+            },
+            "assembled_isoforms": {
+                "id": "f9cad7b01a4721358e59cd66eb960997",
+                "src": "hda",
+                "uuid": "225f9862-e5c3-475b-9578-32848ba083f7"
+            },
+            "total_map_mass": {
+                "id": "f9cad7b01a4721354321839a419e12d2",
+                "src": "hda",
+                "uuid": "f6d6cab9-f9ef-4685-882e-a6b500d31aba"
+            },
+            "skipped": {
+                "id": "f9cad7b01a47213500269f3f90022fd0",
+                "src": "hda",
+                "uuid": "cd9130cc-5844-42a3-86df-eab2e03269ff"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "genes_expression": {
+                "src": "hdca",
+                "id": "aa4d32d1bd96bbfe"
+            },
+            "transcripts_expression": {
+                "src": "hdca",
+                "id": "b6c440c83dbe7031"
+            },
+            "assembled_isoforms": {
+                "src": "hdca",
+                "id": "1c1ec4316473bc7a"
+            },
+            "total_map_mass": {
+                "src": "hdca",
+                "id": "9c8e7d19e0df7371"
+            },
+            "skipped": {
+                "src": "hdca",
+                "id": "b79b224e20607405"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux galaxy-main-set04-5.novalocal 5.14.0-362.8.1.el9_3.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Nov 8 17:36:32 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux galaxy-main-set04-5.novalocal 5.14.0-362.8.1.el9_3.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Nov 8 17:36:32 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "6",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "6.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "30720",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "30720.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-06-08 19:36:48",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1717893408.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-06-08 20:49:38",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1717897778.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "1 hour and 12 minutes",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "4370.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "23",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "23.0000000"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "86.6 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "92990036.0000000"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU usage time",
+                "value": "3 hours and 32 minutes",
+                "plugin": "cgroup",
+                "name": "cpu.stat.usage_usec",
+                "raw_value": "12720322608.0000000"
+            },
+            {
+                "title": "CPU user time",
+                "value": "3 hours and 27 minutes",
+                "plugin": "cgroup",
+                "name": "cpu.stat.user_usec",
+                "raw_value": "12474485117.0000000"
+            },
+            {
+                "title": "CPU system time",
+                "value": "4 minutes",
+                "plugin": "cgroup",
+                "name": "cpu.stat.system_usec",
+                "raw_value": "245837491.0000000"
+            },
+            {
+                "title": "Number of processes belonging to this cgroup killed by any kind of OOM killer",
+                "value": "0",
+                "plugin": "cgroup",
+                "name": "memory.events.oom_kill",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage recorded",
+                "value": "8.1 GB",
+                "plugin": "cgroup",
+                "name": "memory.peak",
+                "raw_value": "8733466624.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        11991,
+        503642961
+    ]
+}

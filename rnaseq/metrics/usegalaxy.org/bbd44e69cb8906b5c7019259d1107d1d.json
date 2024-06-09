@@ -1,0 +1,114 @@
+{
+    "run": "1",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "9cfef8792868a6ae",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b5c7019259d1107d1d",
+        "history_id": "9cfef8792868a6ae",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.8a+galaxy1",
+        "state": "deleted",
+        "exit_code": null,
+        "create_time": "2024-06-07T22:30:14.377190",
+        "update_time": "2024-06-07T22:31:38.905462",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": null,
+        "user_email": null,
+        "command_version": null,
+        "params": {
+            "algo": "{\"params\": {\"__current_case__\": 3, \"align\": {\"alignEndsType\": false, \"alignIntronMax\": \"1000000\", \"alignIntronMin\": \"20\", \"alignMatesGapMax\": \"1000000\", \"alignSJDBoverhangMin\": \"1\", \"alignSJoverhangMin\": \"8\", \"alignSJstitchMismatchNmax\": {\"alignSJstitchMismatchNmax1\": \"0\", \"alignSJstitchMismatchNmax2\": \"-1\", \"alignSJstitchMismatchNmax3\": \"0\", \"alignSJstitchMismatchNmax4\": \"0\"}, \"alignSplicedMateMapLmin\": \"0\", \"alignSplicedMateMapLminOverLmate\": \"0.66\", \"alignTranscriptsPerReadNmax\": \"10000\", \"alignTranscriptsPerWindowNmax\": \"100\", \"alignWindowsPerReadNmax\": \"10000\", \"peOverlapMMp\": \"0.01\", \"peOverlapNbasesMin\": \"0\"}, \"chim_settings\": {\"chimFilter\": true, \"chimJunctionOverhangMin\": \"20\", \"chimMainSegmentMultNmax\": \"10\", \"chimMultimapNmax\": \"1\", \"chimMultimapScoreRange\": \"1\", \"chimScoreDropMax\": \"20\", \"chimScoreJunctionNonGTAG\": \"-1\", \"chimScoreMin\": \"0\", \"chimScoreSeparation\": \"10\", \"chimSegmentMin\": \"12\", \"chimSegmentReadGapMax\": \"0\"}, \"limits\": {\"limitOutSJcollapsed\": \"1000000\", \"limitOutSJoneRead\": \"1000\", \"limitSjdbInsertNsj\": \"1000000\"}, \"seed\": {\"seedMultimapNmax\": \"10000\", \"seedNoneLociPerWindow\": \"10\", \"seedPerReadNmax\": \"1000\", \"seedPerWindowNmax\": \"50\", \"seedSearchLmax\": \"0\", \"seedSearchStartLmax\": \"50\", \"seedSearchStartLmaxOverLread\": \"1.0\"}, \"settingsType\": \"full\"}}",
+            "chimOutType": "\"\"",
+            "filter": "{\"basic_filters\": [\"exclude_unmapped\"], \"output_params2\": {\"__current_case__\": 0, \"outFilterMatchNmin\": \"0\", \"outFilterMatchNminOverLread\": \"0.66\", \"outFilterMismatchNmax\": \"999\", \"outFilterMismatchNoverLmax\": \"0.3\", \"outFilterMismatchNoverReadLmax\": \"0.04\", \"outFilterMultimapNmax\": \"20\", \"outFilterMultimapScoreRange\": \"1\", \"outFilterScoreMin\": \"0\", \"outFilterScoreMinOverLread\": \"0.66\", \"outFilterType\": true, \"outSAMmultNmax\": \"-1\", \"outSAMtlen\": \"1\", \"output_select2\": \"yes\"}}",
+            "oformat": "{\"HI_offset\": \"1\", \"outSAMattributes\": [\"NH\", \"HI\", \"AS\", \"nM\"], \"outSAMmapqUnique\": \"255\", \"outSAMprimaryFlag\": \"OneBestScore\"}",
+            "perf": "{\"outBAMsortingBinsN\": \"50\", \"winAnchorMultimapNmax\": \"50\"}",
+            "quantmode_output": "{\"__current_case__\": 1, \"quantMode\": \"GeneCounts\"}",
+            "refGenomeSource": "{\"GTFconditional\": {\"GTFselect\": \"without-gtf\", \"__current_case__\": 1, \"genomeDir\": \"hg38\", \"sjdbGTFfile\": {\"values\": [{\"id\": 130469419, \"src\": \"hda\"}]}, \"sjdbOverhang\": \"99\"}, \"__current_case__\": 0, \"geneSource\": \"indexed\"}",
+            "singlePaired": "{\"__current_case__\": 2, \"input\": {\"values\": [{\"id\": 57467363, \"src\": \"dce\"}]}, \"sPaired\": \"paired_collection\"}",
+            "twopass": "{\"__current_case__\": 0, \"sj_precalculated\": \"\", \"twopassMode\": \"None\", \"twopass_read_subset\": \"\"}",
+            "__workflow_invocation_uuid__": "\"8140886e251d11efa3d2005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "refGenomeSource|GTFconditional|sjdbGTFfile": {
+                "id": "f9cad7b01a472135b4212e7c83aab49f",
+                "src": "hda",
+                "uuid": "e328938a-038d-4820-bef8-8edc6a3244d2"
+            },
+            "singlePaired|input1": {
+                "id": "f9cad7b01a4721357841fd5b02ee6970",
+                "src": "hda",
+                "uuid": "334f2252-8b4c-42c3-82a6-e47e709c0772"
+            },
+            "singlePaired|input2": {
+                "id": "f9cad7b01a4721354a759798ce6eb83a",
+                "src": "hda",
+                "uuid": "6cc61906-3b06-4583-8ff6-56bc94271dc8"
+            }
+        },
+        "outputs": {
+            "output_log": {
+                "id": "f9cad7b01a472135f6921551eeaaafc3",
+                "src": "hda",
+                "uuid": "61f6233e-7407-4634-9099-2cfe77fc2d8b"
+            },
+            "splice_junctions": {
+                "id": "f9cad7b01a47213525d6c4e7d3e1a9a9",
+                "src": "hda",
+                "uuid": "5c2edf02-be99-4626-8441-9e59e74b635d"
+            },
+            "mapped_reads": {
+                "id": "f9cad7b01a472135717d595f6a69c86b",
+                "src": "hda",
+                "uuid": "be005c14-62c0-4d3c-a88f-3dbb0c84f676"
+            },
+            "reads_per_gene": {
+                "id": "f9cad7b01a47213583403f9c92a38b78",
+                "src": "hda",
+                "uuid": "05007559-9cba-40ae-bf1d-42b29f9c5417"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "output_log": {
+                "src": "hdca",
+                "id": "874cce4e9fafd77e"
+            },
+            "splice_junctions": {
+                "src": "hdca",
+                "id": "b109a910d2b2060d"
+            },
+            "mapped_reads": {
+                "src": "hdca",
+                "id": "2e68e460255042ef"
+            },
+            "reads_per_gene": {
+                "src": "hdca",
+                "id": "08662407e491f3f4"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stdout": "",
+        "stderr": "",
+        "job_messages": null,
+        "dependencies": [],
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}

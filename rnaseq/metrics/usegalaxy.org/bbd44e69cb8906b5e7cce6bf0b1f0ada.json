@@ -1,0 +1,169 @@
+{
+    "run": "2",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "38e74c3bf4045b8f",
+    "inputs": "SRR24043307 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b5e7cce6bf0b1f0ada",
+        "history_id": "38e74c3bf4045b8f",
+        "tool_id": "param_value_from_file",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-08T23:14:45.760632",
+        "update_time": "2024-06-08T23:28:32.794890",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "user_email": null,
+        "command_version": null,
+        "params": {
+            "param_type": "\"float\"",
+            "remove_newlines": "true",
+            "__workflow_invocation_uuid__": "\"e34b251c25ec11efa219005056ba2773\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"txt\""
+        },
+        "inputs": {
+            "input1": {
+                "id": "f9cad7b01a472135288a3e30189ed0f3",
+                "src": "hda",
+                "uuid": "745eb877-427a-40d4-b91b-a841548e83e6"
+            }
+        },
+        "outputs": {
+            "float_param": {
+                "id": "f9cad7b01a472135e59c6b4b6d08eb71",
+                "src": "hda",
+                "uuid": "53b3403b-8afd-427f-a43c-638547217859"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "float_param": {
+                "src": "hdca",
+                "id": "989c084d4b9fc9aa"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux galaxy-main-set02-2 5.14.0-362.24.1.el9_3.0.1.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 4 22:31:43 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux galaxy-main-set02-2 5.14.0-362.24.1.el9_3.0.1.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 4 22:31:43 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "2765",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "2765.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-06-08 18:28:17",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1717889297.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-06-08 18:28:32",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1717889312.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "15 seconds",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "15.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "23",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "23.0000000"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "86.6 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "93002300.0000000"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU usage time",
+                "value": "12.4707730 seconds",
+                "plugin": "cgroup",
+                "name": "cpu.stat.usage_usec",
+                "raw_value": "12470773.0000000"
+            },
+            {
+                "title": "CPU user time",
+                "value": "11.2377150 seconds",
+                "plugin": "cgroup",
+                "name": "cpu.stat.user_usec",
+                "raw_value": "11237715.0000000"
+            },
+            {
+                "title": "CPU system time",
+                "value": "1.2330580 seconds",
+                "plugin": "cgroup",
+                "name": "cpu.stat.system_usec",
+                "raw_value": "1233058.0000000"
+            },
+            {
+                "title": "Number of processes belonging to this cgroup killed by any kind of OOM killer",
+                "value": "0",
+                "plugin": "cgroup",
+                "name": "memory.events.oom_kill",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage recorded",
+                "value": "248.5 MB",
+                "plugin": "cgroup",
+                "name": "memory.peak",
+                "raw_value": "260562944.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        0,
+        503642961
+    ]
+}

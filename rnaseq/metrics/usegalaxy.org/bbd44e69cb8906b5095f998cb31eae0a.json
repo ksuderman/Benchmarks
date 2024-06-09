@@ -1,0 +1,175 @@
+{
+    "run": "3",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "84c766976036a5c1",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b5095f998cb31eae0a",
+        "history_id": "84c766976036a5c1",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.30.0",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-09T04:25:18.460013",
+        "update_time": "2024-06-09T04:49:38.970950",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "bedtools genomecov  -ibam '/corral4/main/objects/a/2/7/dataset_a272d897-b30f-4698-8c27-5cab51173016.dat'   -split   -bg  -scale 0.0232417     > '/corral4/main/jobs/058/460/58460125/outputs/dataset_e7d24f33-fefa-47db-8edb-e519bf17cea6.dat'",
+        "user_email": null,
+        "command_version": "bedtools v2.30.0",
+        "params": {
+            "d": "false",
+            "dz": "false",
+            "five": "false",
+            "input_type": "{\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 57480363, \"src\": \"dce\"}]}, \"input_type_select\": \"bam\"}",
+            "report": "{\"__current_case__\": 0, \"report_select\": \"bg\", \"scale\": \"0.0232417\", \"zero_regions\": false}",
+            "split": "true",
+            "strand": "\"\"",
+            "three": "false",
+            "__workflow_invocation_uuid__": "\"36aa0bf8261311efa673005056ba2773\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"bam\""
+        },
+        "inputs": {
+            "input_type|input": {
+                "id": "f9cad7b01a4721355c936abc74eacd29",
+                "src": "hda",
+                "uuid": "a272d897-b30f-4698-8c27-5cab51173016"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "f9cad7b01a4721350f903a3201f32462",
+                "src": "hda",
+                "uuid": "e7d24f33-fefa-47db-8edb-e519bf17cea6"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "output": {
+                "src": "hdca",
+                "id": "753855099193a177"
+            }
+        },
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux galaxy-main-set02-3 5.14.0-362.24.1.el9_3.0.1.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 4 22:31:43 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux galaxy-main-set02-3 5.14.0-362.24.1.el9_3.0.1.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 4 22:31:43 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "5734",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "5734.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-06-08 23:43:28",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1717908208.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-06-08 23:49:37",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1717908577.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "6 minutes",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "369.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "23",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "23.0000000"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "86.6 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "93002300.0000000"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU usage time",
+                "value": "5 minutes",
+                "plugin": "cgroup",
+                "name": "cpu.stat.usage_usec",
+                "raw_value": "338502069.0000000"
+            },
+            {
+                "title": "CPU user time",
+                "value": "5 minutes",
+                "plugin": "cgroup",
+                "name": "cpu.stat.user_usec",
+                "raw_value": "302521372.0000000"
+            },
+            {
+                "title": "CPU system time",
+                "value": "35.9806970 seconds",
+                "plugin": "cgroup",
+                "name": "cpu.stat.system_usec",
+                "raw_value": "35980697.0000000"
+            },
+            {
+                "title": "Number of processes belonging to this cgroup killed by any kind of OOM killer",
+                "value": "0",
+                "plugin": "cgroup",
+                "name": "memory.events.oom_kill",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage recorded",
+                "value": "3.8 GB",
+                "plugin": "cgroup",
+                "name": "memory.peak",
+                "raw_value": "4031688704.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        11991,
+        503642961
+    ]
+}

@@ -1,0 +1,213 @@
+{
+    "run": "3",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "84c766976036a5c1",
+    "inputs": "SRR24043307-50 ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b5c5d47fb65ed6d061",
+        "history_id": "84c766976036a5c1",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.8a+galaxy1",
+        "state": "ok",
+        "exit_code": 0,
+        "create_time": "2024-06-09T03:49:05.703385",
+        "update_time": "2024-06-09T04:24:45.640131",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": "STAR  --runThreadN ${GALAXY_SLOTS:-4} --genomeLoad NoSharedMemory --genomeDir '/cvmfs/data.galaxyproject.org/managed/rnastar/2.7.4a/hg38/hg38/dataset_fdfceb86-2b00-45f3-a3f4-63794ea8182d_files' --sjdbOverhang 99 --sjdbGTFfile '/jetstream2/scratch/main/jobs/58459852/inputs/dataset_e328938a-038d-4820-bef8-8edc6a3244d2.dat'   --readFilesIn '/jetstream2/scratch/main/jobs/58459852/inputs/dataset_f619a3cf-e722-4cde-ba45-b61e7323dfdd.dat' '/jetstream2/scratch/main/jobs/58459852/inputs/dataset_99e224e3-286a-43d2-90e7-702616d7051e.dat'   --readFilesCommand zcat   --outSAMtype BAM SortedByCoordinate  --twopassMode None ''  --quantMode GeneCounts   --outSAMattrIHstart 1 --outSAMattributes NH HI AS nM  --outSAMprimaryFlag OneBestScore  --outSAMmapqUnique 255    --outSAMunmapped None  --outFilterType BySJout --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 999 --outFilterMismatchNoverLmax 0.3 --outFilterMismatchNoverReadLmax 0.04 --outFilterScoreMin 0 --outFilterScoreMinOverLread 0.66 --outFilterMatchNmin 0 --outFilterMatchNminOverLread 0.66 --outSAMmultNmax -1 --outSAMtlen 1   --seedSearchStartLmax 50 --seedSearchStartLmaxOverLread 1.0 --seedSearchLmax 0 --seedMultimapNmax 10000 --seedPerReadNmax 1000 --seedPerWindowNmax 50 --seedNoneLociPerWindow 10  --alignIntronMin 20 --alignIntronMax 1000000 --alignMatesGapMax 1000000 --alignSJoverhangMin 8 --alignSJstitchMismatchNmax 0 -1 0 0 --alignSJDBoverhangMin 1 --alignSplicedMateMapLmin 0 --alignSplicedMateMapLminOverLmate 0.66 --alignWindowsPerReadNmax 10000 --alignTranscriptsPerWindowNmax 100 --alignTranscriptsPerReadNmax 10000 --alignEndsType Local --peOverlapNbasesMin 0 --peOverlapMMp 0.01  --limitOutSJoneRead 1000 --limitOutSJcollapsed 1000000 --limitSjdbInsertNsj 1000000  --outBAMsortingThreadN ${GALAXY_SLOTS:-4} --outBAMsortingBinsN 50 --winAnchorMultimapNmax 50 --limitBAMsortRAM $((${GALAXY_MEMORY_MB:-0}*1000000))  && samtools view -b -o '/jetstream2/scratch/main/jobs/58459852/outputs/dataset_be09b6a8-5c2f-463d-b56a-86d7750eb8c8.dat' Aligned.sortedByCoord.out.bam",
+        "user_email": null,
+        "command_version": "",
+        "params": {
+            "algo": "{\"params\": {\"__current_case__\": 3, \"align\": {\"alignEndsType\": false, \"alignIntronMax\": \"1000000\", \"alignIntronMin\": \"20\", \"alignMatesGapMax\": \"1000000\", \"alignSJDBoverhangMin\": \"1\", \"alignSJoverhangMin\": \"8\", \"alignSJstitchMismatchNmax\": {\"alignSJstitchMismatchNmax1\": \"0\", \"alignSJstitchMismatchNmax2\": \"-1\", \"alignSJstitchMismatchNmax3\": \"0\", \"alignSJstitchMismatchNmax4\": \"0\"}, \"alignSplicedMateMapLmin\": \"0\", \"alignSplicedMateMapLminOverLmate\": \"0.66\", \"alignTranscriptsPerReadNmax\": \"10000\", \"alignTranscriptsPerWindowNmax\": \"100\", \"alignWindowsPerReadNmax\": \"10000\", \"peOverlapMMp\": \"0.01\", \"peOverlapNbasesMin\": \"0\"}, \"chim_settings\": {\"chimFilter\": true, \"chimJunctionOverhangMin\": \"20\", \"chimMainSegmentMultNmax\": \"10\", \"chimMultimapNmax\": \"1\", \"chimMultimapScoreRange\": \"1\", \"chimScoreDropMax\": \"20\", \"chimScoreJunctionNonGTAG\": \"-1\", \"chimScoreMin\": \"0\", \"chimScoreSeparation\": \"10\", \"chimSegmentMin\": \"12\", \"chimSegmentReadGapMax\": \"0\"}, \"limits\": {\"limitOutSJcollapsed\": \"1000000\", \"limitOutSJoneRead\": \"1000\", \"limitSjdbInsertNsj\": \"1000000\"}, \"seed\": {\"seedMultimapNmax\": \"10000\", \"seedNoneLociPerWindow\": \"10\", \"seedPerReadNmax\": \"1000\", \"seedPerWindowNmax\": \"50\", \"seedSearchLmax\": \"0\", \"seedSearchStartLmax\": \"50\", \"seedSearchStartLmaxOverLread\": \"1.0\"}, \"settingsType\": \"full\"}}",
+            "chimOutType": "\"\"",
+            "filter": "{\"basic_filters\": [\"exclude_unmapped\"], \"output_params2\": {\"__current_case__\": 0, \"outFilterMatchNmin\": \"0\", \"outFilterMatchNminOverLread\": \"0.66\", \"outFilterMismatchNmax\": \"999\", \"outFilterMismatchNoverLmax\": \"0.3\", \"outFilterMismatchNoverReadLmax\": \"0.04\", \"outFilterMultimapNmax\": \"20\", \"outFilterMultimapScoreRange\": \"1\", \"outFilterScoreMin\": \"0\", \"outFilterScoreMinOverLread\": \"0.66\", \"outFilterType\": true, \"outSAMmultNmax\": \"-1\", \"outSAMtlen\": \"1\", \"output_select2\": \"yes\"}}",
+            "oformat": "{\"HI_offset\": \"1\", \"outSAMattributes\": [\"NH\", \"HI\", \"AS\", \"nM\"], \"outSAMmapqUnique\": \"255\", \"outSAMprimaryFlag\": \"OneBestScore\"}",
+            "perf": "{\"outBAMsortingBinsN\": \"50\", \"winAnchorMultimapNmax\": \"50\"}",
+            "quantmode_output": "{\"__current_case__\": 1, \"quantMode\": \"GeneCounts\"}",
+            "refGenomeSource": "{\"GTFconditional\": {\"GTFselect\": \"without-gtf\", \"__current_case__\": 1, \"genomeDir\": \"hg38\", \"sjdbGTFfile\": {\"values\": [{\"id\": 130469419, \"src\": \"hda\"}]}, \"sjdbOverhang\": \"99\"}, \"__current_case__\": 0, \"geneSource\": \"indexed\"}",
+            "singlePaired": "{\"__current_case__\": 2, \"input\": {\"values\": [{\"id\": 57480354, \"src\": \"dce\"}]}, \"sPaired\": \"paired_collection\"}",
+            "twopass": "{\"__current_case__\": 0, \"sj_precalculated\": \"\", \"twopassMode\": \"None\", \"twopass_read_subset\": \"\"}",
+            "__workflow_invocation_uuid__": "\"36aa0bf8261311efa673005056ba2773\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "singlePaired|input1": {
+                "id": "f9cad7b01a472135da4af4d11e170b70",
+                "src": "hda",
+                "uuid": "f619a3cf-e722-4cde-ba45-b61e7323dfdd"
+            },
+            "singlePaired|input2": {
+                "id": "f9cad7b01a4721358bd63d2a2e37c94f",
+                "src": "hda",
+                "uuid": "99e224e3-286a-43d2-90e7-702616d7051e"
+            },
+            "refGenomeSource|GTFconditional|sjdbGTFfile": {
+                "id": "f9cad7b01a472135b4212e7c83aab49f",
+                "src": "hda",
+                "uuid": "e328938a-038d-4820-bef8-8edc6a3244d2"
+            }
+        },
+        "outputs": {
+            "output_log": {
+                "id": "f9cad7b01a472135177e59ed65ca9891",
+                "src": "hda",
+                "uuid": "89510518-b9a9-4545-8cb8-6355a1da709e"
+            },
+            "splice_junctions": {
+                "id": "f9cad7b01a47213589ab7505b1249d0f",
+                "src": "hda",
+                "uuid": "11082c85-ddfa-4c76-b00c-43d2d3a1a8b0"
+            },
+            "mapped_reads": {
+                "id": "f9cad7b01a472135369e34ea506c3f2d",
+                "src": "hda",
+                "uuid": "be09b6a8-5c2f-463d-b56a-86d7750eb8c8"
+            },
+            "reads_per_gene": {
+                "id": "f9cad7b01a472135da36514537a52f5c",
+                "src": "hda",
+                "uuid": "80f48b06-8807-44e4-92cb-5b8a285c6eb3"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "output_log": {
+                "src": "hdca",
+                "id": "1ac39b147cd9debf"
+            },
+            "splice_junctions": {
+                "src": "hdca",
+                "id": "addf6091c70ac8ef"
+            },
+            "mapped_reads": {
+                "src": "hdca",
+                "id": "8297895caecd1efb"
+            },
+            "reads_per_gene": {
+                "src": "hdca",
+                "id": "485c74e264cd69af"
+            }
+        },
+        "tool_stdout": "Jun 09 03:59:52 ..... started STAR run\nJun 09 03:59:52 ..... loading genome\nJun 09 04:09:31 ..... processing annotations GTF\nJun 09 04:09:54 ..... inserting junctions into the genome indices\nJun 09 04:12:57 ..... started mapping\nJun 09 04:16:38 ..... finished mapping\nJun 09 04:17:31 ..... started sorting BAM\nJun 09 04:17:58 ..... finished successfully\n",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stdout": "Jun 09 03:59:52 ..... started STAR run\nJun 09 03:59:52 ..... loading genome\nJun 09 04:09:31 ..... processing annotations GTF\nJun 09 04:09:54 ..... inserting junctions into the genome indices\nJun 09 04:12:57 ..... started mapping\nJun 09 04:16:38 ..... finished mapping\nJun 09 04:17:31 ..... started sorting BAM\nJun 09 04:17:58 ..... finished successfully\n",
+        "stderr": "",
+        "job_messages": [],
+        "dependencies": [],
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux js2-xl9.novalocal 6.1.80-1.el9.elrepo.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Mar  1 13:32:28 EST 2024 x86_64 x86_64 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux js2-xl9.novalocal 6.1.80-1.el9.elrepo.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Mar  1 13:32:28 EST 2024 x86_64 x86_64 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "16",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "16.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "59392",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "59392.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2024-06-08 22:59:51",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1717905591.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2024-06-08 23:23:49",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1717907029.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "23 minutes",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "1438.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "32",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "32.0000000"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "119.5 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "128266144.0000000"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU usage time",
+                "value": "1 hour and 15 minutes",
+                "plugin": "cgroup",
+                "name": "cpu.stat.usage_usec",
+                "raw_value": "4505691659.0000000"
+            },
+            {
+                "title": "CPU user time",
+                "value": "1 hour and 12 minutes",
+                "plugin": "cgroup",
+                "name": "cpu.stat.user_usec",
+                "raw_value": "4322233749.0000000"
+            },
+            {
+                "title": "CPU system time",
+                "value": "3 minutes",
+                "plugin": "cgroup",
+                "name": "cpu.stat.system_usec",
+                "raw_value": "183457910.0000000"
+            },
+            {
+                "title": "Number of processes belonging to this cgroup killed by any kind of OOM killer",
+                "value": "0",
+                "plugin": "cgroup",
+                "name": "memory.events.oom_kill",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage recorded",
+                "value": "56.1 GB",
+                "plugin": "cgroup",
+                "name": "memory.peak",
+                "raw_value": "60222894080.0000000"
+            }
+        ]
+    },
+    "status": "ok",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        11991,
+        503642961
+    ]
+}

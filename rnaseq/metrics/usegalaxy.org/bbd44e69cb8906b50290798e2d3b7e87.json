@@ -1,0 +1,103 @@
+{
+    "run": "1",
+    "cloud": "usa",
+    "job_conf": "Default",
+    "workflow_id": "cee06b200d59d03c",
+    "history_id": "9cfef8792868a6ae",
+    "inputs": "SRR24043307-full ucsc.hg38.knownGene.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "bbd44e69cb8906b50290798e2d3b7e87",
+        "history_id": "9cfef8792868a6ae",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
+        "state": "deleted",
+        "exit_code": null,
+        "create_time": "2024-06-07T22:30:14.510501",
+        "update_time": "2024-06-07T22:31:38.666395",
+        "galaxy_version": "24.0",
+        "external_id": null,
+        "handler": null,
+        "job_runner_name": null,
+        "command_line": null,
+        "user_email": null,
+        "command_version": null,
+        "params": {
+            "comment": "\"\"",
+            "export": "true",
+            "flat": "false",
+            "results": "[{\"__index__\": 0, \"software_cond\": {\"__current_case__\": 5, \"input\": {\"values\": [{\"id\": 2941029, \"src\": \"hdca\"}]}, \"software\": \"cutadapt\"}}, {\"__index__\": 1, \"software_cond\": {\"__current_case__\": 28, \"output\": [{\"__index__\": 0, \"type\": {\"__current_case__\": 0, \"input\": {\"values\": [{\"id\": 2941030, \"src\": \"hdca\"}]}, \"type\": \"log\"}}, {\"__index__\": 1, \"type\": {\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 2941033, \"src\": \"hdca\"}]}, \"type\": \"genecounts\"}}], \"software\": \"star\"}}]",
+            "saveLog": "false",
+            "title": "\"\"",
+            "__workflow_invocation_uuid__": "\"8140886e251d11efa3d2005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "results_1|software_cond|output_0|type|input": {
+                "id": "f9cad7b01a472135f6921551eeaaafc3",
+                "src": "hda",
+                "uuid": "61f6233e-7407-4634-9099-2cfe77fc2d8b"
+            },
+            "results_1|software_cond|output_0|type|input1": {
+                "id": "f9cad7b01a472135f6921551eeaaafc3",
+                "src": "hda",
+                "uuid": "61f6233e-7407-4634-9099-2cfe77fc2d8b"
+            },
+            "results_1|software_cond|output_1|type|input": {
+                "id": "f9cad7b01a47213583403f9c92a38b78",
+                "src": "hda",
+                "uuid": "05007559-9cba-40ae-bf1d-42b29f9c5417"
+            },
+            "results_1|software_cond|output_1|type|input1": {
+                "id": "f9cad7b01a47213583403f9c92a38b78",
+                "src": "hda",
+                "uuid": "05007559-9cba-40ae-bf1d-42b29f9c5417"
+            },
+            "results_0|software_cond|input": {
+                "id": "f9cad7b01a472135a96dcf20672c4e22",
+                "src": "hda",
+                "uuid": "50f3c18c-73a6-4476-949b-1e6e743f7a93"
+            },
+            "results_0|software_cond|input1": {
+                "id": "f9cad7b01a472135a96dcf20672c4e22",
+                "src": "hda",
+                "uuid": "50f3c18c-73a6-4476-949b-1e6e743f7a93"
+            }
+        },
+        "outputs": {
+            "html_report": {
+                "id": "f9cad7b01a4721358a180259b7ad377f",
+                "src": "hda",
+                "uuid": "2a4ff66b-e432-4dae-87cf-42124b90ea46"
+            }
+        },
+        "copied_from_job_id": null,
+        "output_collections": {
+            "stats": {
+                "src": "hdca",
+                "id": "31a8c4bd6913a910"
+            },
+            "plots": {
+                "src": "hdca",
+                "id": "3a38d0242a1b9580"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stdout": "",
+        "stderr": "",
+        "job_messages": null,
+        "dependencies": [],
+        "job_metrics": []
+    },
+    "status": "deleting",
+    "server": "https://usegalaxy.org",
+    "ref_data_size": [],
+    "input_data_size": [
+        3577882155,
+        503642961
+    ]
+}
