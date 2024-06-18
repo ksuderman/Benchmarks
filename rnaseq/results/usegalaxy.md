@@ -1,164 +1,181 @@
-|Run|Inputs|Job Conf|Tool|State|Runtime (Sec)|Max Memory (GB)|
-|---|---|---|---|---|---:|---:|
-| 1 | SRR24043307-50 |Default | param_value_from_file,unknown | ok | 19.0  | 0.266 |
-| 3 | SRR24043307-full |Default | compose_text_param,0.1.1 | ok | 17.0  | 0.271 |
-| 3 | SRR24043307-20 |Default | cufflinks,2.2.1.3 | ok | 2161.0  | 7.340 |
-| 2 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 14.0  | 0.240 |
-| 1 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 33.0  | 0.268 |
-| 2 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 16.0  | 0.255 |
-| 3 | SRR24043307-full |Default | cutadapt,4.0+galaxy1 | error |  8.0  | 0.229 |
-| 3 | SRR24043307-50 |Default | multiqc,1.11+galaxy1 | ok | 38.0  | 0.290 |
-| 3 | SRR24043307-50 |Default | param_value_from_file,unknown | ok | 17.0  | 0.270 |
-| 3 | SRR24043307-50 |Default | revertR2orientationInBam,0.0.2 | ok | 950.0  | 2.702 |
-| 2 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 17.0  | 0.252 |
-| 1 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 21.0  | 0.244 |
-| 2 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 16.0  | 0.270 |
-| 1 | SRR24043307-full |Default | cutadapt,4.0+galaxy1 | error | 10.0  | 0.240 |
-| 1 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 16.0  | 0.269 |
-| 3 | SRR24043307-20 |Default | multiqc,1.11+galaxy1 | ok | 29.0  | 0.248 |
-| 2 | SRR24043307-20 |Default | param_value_from_file,unknown | ok | 15.0  | 0.243 |
-| 2 | SRR24043307-full |Default | cutadapt,4.0+galaxy1 | error | 11.0  | 0.240 |
-| 2 | SRR24043307-full |Default | param_value_from_file,unknown | deleted |   |  |
-| 1 | SRR24043307-full |Default | compose_text_param,0.1.1 | ok | 18.0  | 0.273 |
-| 2 | SRR24043307-20 |Default | wig_to_bigWig,unknown | ok | 31.0  | 0.942 |
-| 2 | SRR24043307-20 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 141.0  | 2.324 |
-| 2 | SRR24043307-50 |Default | multiqc,1.11+galaxy1 | ok | 28.0  | 0.237 |
-| 2 | SRR24043307-20 |Default | wig_to_bigWig,unknown | ok | 30.0  | 1.714 |
-| 1 | SRR24043307-50 |Default | tp_awk_tool,1.1.2 | ok | 11.0  | 0.243 |
-| 2 | SRR24043307-50 |Default | wig_to_bigWig,unknown | ok | 78.0  | 2.656 |
-| 1 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 14.0  | 0.232 |
-| 3 | SRR24043307-50 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 369.0  | 3.755 |
-| 3 | SRR24043307-50 |Default | cufflinks,2.2.1.3 | ok | 4012.0  | 9.177 |
-| 2 | SRR24043307-full |Default | cutadapt,4.0+galaxy1 | error | 10.0  | 0.240 |
-| 3 | SRR24043307-20 |Default | rna_star,2.7.8a+galaxy1 | ok | 834.0  | 45.700 |
-| 3 | SRR24043307-20 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 131.0  | 1.964 |
-| 3 | SRR24043307-50 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 261.0  | 3.630 |
-| 1 | SRR24043307-full |Default | cutadapt,4.0+galaxy1 | error |  9.0  | 0.230 |
-| 3 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 20.0  | 0.267 |
-| 1 | SRR24043307-20 |Default | wig_to_bigWig,unknown | ok | 18.0  | 0.883 |
-| 3 | SRR24043307-50 |Default | tp_awk_tool,1.1.2 | ok | 10.0  | 0.244 |
-| 1 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 14.0  | 0.232 |
-| 3 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 19.0  | 0.261 |
-| 3 | SRR24043307-20 |Default | tp_awk_tool,1.1.2 | ok |  6.0  | 0.239 |
-| 1 | SRR24043307-20 |Default | bamFilter,2.5.2+galaxy1 | ok | 483.0  | 2.700 |
-| 2 | SRR24043307-20 |Default | tp_awk_tool,1.1.2 | ok |  8.0  | 0.231 |
-| 1 | SRR24043307-20 |Default | compose_text_param,0.1.1 | ok | 18.0  | 0.270 |
-| 3 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 15.0  | 0.251 |
-| 3 | SRR24043307-20 |Default | wig_to_bigWig,unknown | ok | 22.0  | 0.881 |
-| 2 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 17.0  | 0.246 |
-| 1 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 19.0  | 0.266 |
-| 1 | SRR24043307-20 |Default | revertR2orientationInBam,0.0.2 | ok | 414.0  | 2.131 |
-| 1 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 18.0  | 0.270 |
-| 3 | SRR24043307-full |Default | cutadapt,4.0+galaxy1 | error |  8.0  | 0.230 |
-| 2 | SRR24043307-20 |Default | tp_awk_tool,1.1.2 | ok |  9.0  | 0.244 |
-| 3 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 16.0  | 0.276 |
-| 1 | SRR24043307-50 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 386.0  | 3.997 |
-| 1 | SRR24043307-50 |Default | wig_to_bigWig,unknown | ok | 25.0  | 1.430 |
-| 2 | SRR24043307-50 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 305.0  | 3.636 |
-| 3 | SRR24043307-full |Default | multiqc,1.11+galaxy1 | deleted |   |  |
-| 1 | SRR24043307-20 |Default | param_value_from_file,unknown | ok | 16.0  | 0.265 |
-| 3 | SRR24043307-20 |Default | cutadapt,4.0+galaxy1 | ok | 204.0  | 7.036 |
-| 3 | SRR24043307-20 |Default | wig_to_bigWig,unknown | ok | 31.0  | 1.708 |
-| 1 | SRR24043307-20 |Default | cutadapt,4.0+galaxy1 | ok | 206.0  | 7.128 |
-| 2 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 17.0  | 0.237 |
-| 3 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 15.0  | 0.245 |
-| 2 | SRR24043307-20 |Default | cutadapt,4.0+galaxy1 | ok | 203.0  | 7.575 |
-| 3 | SRR24043307-50 |Default | tp_awk_tool,1.1.2 | ok |  6.0  | 0.230 |
-| 1 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 17.0  | 0.250 |
-| 3 | SRR24043307-50 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 265.0  | 3.644 |
-| 2 | SRR24043307-20 |Default | rna_star,2.7.8a+galaxy1 | ok | 502.0  | 43.992 |
-| 2 | SRR24043307-50 |Default | cufflinks,2.2.1.3 | ok | 4370.0  | 8.134 |
-| 1 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 17.0  | 0.250 |
-| 2 | SRR24043307-20 |Default | multiqc,1.11+galaxy1 | ok | 30.0  | 0.284 |
-| 2 | SRR24043307-full |Default | tp_awk_tool,1.1.2 | deleted |   |  |
-| 2 | SRR24043307-50 |Default | cutadapt,4.0+galaxy1 | ok | 515.0  | 13.500 |
-| 2 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 16.0  | 0.271 |
-| 3 | SRR24043307-50 |Default | wig_to_bigWig,unknown | ok | 25.0  | 1.370 |
-| 1 | SRR24043307-full |Default | multiqc,1.11+galaxy1 | deleted |   |  |
-| 1 | SRR24043307-20 |Default | multiqc,1.11+galaxy1 | ok | 42.0  | 0.255 |
-| 3 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 17.0  | 0.256 |
-| 3 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 14.0  | 0.236 |
-| 3 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 15.0  | 0.243 |
-| 1 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 20.0  | 0.271 |
-| 2 | SRR24043307-50 |Default | rna_star,2.7.8a+galaxy1 | ok | 1188.0  | 51.700 |
-| 1 | SRR24043307-20 |Default | tp_awk_tool,1.1.2 | ok | 11.0  | 0.230 |
-| 3 | SRR24043307-full |Default | param_value_from_file,unknown | deleted |   |  |
-| 2 | SRR24043307-50 |Default | bamFilter,2.5.2+galaxy1 | ok | 1151.0  | 2.702 |
-| 1 | SRR24043307-full |Default | bamFilter,2.5.2+galaxy1 | deleted |   |  |
-| 1 | SRR24043307-full |Default | tp_awk_tool,1.1.2 | deleted |   |  |
-| 2 | SRR24043307-20 |Default | revertR2orientationInBam,0.0.2 | ok | 413.0  | 2.700 |
-| 1 | SRR24043307-full |Default | rna_star,2.7.8a+galaxy1 | deleted |   |  |
-| 3 | SRR24043307-full |Default | revertR2orientationInBam,0.0.2 | deleted |   |  |
-| 1 | SRR24043307-50 |Default | multiqc,1.11+galaxy1 | ok | 31.0  | 0.248 |
-| 3 | SRR24043307-50 |Default | cutadapt,4.0+galaxy1 | ok | 549.0  | 13.500 |
-| 2 | SRR24043307-50 |Default | wig_to_bigWig,unknown | ok | 25.0  | 1.431 |
-| 3 | SRR24043307-50 |Default | compose_text_param,0.1.1 | ok | 16.0  | 0.246 |
-| 1 | SRR24043307-20 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 209.0  | 1.936 |
-| 2 | SRR24043307-50 |Default | tp_awk_tool,1.1.2 | ok |  6.0  | 0.228 |
-| 3 | SRR24043307-20 |Default | bamFilter,2.5.2+galaxy1 | ok | 469.0  | 2.700 |
-| 1 | SRR24043307-20 |Default | wig_to_bigWig,unknown | ok | 18.0  | 0.916 |
-| 3 | SRR24043307-full |Default | rna_star,2.7.8a+galaxy1 | deleted |   |  |
-| 1 | SRR24043307-50 |Default | bamFilter,2.5.2+galaxy1 | ok | 1169.0  | 2.702 |
-| 2 | SRR24043307-full |Default | revertR2orientationInBam,0.0.2 | deleted |   |  |
-| 2 | SRR24043307-20 |Default | cufflinks,2.2.1.3 | ok | 2211.0  | 6.777 |
-| 2 | SRR24043307-50 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 334.0  | 4.019 |
-| 1 | SRR24043307-20 |Default | wig_to_bigWig,unknown | ok | 29.0  | 1.711 |
-| 2 | SRR24043307-full |Default | rna_star,2.7.8a+galaxy1 | deleted |   |  |
-| 2 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 14.0  | 0.238 |
-| 3 | SRR24043307-full |Default | tp_awk_tool,1.1.2 | deleted |   |  |
-| 1 | SRR24043307-50 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 261.0  | 2.936 |
-| 2 | SRR24043307-full |Default | multiqc,1.11+galaxy1 | deleted |   |  |
-| 2 | SRR24043307-full |Default | bamFilter,2.5.2+galaxy1 | deleted |   |  |
-| 2 | SRR24043307-50 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 271.0  | 3.587 |
-| 2 | SRR24043307-20 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 186.0  | 2.599 |
-| 1 | SRR24043307-20 |Default | rna_star,2.7.8a+galaxy1 | ok | 1959.0  | 47.876 |
-| 2 | SRR24043307-50 |Default | revertR2orientationInBam,0.0.2 | ok | 979.0  | 2.702 |
-| 3 | SRR24043307-50 |Default | rna_star,2.7.8a+galaxy1 | ok | 1438.0  | 56.087 |
-| 2 | SRR24043307-full |Default | cutadapt,4.0+galaxy1 | error |  8.0  | 0.227 |
-| 3 | SRR24043307-20 |Default | tp_awk_tool,1.1.2 | ok |  7.0  | 0.232 |
-| 1 | SRR24043307-50 |Default | cufflinks,2.2.1.3 | ok | 5052.0  | 6.735 |
-| 2 | SRR24043307-50 |Default | param_value_from_file,unknown | ok | 15.0  | 0.241 |
-| 3 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 15.0  | 0.248 |
-| 3 | SRR24043307-20 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 135.0  | 2.369 |
-| 3 | SRR24043307-50 |Default | wig_to_bigWig,unknown | ok | 26.0  | 1.431 |
-| 2 | SRR24043307-full |Default | compose_text_param,0.1.1 | ok | 15.0  | 0.244 |
-| 3 | SRR24043307-50 |Default | bamFilter,2.5.2+galaxy1 | ok | 1119.0  | 2.702 |
-| 2 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 17.0  | 0.267 |
-| 1 | SRR24043307-50 |Default | revertR2orientationInBam,0.0.2 | ok | 994.0  | 2.700 |
-| 1 | SRR24043307-full |Default | cutadapt,4.0+galaxy1 | error |  8.0  | 0.230 |
-| 3 | SRR24043307-full |Default | cutadapt,4.0+galaxy1 | error | 10.0  | 0.242 |
-| 2 | SRR24043307-50 |Default | tp_awk_tool,1.1.2 | ok |  9.0  | 0.244 |
-| 2 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 16.0  | 0.244 |
-| 1 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 18.0  | 0.274 |
-| 2 | SRR24043307-20 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 136.0  | 1.914 |
-| 1 | SRR24043307-50 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 270.0  | 2.376 |
-| 3 | SRR24043307-20 |Default | compose_text_param,0.1.1 | ok | 15.0  | 0.243 |
-| 3 | SRR24043307-20 |Default | param_value_from_file,unknown | ok | 15.0  | 0.244 |
-| 1 | SRR24043307-50 |Default | tp_awk_tool,1.1.2 | ok |  9.0  | 0.230 |
-| 3 | SRR24043307-20 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 173.0  | 2.596 |
-| 2 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 16.0  | 0.272 |
-| 2 | SRR24043307-20 |Default | wig_to_bigWig,unknown | ok | 40.0  | 0.881 |
-| 1 | SRR24043307-50 |Default | wig_to_bigWig,unknown | ok | 26.0  | 1.363 |
-| 3 | SRR24043307-full |Default | bamFilter,2.5.2+galaxy1 | deleted |   |  |
-| 1 | SRR24043307-20 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 134.0  | 1.958 |
-| 3 | SRR24043307-20 |Default | revertR2orientationInBam,0.0.2 | ok | 402.0  | 2.130 |
-| 3 | SRR24043307-20 |Default | map_param_value,0.1.1 | ok | 16.0  | 0.251 |
-| 1 | SRR24043307-50 |Default | compose_text_param,0.1.1 | ok | 25.0  | 0.244 |
-| 3 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 15.0  | 0.236 |
-| 3 | SRR24043307-50 |Default | wig_to_bigWig,unknown | ok | 45.0  | 2.657 |
-| 1 | SRR24043307-50 |Default | wig_to_bigWig,unknown | ok | 44.0  | 2.637 |
-| 2 | SRR24043307-50 |Default | wig_to_bigWig,unknown | ok | 24.0  | 1.363 |
-| 1 | SRR24043307-20 |Default | bedtools_genomecoveragebed,2.30.0 | ok | 226.0  | 2.340 |
-| 1 | SRR24043307-50 |Default | map_param_value,0.1.1 | ok | 22.0  | 0.241 |
-| 1 | SRR24043307-full |Default | param_value_from_file,unknown | deleted |   |  |
-| 2 | SRR24043307-20 |Default | bamFilter,2.5.2+galaxy1 | ok | 418.0  | 2.329 |
-| 1 | SRR24043307-20 |Default | cufflinks,2.2.1.3 | ok | 3476.0  |  |
-| 1 | SRR24043307-20 |Default | tp_awk_tool,1.1.2 | ok | 12.0  | 0.243 |
-| 3 | SRR24043307-20 |Default | wig_to_bigWig,unknown | ok | 21.0  | 0.914 |
-| 2 | SRR24043307-50 |Default | compose_text_param,0.1.1 | ok | 18.0  | 0.246 |
-| 1 | SRR24043307-full |Default | revertR2orientationInBam,0.0.2 | deleted |   |  |
-| 3 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 17.0  | 0.241 |
-| 2 | SRR24043307-full |Default | map_param_value,0.1.1 | ok | 15.0  | 0.243 |
-| 1 | SRR24043307-50 |Default | cutadapt,4.0+galaxy1 | ok | 542.0  | 13.500 |
-| 2 | SRR24043307-20 |Default | compose_text_param,0.1.1 | ok | 17.0  | 0.256 |
-| 1 | SRR24043307-50 |Default | rna_star,2.7.8a+galaxy1 | ok | 1226.0  | 52.504 |
+| Tool ID | History | State | Memory (GB) | Runtime (sec)|
+|---|---|---:|---:|---:|
+| wig_to_bigWig | RNAseq_PE_3 | ok | 2.0 |    36 |
+| wig_to_bigWig | RNAseq_PE_3 | ok | 1.9 |    34 |
+| bedtools_genomecoveragebed/2.30.0 | RNAseq_PE_3 | ok | 4.0 |   624 |
+| bedtools_genomecoveragebed/2.30.0 | RNAseq_PE_3 | ok | 3.3 |   575 |
+| revertR2orientationInBam/0.0.2 | RNAseq_PE_3 | ok | 2.7 |  2064 |
+| wig_to_bigWig | RNAseq_PE_3 | ok | 3.6 |    60 |
+| bedtools_genomecoveragebed/2.30.0 | RNAseq_PE_3 | ok | 5.5 |   650 |
+| bamFilter/2.5.2+galaxy1 | RNAseq_PE_3 | ok | 2.7 |  3066 |
+| multiqc/1.11+galaxy1 | RNAseq_PE_3 | ok | 0.3 |    52 |
+| param_value_from_file | RNAseq_PE_3 | ok | 0.3 |    22 |
+| tp_awk_tool/1.1.2 | RNAseq_PE_3 | ok | 0.2 |    17 |
+| tp_awk_tool/1.1.2 | RNAseq_PE_3 | ok | 0.3 |    16 |
+| rna_star/2.7.8a+galaxy1 | RNAseq_PE_3 | ok | 47.4 |  2147 |
+| cutadapt/4.0+galaxy1 | RNAseq_PE_3 | ok | 13.5 |  1303 |
+| map_param_value/0.1.1 | RNAseq_PE_3 | ok | 0.3 |    18 |
+| map_param_value/0.1.1 | RNAseq_PE_3 | ok | 0.3 |    28 |
+| map_param_value/0.1.1 | RNAseq_PE_3 | ok | 0.3 |    26 |
+| map_param_value/0.1.1 | RNAseq_PE_3 | ok | 0.3 |    20 |
+| compose_text_param/0.1.1 | RNAseq_PE_3 | ok | 0.3 |    20 |
+| cufflinks/2.2.1.3 | RNAseq_PE_2 | ok | 2.8 |   321 |
+| wig_to_bigWig | RNAseq_PE_2 | ok | 0.3 |     7 |
+| wig_to_bigWig | RNAseq_PE_2 | ok | 0.2 |     7 |
+| wig_to_bigWig | RNAseq_PE_2 | ok | 0.2 |     7 |
+| bedtools_genomecoveragebed/2.30.0 | RNAseq_PE_2 | ok | 0.3 |    15 |
+| bedtools_genomecoveragebed/2.30.0 | RNAseq_PE_2 | ok | 0.3 |    14 |
+| bedtools_genomecoveragebed/2.30.0 | RNAseq_PE_2 | ok | 0.3 |    10 |
+| param_value_from_file | RNAseq_PE_2 | ok | 0.3 |    19 |
+| multiqc/1.11+galaxy1 | RNAseq_PE_2 | ok | 0.3 |    28 |
+| revertR2orientationInBam/0.0.2 | RNAseq_PE_2 | ok | 0.2 |    12 |
+| tp_awk_tool/1.1.2 | RNAseq_PE_2 | ok | 0.2 |    12 |
+| bamFilter/2.5.2+galaxy1 | RNAseq_PE_2 | ok | 0.3 |     9 |
+| tp_awk_tool/1.1.2 | RNAseq_PE_2 | ok | 0.2 |    10 |
+| rna_star/2.7.8a+galaxy1 | RNAseq_PE_2 | ok | 16.6 | 48598 |
+| cutadapt/4.0+galaxy1 | RNAseq_PE_2 | ok | 13.5 |  1160 |
+| map_param_value/0.1.1 | RNAseq_PE_2 | ok | 0.2 |    18 |
+| map_param_value/0.1.1 | RNAseq_PE_2 | ok | 0.3 |    25 |
+| compose_text_param/0.1.1 | RNAseq_PE_2 | ok | 0.3 |    21 |
+| map_param_value/0.1.1 | RNAseq_PE_2 | ok | 0.2 |    17 |
+| map_param_value/0.1.1 | RNAseq_PE_2 | ok | 0.3 |    20 |
+| cufflinks/2.2.1.3 | RNAseq_PE_1 | ok | 10.4 |  7823 |
+| wig_to_bigWig | RNAseq_PE_1 | ok | 1.8 |    31 |
+| bedtools_genomecoveragebed/2.30.0 | RNAseq_PE_1 | ok | 5.1 |   626 |
+| wig_to_bigWig | RNAseq_PE_1 | ok | 1.9 |    34 |
+| bedtools_genomecoveragebed/2.30.0 | RNAseq_PE_1 | ok | 5.3 |   507 |
+| revertR2orientationInBam/0.0.2 | RNAseq_PE_1 | ok | 2.7 |  2278 |
+| wig_to_bigWig | RNAseq_PE_1 | ok | 3.6 |    87 |
+| bedtools_genomecoveragebed/2.30.0 | RNAseq_PE_1 | ok | 5.6 |   720 |
+| bamFilter/2.5.2+galaxy1 | RNAseq_PE_1 | ok | 2.7 |  2385 |
+| multiqc/1.11+galaxy1 | RNAseq_PE_1 | ok | 0.3 |    30 |
+| param_value_from_file | RNAseq_PE_1 | ok | 0.3 |    23 |
+| tp_awk_tool/1.1.2 | RNAseq_PE_1 | ok | 0.3 |    11 |
+| tp_awk_tool/1.1.2 | RNAseq_PE_1 | ok | 0.2 |    13 |
+| rna_star/2.7.8a+galaxy1 | RNAseq_PE_1 | ok | 58.0 |  2165 |
+| cutadapt/4.0+galaxy1 | RNAseq_PE_1 | ok | 13.5 |  1080 |
+| map_param_value/0.1.1 | RNAseq_PE_1 | ok | 0.2 |    16 |
+| map_param_value/0.1.1 | RNAseq_PE_1 | ok | 0.3 |    23 |
+| map_param_value/0.1.1 | RNAseq_PE_1 | ok | 0.2 |    19 |
+| map_param_value/0.1.1 | RNAseq_PE_1 | ok | 0.2 |    18 |
+| compose_text_param/0.1.1 | RNAseq_PE_1 | ok | 0.3 |    18 |
+| cufflinks/2.2.1.3 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 9.2 |  4012 |
+| wig_to_bigWig | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 1.4 |    26 |
+| wig_to_bigWig | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 1.4 |    25 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 3.6 |   265 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 3.6 |   261 |
+| revertR2orientationInBam/0.0.2 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 2.7 |   950 |
+| wig_to_bigWig | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 2.7 |    45 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 3.8 |   369 |
+| bamFilter/2.5.2+galaxy1 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 2.7 |  1119 |
+| multiqc/1.11+galaxy1 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 0.3 |    38 |
+| param_value_from_file | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 0.3 |    17 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 0.2 |     6 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 0.2 |    10 |
+| rna_star/2.7.8a+galaxy1 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 56.1 |  1438 |
+| cutadapt/4.0+galaxy1 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 13.5 |   549 |
+| map_param_value/0.1.1 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 0.2 |    15 |
+| map_param_value/0.1.1 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 0.3 |    17 |
+| map_param_value/0.1.1 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 0.2 |    15 |
+| map_param_value/0.1.1 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 0.2 |    15 |
+| compose_text_param/0.1.1 | usegalaxy.org 3 usa 5GB RNASeq-PE | ok | 0.2 |    16 |
+| cufflinks/2.2.1.3 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 7.3 |  2161 |
+| wig_to_bigWig | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.9 |    22 |
+| wig_to_bigWig | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.9 |    21 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 2.4 |   135 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 2.0 |   131 |
+| revertR2orientationInBam/0.0.2 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 2.1 |   402 |
+| wig_to_bigWig | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 1.7 |    31 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 2.6 |   173 |
+| bamFilter/2.5.2+galaxy1 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 2.7 |   469 |
+| multiqc/1.11+galaxy1 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.2 |    29 |
+| param_value_from_file | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.2 |    15 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.2 |     6 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.2 |     7 |
+| rna_star/2.7.8a+galaxy1 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 45.7 |   834 |
+| cutadapt/4.0+galaxy1 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 7.0 |   204 |
+| map_param_value/0.1.1 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.2 |    14 |
+| map_param_value/0.1.1 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.3 |    16 |
+| map_param_value/0.1.1 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.2 |    15 |
+| map_param_value/0.1.1 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.3 |    15 |
+| compose_text_param/0.1.1 | usegalaxy.org 3 usa 2GB RNASeq-PE | ok | 0.2 |    15 |
+| cufflinks/2.2.1.3 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 8.1 |  4370 |
+| wig_to_bigWig | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 1.4 |    24 |
+| wig_to_bigWig | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 1.4 |    25 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 3.6 |   305 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 3.6 |   271 |
+| revertR2orientationInBam/0.0.2 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 2.7 |   979 |
+| wig_to_bigWig | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 2.7 |    78 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 4.0 |   334 |
+| bamFilter/2.5.2+galaxy1 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 2.7 |  1151 |
+| multiqc/1.11+galaxy1 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 0.2 |    28 |
+| param_value_from_file | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 0.2 |    15 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 0.2 |     6 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 0.2 |     9 |
+| rna_star/2.7.8a+galaxy1 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 51.7 |  1188 |
+| cutadapt/4.0+galaxy1 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 13.5 |   515 |
+| compose_text_param/0.1.1 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 0.2 |    18 |
+| map_param_value/0.1.1 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 0.3 |    17 |
+| map_param_value/0.1.1 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 0.2 |    17 |
+| map_param_value/0.1.1 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 0.2 |    17 |
+| map_param_value/0.1.1 | usegalaxy.org 2 usa 5GB RNASeq-PE | ok | 0.3 |    17 |
+| cufflinks/2.2.1.3 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 6.8 |  2211 |
+| wig_to_bigWig | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.9 |    40 |
+| wig_to_bigWig | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.9 |    31 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 2.3 |   141 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 1.9 |   136 |
+| revertR2orientationInBam/0.0.2 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 2.7 |   413 |
+| wig_to_bigWig | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 1.7 |    30 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 2.6 |   186 |
+| bamFilter/2.5.2+galaxy1 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 2.3 |   418 |
+| multiqc/1.11+galaxy1 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.3 |    30 |
+| param_value_from_file | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.2 |    15 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.2 |     9 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.2 |     8 |
+| rna_star/2.7.8a+galaxy1 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 44.0 |   502 |
+| cutadapt/4.0+galaxy1 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 7.6 |   203 |
+| map_param_value/0.1.1 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.2 |    14 |
+| map_param_value/0.1.1 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.3 |    16 |
+| compose_text_param/0.1.1 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.3 |    17 |
+| map_param_value/0.1.1 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.3 |    16 |
+| map_param_value/0.1.1 | usegalaxy.org 2 usa 2GB RNASeq-PE | ok | 0.3 |    16 |
+| cufflinks/2.2.1.3 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 6.7 |  5052 |
+| wig_to_bigWig | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 1.4 |    26 |
+| wig_to_bigWig | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 1.4 |    25 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 2.4 |   270 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 2.9 |   261 |
+| revertR2orientationInBam/0.0.2 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 2.7 |   994 |
+| wig_to_bigWig | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 2.6 |    44 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 4.0 |   386 |
+| bamFilter/2.5.2+galaxy1 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 2.7 |  1169 |
+| multiqc/1.11+galaxy1 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 0.2 |    31 |
+| param_value_from_file | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 0.3 |    19 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 0.2 |    11 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 0.2 |     9 |
+| rna_star/2.7.8a+galaxy1 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 52.5 |  1226 |
+| cutadapt/4.0+galaxy1 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 13.5 |   542 |
+| map_param_value/0.1.1 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 0.3 |    19 |
+| compose_text_param/0.1.1 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 0.2 |    25 |
+| map_param_value/0.1.1 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 0.2 |    22 |
+| map_param_value/0.1.1 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 0.2 |    21 |
+| map_param_value/0.1.1 | usegalaxy.org 1 usa 5GB RNASeq-PE | ok | 0.3 |    18 |
+| cufflinks/2.2.1.3 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok |  |  3476 |
+| wig_to_bigWig | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.9 |    18 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 2.3 |   226 |
+| wig_to_bigWig | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.9 |    18 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 2.0 |   134 |
+| revertR2orientationInBam/0.0.2 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 2.1 |   414 |
+| wig_to_bigWig | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 1.7 |    29 |
+| bedtools_genomecoveragebed/2.30.0 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 1.9 |   209 |
+| bamFilter/2.5.2+galaxy1 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 2.7 |   483 |
+| multiqc/1.11+galaxy1 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.3 |    42 |
+| param_value_from_file | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.3 |    16 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.2 |    12 |
+| tp_awk_tool/1.1.2 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.2 |    11 |
+| rna_star/2.7.8a+galaxy1 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 47.9 |  1959 |
+| cutadapt/4.0+galaxy1 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 7.1 |   206 |
+| map_param_value/0.1.1 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.3 |    33 |
+| map_param_value/0.1.1 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.3 |    20 |
+| compose_text_param/0.1.1 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.3 |    18 |
+| map_param_value/0.1.1 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.3 |    17 |
+| map_param_value/0.1.1 | usegalaxy.org 1 usa 2GB RNASeq-PE | ok | 0.2 |    17 |

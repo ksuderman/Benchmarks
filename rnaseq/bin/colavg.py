@@ -5,38 +5,6 @@ from argparse import ArgumentParser
 from typing import List
 
 
-# class Data:
-#     def __int__(self, header: list = None):
-#         self.header = header
-#         self.rows = list()
-#         self.columns = len(header) if header is not None else 0
-#
-#     def set_header(self, header: list):
-#         self.header = header
-#         self.columns = len(header)
-#
-#     def add_row(self, row: list):
-#         if self.header is None:
-#             print("ERROR: Header has not been set.")
-#             return
-#         if len(row) != self.columns:
-#             print(
-#                 f"ERROR: Invalid number of columns in row.  Expected {self.columns} found {len(row)}"
-#             )
-#             return
-#         self.rows.append(row)
-#
-#     def calculate_averages(self):
-#         n = len(self.header)
-#         results = [0] * n
-#         for row in self.rows:
-#             for i in range(0, n):
-#                 results[i] += self.rows[i]
-#         for i in range(0, n):
-#             results[i] = results[i] / n
-#         return results
-
-
 def do_filter(collection, f):
     '''
     Similar to the built-in filter function but we return an actual list object
@@ -100,13 +68,20 @@ def calculate_averages(rows, columns):
     n = len(columns)
     results = [0.0] * n
     for row in rows:
-        print(row)
+        # print(row)
         for i in range(0, n):
             column = int(columns[i])
             # print(f"i={i} column={column}")
-            results[i] += float(row[column])
+            try:
+                results[i] += float(row[column])
+            except:
+                # Ignore malformed content.  The tool failed.
+                pass
     for i in range(0, n):
-        results[i] = results[i] / len(rows)
+        if len(rows) == 0:
+            results[i] = 0.0
+        else:
+            results[i] = results[i] / len(rows)
     return results
 
 
@@ -124,10 +99,12 @@ def run(args):
     accept = lambda c: c in columns
     header = None
     rows = list()
+    line = []
     if args.filter:
+        line.extend(args.filter)
         def line_filter(line:str) -> bool:
             for f in args.filter:
-                if f not in line:
+                if f[0] not in line:
                     return False
             return True
     else:
@@ -139,15 +116,21 @@ def run(args):
         if header is None:
             header = data[0]
         rows.extend(data[1:])
-        # for row in data[1:]:
-        #     rows.append(do_filter(row, accept))
-    # print(f"There are {len(rows)} rows that match the filters")
     averages = calculate_averages(rows, columns)
-    # print('averages', averages)
-    # print('header', header)
-    for i in range(0, len(columns)):
-        column = int(columns[i])
-        print(f"{header[column]:<20}: {averages[i]:5.2f}")
+    # for i in range(0, len(columns)):
+    #     column = int(columns[i])
+    #     print(f"{header[column]:<20}: {averages[i]:5.2f}")
+    print_results_as_csv(args.filter, averages)
+
+
+def print_results_as_csv(filters, averages):
+    if filters:
+        print(filters[0][0], end="")
+        for f in filters[1:]:
+            print(f", {f[0]}", end="")
+    for i in range(0, len(averages)):
+        print(f", {averages[i]:5.2f}", end="")
+    print()
 
 
 def print_args(args):
@@ -177,9 +160,8 @@ General markdowm files, with content other than a table, are not supported.
         help="averages will be calculated for these columns",
         required=True,
     )
-    parser.add_argument("-f", "--filter", help="string used to filter rows", nargs="*")
+    parser.add_argument("-f", "--filter", action="append", help="string used to filter rows", nargs='+')
     parser.add_argument("file", nargs="+", help="one or more files to be processed")
 
     args = parser.parse_args(sys.argv[1:])
     run(args)
-    # print_args(args)

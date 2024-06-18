@@ -48,7 +48,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('file', nargs=1)
     parser.add_argument('-t', '--tool', help='Tool name to filter on')
-    parser.add_argument('-f', '--filter', help='A string to also filter on', nargs='+')
+    parser.add_argument('-f', '--filter', action="append", help='A string to also filter on', nargs='1')
     args = parser.parse_args(sys.argv[1:])
 #     print('Filters', args.filter)
     run(args.file[0], args.tool, args.filter)
